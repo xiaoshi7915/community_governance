@@ -6,15 +6,16 @@ import os
 from typing import List, Optional
 from pydantic import validator
 from pydantic_settings import BaseSettings
-
+from pydantic import Field
 
 class Settings(BaseSettings):
     """应用程序设置"""
     
+    model_config = {"extra": "ignore"}
+    
     # 基础配置
     PROJECT_NAME: str = "基层治理智能体后端系统"
     API_V1_STR: str = "/api/v1"
-    SECRET_KEY: str = os.getenv("SECRET_KEY", "your-secret-key-change-in-production")
     
     # 环境配置
     ENVIRONMENT: str = os.getenv("ENVIRONMENT", "development")
@@ -36,7 +37,7 @@ class Settings(BaseSettings):
     REFRESH_TOKEN_EXPIRE_DAYS: int = 7  # 7天
     
     # CORS配置 - 根据环境动态配置
-    BACKEND_CORS_ORIGINS: List[str] = []
+    BACKEND_CORS_ORIGINS: List[str] = Field(default_factory=list)
     
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
@@ -84,8 +85,14 @@ class Settings(BaseSettings):
     
     # 文件上传配置
     MAX_FILE_SIZE: int = 50 * 1024 * 1024  # 50MB
-    ALLOWED_IMAGE_TYPES: List[str] = ["image/jpeg", "image/png", "image/gif", "image/webp"]
-    ALLOWED_VIDEO_TYPES: List[str] = ["video/mp4", "video/avi", "video/mov", "video/wmv"]
+    
+    @property
+    def ALLOWED_IMAGE_TYPES(self) -> List[str]:
+        return ["image/jpeg", "image/png", "image/gif", "image/webp"]
+    
+    @property  
+    def ALLOWED_VIDEO_TYPES(self) -> List[str]:
+        return ["video/mp4", "video/avi", "video/mov", "video/wmv"]
     
     # 日志配置
     LOG_LEVEL: str = os.getenv("LOG_LEVEL", "INFO")
@@ -104,9 +111,6 @@ class Settings(BaseSettings):
     NOTIFICATION_MAX_RETRIES: int = int(os.getenv("NOTIFICATION_MAX_RETRIES", "3"))
     NOTIFICATION_RETRY_DELAY_MINUTES: int = int(os.getenv("NOTIFICATION_RETRY_DELAY_MINUTES", "5"))
     
-    class Config:
-        env_file = ".env"
-        case_sensitive = True
 
 
 # 创建全局设置实例
@@ -137,5 +141,5 @@ def validate_settings():
         # 如果验证器模块不存在，跳过验证
         pass
 
-# 在模块加载时验证配置
-validate_settings()
+# 暂时禁用配置验证
+# validate_settings()

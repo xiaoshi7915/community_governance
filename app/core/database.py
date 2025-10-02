@@ -2,20 +2,25 @@
 数据库连接配置
 支持PostgreSQL异步连接
 """
-from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine, async_sessionmaker
+from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession, async_sessionmaker
+from sqlalchemy.orm import declarative_base
 from sqlalchemy.pool import NullPool
 from app.core.config import settings
 
+# 处理数据库URL，确保使用正确的异步驱动
+database_url = settings.DATABASE_URL
+if database_url.startswith("postgresql://"):
+    database_url = database_url.replace("postgresql://", "postgresql+asyncpg://", 1)
+
 # 创建异步数据库引擎
 engine = create_async_engine(
-    settings.DATABASE_URL,
-    echo=settings.DEBUG,  # 在调试模式下显示SQL语句
-    poolclass=NullPool if settings.ENVIRONMENT == "test" else None,
-    pool_pre_ping=True,  # 连接前检查连接是否有效
-    pool_size=20,  # 连接池大小
-    max_overflow=30,  # 最大溢出连接数
-    pool_timeout=30,  # 获取连接超时时间
-    pool_recycle=3600,  # 连接回收时间（1小时）
+    database_url,
+    echo=settings.DEBUG,
+    pool_pre_ping=True,
+    pool_recycle=3600,
+    pool_size=20,
+    max_overflow=30,
+    poolclass=NullPool if "sqlite" in database_url else None,
 )
 
 # 创建异步会话工厂
