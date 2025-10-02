@@ -1,0 +1,2485 @@
+{
+  "system_metrics": [
+    {
+      "timestamp": "2025-10-01T10:55:54.776313",
+      "cpu_percent": 12.5,
+      "memory_percent": 90.2,
+      "memory_used_mb": 14451.19140625,
+      "memory_available_mb": 1565.28515625,
+      "disk_percent": 92.14796622564968,
+      "disk_used_gb": 218.52835845947266,
+      "disk_free_gb": 18.621051788330078,
+      "active_connections": 254
+    },
+    {
+      "timestamp": "2025-10-01T10:56:55.799692",
+      "cpu_percent": 10.2,
+      "memory_percent": 90.4,
+      "memory_used_mb": 14470.88671875,
+      "memory_available_mb": 1545.58984375,
+      "disk_percent": 92.1480997363646,
+      "disk_used_gb": 218.5286750793457,
+      "disk_free_gb": 18.62073516845703,
+      "active_connections": 252
+    },
+    {
+      "timestamp": "2025-10-01T10:57:57.865760",
+      "cpu_percent": 9.9,
+      "memory_percent": 90.1,
+      "memory_used_mb": 14434.23046875,
+      "memory_available_mb": 1582.24609375,
+      "disk_percent": 92.14829115534141,
+      "disk_used_gb": 218.5291290283203,
+      "disk_free_gb": 18.620281219482422,
+      "active_connections": 247
+    },
+    {
+      "timestamp": "2025-10-01T10:58:58.893301",
+      "cpu_percent": 12.3,
+      "memory_percent": 90.7,
+      "memory_used_mb": 14529.12890625,
+      "memory_available_mb": 1487.34765625,
+      "disk_percent": 92.14252124046897,
+      "disk_used_gb": 218.51544570922852,
+      "disk_free_gb": 18.63396453857422,
+      "active_connections": 252
+    },
+    {
+      "timestamp": "2025-10-01T10:59:59.948743",
+      "cpu_percent": 19.8,
+      "memory_percent": 90.6,
+      "memory_used_mb": 14512.484375,
+      "memory_available_mb": 1503.9921875,
+      "disk_percent": 92.14266279399803,
+      "disk_used_gb": 218.5157814025879,
+      "disk_free_gb": 18.633628845214844,
+      "active_connections": 251
+    },
+    {
+      "timestamp": "2025-10-01T11:01:00.975848",
+      "cpu_percent": 9.1,
+      "memory_percent": 90.8,
+      "memory_used_mb": 14538.62109375,
+      "memory_available_mb": 1477.85546875,
+      "disk_percent": 92.1427930875873,
+      "disk_used_gb": 218.5160903930664,
+      "disk_free_gb": 18.633319854736328,
+      "active_connections": 250
+    },
+    {
+      "timestamp": "2025-10-01T11:02:01.994405",
+      "cpu_percent": 13.4,
+      "memory_percent": 90.7,
+      "memory_used_mb": 14523.13671875,
+      "memory_available_mb": 1493.33984375,
+      "disk_percent": 92.14300863500657,
+      "disk_used_gb": 218.5166015625,
+      "disk_free_gb": 18.632808685302734,
+      "active_connections": 253
+    },
+    {
+      "timestamp": "2025-10-01T11:03:04.043570",
+      "cpu_percent": 24.7,
+      "memory_percent": 91.0,
+      "memory_used_mb": 14574.23046875,
+      "memory_available_mb": 1442.24609375,
+      "disk_percent": 92.14341720996546,
+      "disk_used_gb": 218.51757049560547,
+      "disk_free_gb": 18.631839752197266,
+      "active_connections": 254
+    },
+    {
+      "timestamp": "2025-10-01T11:04:05.066789",
+      "cpu_percent": 10.3,
+      "memory_percent": 90.9,
+      "memory_used_mb": 14556.37890625,
+      "memory_available_mb": 1460.09765625,
+      "disk_percent": 92.0964133955,
+      "disk_used_gb": 218.40610122680664,
+      "disk_free_gb": 18.743309020996094,
+      "active_connections": 244
+    },
+    {
+      "timestamp": "2025-10-01T11:05:06.105492",
+      "cpu_percent": 14.9,
+      "memory_percent": 90.8,
+      "memory_used_mb": 14550.68359375,
+      "memory_available_mb": 1465.79296875,
+      "disk_percent": 92.09656942609455,
+      "disk_used_gb": 218.4064712524414,
+      "disk_free_gb": 18.742938995361328,
+      "active_connections": 240
+    },
+    {
+      "timestamp": "2025-10-01T11:06:07.143110",
+      "cpu_percent": 12.0,
+      "memory_percent": 91.2,
+      "memory_used_mb": 14599.296875,
+      "memory_available_mb": 1417.1796875,
+      "disk_percent": 92.09677853926249,
+      "disk_used_gb": 218.40696716308594,
+      "disk_free_gb": 18.742443084716797,
+      "active_connections": 226
+    },
+    {
+      "timestamp": "2025-10-01T11:07:08.187697",
+      "cpu_percent": 81.3,
+      "memory_percent": 96.9,
+      "memory_used_mb": 15527.59765625,
+      "memory_available_mb": 488.87890625,
+      "disk_percent": 92.09754582373256,
+      "disk_used_gb": 218.40878677368164,
+      "disk_free_gb": 18.740623474121094,
+      "active_connections": 285
+    },
+    {
+      "timestamp": "2025-10-01T11:08:16.574935",
+      "cpu_percent": 14.5,
+      "memory_percent": 94.2,
+      "memory_used_mb": 15092.69140625,
+      "memory_available_mb": 923.78515625,
+      "disk_percent": 92.10058439891908,
+      "disk_used_gb": 218.4159927368164,
+      "disk_free_gb": 18.733417510986328,
+      "active_connections": 310
+    },
+    {
+      "timestamp": "2025-10-01T11:09:17.596770",
+      "cpu_percent": 8.5,
+      "memory_percent": 94.4,
+      "memory_used_mb": 15123.37890625,
+      "memory_available_mb": 893.09765625,
+      "disk_percent": 92.10072112675965,
+      "disk_used_gb": 218.41631698608398,
+      "disk_free_gb": 18.73309326171875,
+      "active_connections": 350
+    },
+    {
+      "timestamp": "2025-10-01T11:10:18.622223",
+      "cpu_percent": 11.5,
+      "memory_percent": 94.3,
+      "memory_used_mb": 15096.82421875,
+      "memory_available_mb": 919.65234375,
+      "disk_percent": 92.10078225214721,
+      "disk_used_gb": 218.41646194458008,
+      "disk_free_gb": 18.732948303222656,
+      "active_connections": 321
+    },
+    {
+      "timestamp": "2025-10-01T11:11:19.642356",
+      "cpu_percent": 4.8,
+      "memory_percent": 96.0,
+      "memory_used_mb": 15383.6328125,
+      "memory_available_mb": 632.84375,
+      "disk_percent": 92.10085624603741,
+      "disk_used_gb": 218.4166374206543,
+      "disk_free_gb": 18.732772827148438,
+      "active_connections": 326
+    },
+    {
+      "timestamp": "2025-10-01T11:12:20.688273",
+      "cpu_percent": 9.2,
+      "memory_percent": 95.5,
+      "memory_used_mb": 15294.77734375,
+      "memory_available_mb": 721.69921875,
+      "disk_percent": 92.10095597693288,
+      "disk_used_gb": 218.41687393188477,
+      "disk_free_gb": 18.73253631591797,
+      "active_connections": 405
+    },
+    {
+      "timestamp": "2025-10-01T11:13:23.438434",
+      "cpu_percent": 4.4,
+      "memory_percent": 94.4,
+      "memory_used_mb": 15115.9140625,
+      "memory_available_mb": 900.5625,
+      "disk_percent": 92.10136455189179,
+      "disk_used_gb": 218.41784286499023,
+      "disk_free_gb": 18.7315673828125,
+      "active_connections": 375
+    },
+    {
+      "timestamp": "2025-10-01T11:14:24.455707",
+      "cpu_percent": 22.9,
+      "memory_percent": 95.5,
+      "memory_used_mb": 15299.54296875,
+      "memory_available_mb": 716.93359375,
+      "disk_percent": 92.10238598928906,
+      "disk_used_gb": 218.4202651977539,
+      "disk_free_gb": 18.729145050048828,
+      "active_connections": 302
+    },
+    {
+      "timestamp": "2025-10-01T11:15:25.482529",
+      "cpu_percent": 9.0,
+      "memory_percent": 96.8,
+      "memory_used_mb": 15497.41796875,
+      "memory_available_mb": 519.05859375,
+      "disk_percent": 92.1028170841276,
+      "disk_used_gb": 218.4212875366211,
+      "disk_free_gb": 18.72812271118164,
+      "active_connections": 301
+    },
+    {
+      "timestamp": "2025-10-01T11:16:26.535170",
+      "cpu_percent": 13.1,
+      "memory_percent": 93.9,
+      "memory_used_mb": 15039.1796875,
+      "memory_available_mb": 977.296875,
+      "disk_percent": 92.10280421562496,
+      "disk_used_gb": 218.42125701904297,
+      "disk_free_gb": 18.728153228759766,
+      "active_connections": 287
+    },
+    {
+      "timestamp": "2025-10-01T11:17:27.569713",
+      "cpu_percent": 11.4,
+      "memory_percent": 95.1,
+      "memory_used_mb": 15238.296875,
+      "memory_available_mb": 778.1796875,
+      "disk_percent": 92.10289268658062,
+      "disk_used_gb": 218.42146682739258,
+      "disk_free_gb": 18.727943420410156,
+      "active_connections": 321
+    },
+    {
+      "timestamp": "2025-10-01T11:18:30.107752",
+      "cpu_percent": 11.5,
+      "memory_percent": 95.0,
+      "memory_used_mb": 15210.0,
+      "memory_available_mb": 806.4765625,
+      "disk_percent": 92.1029972431646,
+      "disk_used_gb": 218.42171478271484,
+      "disk_free_gb": 18.72769546508789,
+      "active_connections": 330
+    },
+    {
+      "timestamp": "2025-10-01T11:19:31.136182",
+      "cpu_percent": 15.0,
+      "memory_percent": 94.6,
+      "memory_used_mb": 15149.0,
+      "memory_available_mb": 867.4765625,
+      "disk_percent": 92.10306319424065,
+      "disk_used_gb": 218.42187118530273,
+      "disk_free_gb": 18.7275390625,
+      "active_connections": 331
+    },
+    {
+      "timestamp": "2025-10-01T11:20:32.153649",
+      "cpu_percent": 7.1,
+      "memory_percent": 94.6,
+      "memory_used_mb": 15156.890625,
+      "memory_available_mb": 859.5859375,
+      "disk_percent": 92.10334790986161,
+      "disk_used_gb": 218.42254638671875,
+      "disk_free_gb": 18.726863861083984,
+      "active_connections": 565
+    },
+    {
+      "timestamp": "2025-10-01T11:21:33.183580",
+      "cpu_percent": 9.9,
+      "memory_percent": 95.0,
+      "memory_used_mb": 15213.578125,
+      "memory_available_mb": 802.8984375,
+      "disk_percent": 92.1037291392524,
+      "disk_used_gb": 218.4234504699707,
+      "disk_free_gb": 18.72595977783203,
+      "active_connections": 531
+    },
+    {
+      "timestamp": "2025-10-01T11:22:34.192599",
+      "cpu_percent": 18.8,
+      "memory_percent": 94.3,
+      "memory_used_mb": 15097.46875,
+      "memory_available_mb": 919.0078125,
+      "disk_percent": 92.10357150009503,
+      "disk_used_gb": 218.42307662963867,
+      "disk_free_gb": 18.726333618164062,
+      "active_connections": 326
+    },
+    {
+      "timestamp": "2025-10-01T11:23:36.925520",
+      "cpu_percent": 15.6,
+      "memory_percent": 95.3,
+      "memory_used_mb": 15257.6015625,
+      "memory_available_mb": 758.875,
+      "disk_percent": 92.1026851819755,
+      "disk_used_gb": 218.4209747314453,
+      "disk_free_gb": 18.728435516357422,
+      "active_connections": 332
+    },
+    {
+      "timestamp": "2025-10-01T11:24:37.964998",
+      "cpu_percent": 10.8,
+      "memory_percent": 96.4,
+      "memory_used_mb": 15445.1875,
+      "memory_available_mb": 571.2890625,
+      "disk_percent": 92.10583153087167,
+      "disk_used_gb": 218.42843627929688,
+      "disk_free_gb": 18.72097396850586,
+      "active_connections": 355
+    }
+  ],
+  "api_metrics": [
+    {
+      "endpoint": "/api/v1/auth/login",
+      "method": "POST",
+      "response_time": 0.7110540866851807,
+      "status_code": 200,
+      "timestamp": "2025-10-01T11:08:36.172170",
+      "request_id": "ac155377-3383-49b2-9c5f-77fe8f36901e"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0014271736145019531,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:08:36.261948",
+      "request_id": "6d6bea6d-f699-4029-9e8d-2cb6a75e4731"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:08:36.268430",
+      "request_id": "a7859d48-bd4d-4b43-a138-c90923d10355"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.002305746078491211,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:08:36.289168",
+      "request_id": "dd843a72-043b-4252-889f-05a2055880dc"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:08:36.294254",
+      "request_id": "761a9aee-9da3-4150-93c8-a503d3bb6eb2"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0009970664978027344,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:08:37.276587",
+      "request_id": "35588ec8-ca9e-4b3d-8def-988f7f7b215b"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0009946823120117188,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:08:37.286963",
+      "request_id": "8eeaf11c-6268-46b9-aa86-32b9f4d7e371"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0010006427764892578,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:08:37.299657",
+      "request_id": "3802d685-a540-4cae-bf82-10ba134dc790"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0010004043579101562,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:08:37.310666",
+      "request_id": "ae7bbfe2-8d78-477d-84b3-94202f171771"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.00211334228515625,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:08:39.290600",
+      "request_id": "891360a2-31b7-40a1-80ce-fa32dfd21821"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.002015829086303711,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:08:39.306421",
+      "request_id": "8c894b8a-983d-423e-bf14-529d9494712d"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:08:39.317467",
+      "request_id": "a613b938-601d-43ca-a6a2-be4e7a74d858"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.002475738525390625,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:08:39.333781",
+      "request_id": "555138de-8125-4452-8224-580f8dbcd7f0"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:08:43.307782",
+      "request_id": "58bdae4f-41c4-4c8c-93ad-7a6cca99dae7"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.001001596450805664,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:08:43.331088",
+      "request_id": "82b6a28c-37a6-4b2f-922e-48b326dc93b2"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0010120868682861328,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:08:43.344830",
+      "request_id": "11b74c5d-713a-4603-a8a2-4100e87f88d1"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0009989738464355469,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:08:43.356151",
+      "request_id": "52a09550-7b20-483f-b1c0-adef9c393231"
+    },
+    {
+      "endpoint": "/api/v1/events/",
+      "method": "GET",
+      "response_time": 0.0010018348693847656,
+      "status_code": 307,
+      "timestamp": "2025-10-01T11:10:23.731151",
+      "request_id": "bdbe2321-c5b8-47d3-b27f-bd4e068ce56b"
+    },
+    {
+      "endpoint": "/api/v1/events/",
+      "method": "GET",
+      "response_time": 0.0020122528076171875,
+      "status_code": 307,
+      "timestamp": "2025-10-01T11:10:23.742181",
+      "request_id": "826a303e-9151-409c-b918-d7890b187c5f"
+    },
+    {
+      "endpoint": "/api/v1/events",
+      "method": "GET",
+      "response_time": 0.0010056495666503906,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:10:24.071162",
+      "request_id": "3536231f-8532-4ff5-917a-242de4b06ea2"
+    },
+    {
+      "endpoint": "/api/v1/events",
+      "method": "GET",
+      "response_time": 0.0010085105895996094,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:10:24.075688",
+      "request_id": "ef5dad35-64a6-4e6d-93d9-9c6f69647de0"
+    },
+    {
+      "endpoint": "/api/v1/events/",
+      "method": "GET",
+      "response_time": 0.0009999275207519531,
+      "status_code": 307,
+      "timestamp": "2025-10-01T11:10:25.083179",
+      "request_id": "135a5223-250d-4a6c-bd68-fbc1619fa79c"
+    },
+    {
+      "endpoint": "/api/v1/events",
+      "method": "GET",
+      "response_time": 0.0029993057250976562,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:10:25.094677",
+      "request_id": "64161ba2-ae53-479d-b32a-9187bed49a25"
+    },
+    {
+      "endpoint": "/api/v1/events/",
+      "method": "GET",
+      "response_time": 0.0019998550415039062,
+      "status_code": 307,
+      "timestamp": "2025-10-01T11:10:25.095670",
+      "request_id": "1301b052-657d-4473-83ef-0c5f446fc721"
+    },
+    {
+      "endpoint": "/api/v1/events",
+      "method": "GET",
+      "response_time": 0.0021474361419677734,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:10:25.102040",
+      "request_id": "f9861703-664c-4198-9042-e02efb746d41"
+    },
+    {
+      "endpoint": "/api/v1/events/",
+      "method": "GET",
+      "response_time": 0.0010001659393310547,
+      "status_code": 307,
+      "timestamp": "2025-10-01T11:10:27.106290",
+      "request_id": "6d0500a9-129f-463c-bb3a-9d785b3edce9"
+    },
+    {
+      "endpoint": "/api/v1/events",
+      "method": "GET",
+      "response_time": 0.001001119613647461,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:10:27.113287",
+      "request_id": "c56ab2b1-0e63-41e1-ad50-83856f595cab"
+    },
+    {
+      "endpoint": "/api/v1/events/",
+      "method": "GET",
+      "response_time": 0.0022487640380859375,
+      "status_code": 307,
+      "timestamp": "2025-10-01T11:10:27.118535",
+      "request_id": "bc19b820-2ee4-4375-ac88-28701f6c71cb"
+    },
+    {
+      "endpoint": "/api/v1/events",
+      "method": "GET",
+      "response_time": 0.0010018348693847656,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:10:27.124536",
+      "request_id": "cfe34bc7-f8a6-41a9-8ef8-6507dd451bcd"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0011641979217529297,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:10:27.399360",
+      "request_id": "fe439007-0666-4440-b81d-98db9f1dd012"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0030012130737304688,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:10:28.419343",
+      "request_id": "06b93392-2fe8-4c8a-ad2d-cf1a814b2c75"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0010199546813964844,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:10:30.433777",
+      "request_id": "9c990587-2a67-4e64-bddc-01bef15042d3"
+    },
+    {
+      "endpoint": "/api/v1/events/",
+      "method": "GET",
+      "response_time": 0.0010027885437011719,
+      "status_code": 307,
+      "timestamp": "2025-10-01T11:10:31.128395",
+      "request_id": "2ef61922-1171-454f-a3aa-6934f707b5df"
+    },
+    {
+      "endpoint": "/api/v1/events",
+      "method": "GET",
+      "response_time": 0.0009980201721191406,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:10:31.132344",
+      "request_id": "0b1e9a62-4875-43b4-9ace-1dfccdd3787b"
+    },
+    {
+      "endpoint": "/api/v1/events/",
+      "method": "GET",
+      "response_time": 0.0010075569152832031,
+      "status_code": 307,
+      "timestamp": "2025-10-01T11:10:31.135351",
+      "request_id": "78158ce1-f70e-43dd-a571-708b10a73b50"
+    },
+    {
+      "endpoint": "/api/v1/events",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:10:31.141932",
+      "request_id": "fee98190-7117-4f6c-919c-750e0e64a045"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0020041465759277344,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:10:31.655114",
+      "request_id": "6c98f7f3-3066-4b40-ab8c-c652d5cb3d0f"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.001001596450805664,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:10:31.665674",
+      "request_id": "20370ddd-bfbd-426a-8444-fd5a5fe9ebbc"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:10:32.693794",
+      "request_id": "ede4e040-cce7-4063-9350-8e58c09e5cd3"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0021860599517822266,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:10:32.711852",
+      "request_id": "fc12f60c-09ac-4fa1-a228-0a9c59741403"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.001531362533569336,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:10:34.465081",
+      "request_id": "e312ce48-695c-446d-bf60-0840e2f437eb"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0015130043029785156,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:10:34.715176",
+      "request_id": "48f35585-56de-4093-aaee-855a852aa67d"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0009982585906982422,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:10:34.733030",
+      "request_id": "d4b42788-a4d0-47f4-bb22-09df7f59864d"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.000997781753540039,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:10:38.736360",
+      "request_id": "4d089d1d-9eb9-4bc2-95ba-4bf7f61f773a"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0010008811950683594,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:10:38.747425",
+      "request_id": "cbf3871b-cce9-40ae-858f-e834a6068d7f"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.001512289047241211,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:11:17.213840",
+      "request_id": "6cf398d8-c359-4280-b2a1-ad47e4ee875e"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.0010466575622558594,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:11:18.234030",
+      "request_id": "d8214609-7b8b-4590-8813-3a1a7ca0d669"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:11:20.245653",
+      "request_id": "161104c3-5fa9-4cc0-9b37-abe7a4541a45"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.0010142326354980469,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:11:24.262553",
+      "request_id": "17eb2ec5-eb00-4232-8554-7a83ff1edadb"
+    },
+    {
+      "endpoint": "/api/v1/auth/login",
+      "method": "POST",
+      "response_time": 0.6372811794281006,
+      "status_code": 200,
+      "timestamp": "2025-10-01T11:11:43.213224",
+      "request_id": "82900f02-a69a-4082-b02d-3530858d0481"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0020008087158203125,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:11:43.288519",
+      "request_id": "6e148dff-f5a5-4b7f-ae1a-2dd93a72258a"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0035202503204345703,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:11:43.300158",
+      "request_id": "93181629-1d65-4d3f-9816-e40e02b53732"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0020003318786621094,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:11:43.314803",
+      "request_id": "61ba9ac9-87ab-49d1-8fc2-1c96a5114d32"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0010101795196533203,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:11:43.325390",
+      "request_id": "52b3d84e-3439-4593-ba1d-91864a313b81"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0010004043579101562,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:11:43.336378",
+      "request_id": "6130e542-3572-4ccd-b491-0a58304947a1"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.003557443618774414,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:11:43.347938",
+      "request_id": "4d017aff-f8ce-4435-be72-1258cae2e0a6"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0010030269622802734,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:11:43.358484",
+      "request_id": "4b4eab0d-b1fa-4286-bf17-fe389b17ee11"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0005483627319335938,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:11:44.315599",
+      "request_id": "7b5b1aa1-7af8-411f-9714-ece502d2598e"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:11:44.321410",
+      "request_id": "5e2d2e55-7389-4117-a3cf-97fed22948a3"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0017943382263183594,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:11:44.329344",
+      "request_id": "d3a678b6-fea8-4b55-a988-a5857a3ad40f"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:11:44.330301",
+      "request_id": "6a5eda46-1ddd-4986-ba96-e3b0b5bfe6e5"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:11:44.346789",
+      "request_id": "ec8e4249-e3c2-47b7-b5aa-4f6722c591bc"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:11:44.358817",
+      "request_id": "3600e551-c125-420e-80f1-ac6398996f6f"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.00099945068359375,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:11:44.384124",
+      "request_id": "5954aabd-9133-4293-bfa1-b67b48e0d360"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:11:46.327712",
+      "request_id": "2c3222bf-572a-4e8c-9f8b-4c4f0b8bdaea"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:11:46.339490",
+      "request_id": "7a7db5f2-7a5b-487c-8bfb-3224f53e67c2"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0010099411010742188,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:11:46.349175",
+      "request_id": "7f84cae8-2bef-46a5-8092-e9ee54f66390"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:11:46.349175",
+      "request_id": "a57531d8-aee4-401a-bbcd-f21bebb3b2a9"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0009949207305908203,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:11:46.367314",
+      "request_id": "ba41583a-ff60-4c42-8fd1-638a9301c6f4"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0010042190551757812,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:11:46.375312",
+      "request_id": "e9bd50be-8787-4bd9-80a0-09597d1f4578"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0010073184967041016,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:11:46.398298",
+      "request_id": "4d210ceb-bf53-45a0-9a21-1950038a5670"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.002149343490600586,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:11:50.357793",
+      "request_id": "2cca3e9b-6e3f-486e-a5fc-e5c3d39c28ed"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0010190010070800781,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:11:52.398608",
+      "request_id": "c1a06aa5-aeb8-4102-be59-50b4d416af23"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0012938976287841797,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:11:54.447426",
+      "request_id": "d88bb24b-caaa-4535-bad8-ecf52dd08d9b"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0023941993713378906,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:11:56.489781",
+      "request_id": "b8c4a621-f321-4647-a9cd-a6fd782c4a2e"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0011856555938720703,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:11:58.517861",
+      "request_id": "deef0640-0a61-4bfa-aec9-1db88d1aba26"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0013930797576904297,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:11:59.744241",
+      "request_id": "7dd0cd74-f5e3-4fd6-9dfd-ac9eb74df2a9"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0010018348693847656,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:11:59.753850",
+      "request_id": "fdf41321-2abe-4c86-89be-1421e81c5b73"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0010006427764892578,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:12:02.100288",
+      "request_id": "8d093e2e-a373-4c51-92d1-0a4d562fbbbf"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0010085105895996094,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:12:02.111290",
+      "request_id": "224d2c29-f36e-4f3e-a623-8f7bf1c06d24"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:12:03.126042",
+      "request_id": "5d21499c-9111-43cd-9040-45d85fb35422"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0009989738464355469,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:12:03.134411",
+      "request_id": "c75f8d24-1684-4281-b251-fd6898b867f5"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0009984970092773438,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:12:05.150943",
+      "request_id": "abb3f7ac-6b26-4af5-a3e6-a32998184d24"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0020132064819335938,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:12:05.162926",
+      "request_id": "171cd606-52c1-451c-84a7-ceeb55c75fdf"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0010001659393310547,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:12:09.173932",
+      "request_id": "361019d1-1aab-46fd-baee-38119f6329b4"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:12:11.201799",
+      "request_id": "d56ad7a8-ceb0-4714-8b7d-a61bf4b82300"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0020122528076171875,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:12:33.462691",
+      "request_id": "c51bab44-70af-4eb6-80bf-b30e5c2299ea"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0020034313201904297,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:12:33.472841",
+      "request_id": "e82b69dd-1a77-46e0-8cf8-73d6a6b1848b"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.002001047134399414,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:12:34.481766",
+      "request_id": "e2af2584-79aa-46bf-9f53-f91cf9bebcdb"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0019981861114501953,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:12:34.496252",
+      "request_id": "ebe14ecb-8559-4b81-93f8-d4f38b862f4f"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:12:36.488334",
+      "request_id": "4e47d634-4324-4e86-b5fb-061243b144f3"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0010020732879638672,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:12:36.512472",
+      "request_id": "69efa3a4-1ba3-4b74-9d13-3acddeffad1d"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.00199127197265625,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:12:40.532201",
+      "request_id": "28af7741-95df-4198-a8eb-dd43d9e0e16e"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.002324342727661133,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:12:42.552636",
+      "request_id": "9d5381e9-2fb4-434a-907a-3024fc2cf860"
+    },
+    {
+      "endpoint": "/api/v1/files/upload",
+      "method": "POST",
+      "response_time": 0.8477926254272461,
+      "status_code": 200,
+      "timestamp": "2025-10-01T11:15:07.255618",
+      "request_id": "85c6551c-b8bc-40bf-b673-f85431052885"
+    },
+    {
+      "endpoint": "/api/v1/ai/analyze-image",
+      "method": "POST",
+      "response_time": 0.003002643585205078,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:15:07.293722",
+      "request_id": "d5e4314e-4872-4d64-b613-9638041209c4"
+    },
+    {
+      "endpoint": "/api/v1/ai/analyze-image",
+      "method": "POST",
+      "response_time": 0.002358675003051758,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:15:08.318687",
+      "request_id": "f718d9d7-6564-4a9e-ae02-1a42e49f97cf"
+    },
+    {
+      "endpoint": "/api/v1/ai/analyze-image",
+      "method": "POST",
+      "response_time": 0.0017015933990478516,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:15:10.343473",
+      "request_id": "c2c2f34a-cf21-42be-87ba-1c56f7a1248e"
+    },
+    {
+      "endpoint": "/api/v1/ai/analyze-image",
+      "method": "POST",
+      "response_time": 0.013492822647094727,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:15:14.371575",
+      "request_id": "ec3b34d6-a747-4209-9f69-71f8a435880e"
+    },
+    {
+      "endpoint": "/api/v1/events/",
+      "method": "GET",
+      "response_time": 0.001961231231689453,
+      "status_code": 307,
+      "timestamp": "2025-10-01T11:16:32.865522",
+      "request_id": "912b60c3-5669-4c52-ac34-1815c7dfd862"
+    },
+    {
+      "endpoint": "/api/v1/events/",
+      "method": "GET",
+      "response_time": 0.0009996891021728516,
+      "status_code": 307,
+      "timestamp": "2025-10-01T11:16:32.874861",
+      "request_id": "b62d678f-fc43-4cbf-8c83-532087a16c17"
+    },
+    {
+      "endpoint": "/api/v1/events",
+      "method": "GET",
+      "response_time": 0.0020194053649902344,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:16:33.193024",
+      "request_id": "e63b06df-451f-40c2-9aa7-9a85198a8035"
+    },
+    {
+      "endpoint": "/api/v1/events",
+      "method": "GET",
+      "response_time": 0.0016121864318847656,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:16:33.199933",
+      "request_id": "cdf50c30-1242-4e64-ae46-23a7adf30169"
+    },
+    {
+      "endpoint": "/api/v1/events/",
+      "method": "GET",
+      "response_time": 0.0009872913360595703,
+      "status_code": 307,
+      "timestamp": "2025-10-01T11:16:34.204339",
+      "request_id": "68461f98-a81c-48d8-94d9-a4195d0260eb"
+    },
+    {
+      "endpoint": "/api/v1/events/",
+      "method": "GET",
+      "response_time": 0.0030050277709960938,
+      "status_code": 307,
+      "timestamp": "2025-10-01T11:16:34.214951",
+      "request_id": "07caa777-72aa-4dc4-ac2e-3fd11680a3bd"
+    },
+    {
+      "endpoint": "/api/v1/events",
+      "method": "GET",
+      "response_time": 0.002989530563354492,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:16:34.216942",
+      "request_id": "17114937-f3ed-4801-96c7-9d29c20d3426"
+    },
+    {
+      "endpoint": "/api/v1/events",
+      "method": "GET",
+      "response_time": 0.0029931068420410156,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:16:34.224944",
+      "request_id": "58cf6f04-dcf3-440a-b0b2-c75ebbec1f78"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.00202178955078125,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:16:35.855254",
+      "request_id": "0fdf13aa-9378-42a9-9dc2-fee3fcb63191"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.003111600875854492,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:16:35.868432",
+      "request_id": "0fa2e3f5-0482-4159-8f37-df381cf2b3f9"
+    },
+    {
+      "endpoint": "/api/v1/events/",
+      "method": "GET",
+      "response_time": 0.0010001659393310547,
+      "status_code": 307,
+      "timestamp": "2025-10-01T11:16:36.235446",
+      "request_id": "4d7bc2f0-ad42-4495-9c1a-cd7d9dc2b7e4"
+    },
+    {
+      "endpoint": "/api/v1/events/",
+      "method": "GET",
+      "response_time": 0.0005092620849609375,
+      "status_code": 307,
+      "timestamp": "2025-10-01T11:16:36.250960",
+      "request_id": "6420a278-6f67-4f95-af9c-a1e533a822b6"
+    },
+    {
+      "endpoint": "/api/v1/events",
+      "method": "GET",
+      "response_time": 0.002002716064453125,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:16:36.564260",
+      "request_id": "7e80e568-922f-49e7-9297-0f3dd20513dc"
+    },
+    {
+      "endpoint": "/api/v1/events",
+      "method": "GET",
+      "response_time": 0.0029942989349365234,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:16:36.574456",
+      "request_id": "86f51537-fcce-406e-a26f-fd018f23715d"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0009989738464355469,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:16:36.910036",
+      "request_id": "6ea2ae78-0c5e-4011-a3be-f2a20ea5951e"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0010874271392822266,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:16:36.921711",
+      "request_id": "1182d65a-0723-4636-8bda-478d127199f3"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0019979476928710938,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:16:38.929681",
+      "request_id": "f87c5c7d-a57c-4187-aa41-1579fa3be6e8"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.001990079879760742,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:16:38.947326",
+      "request_id": "dc6d8d2a-e19a-4a29-84c8-3ea116c1703f"
+    },
+    {
+      "endpoint": "/api/v1/events/",
+      "method": "GET",
+      "response_time": 0.0019958019256591797,
+      "status_code": 307,
+      "timestamp": "2025-10-01T11:16:40.595625",
+      "request_id": "af6b50eb-9819-43b0-b75e-845ac634006c"
+    },
+    {
+      "endpoint": "/api/v1/events",
+      "method": "GET",
+      "response_time": 0.013576507568359375,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:16:40.619731",
+      "request_id": "7c71513e-69bd-4544-b3a1-2aa52f9178c9"
+    },
+    {
+      "endpoint": "/api/v1/events/",
+      "method": "GET",
+      "response_time": 0.0029888153076171875,
+      "status_code": 307,
+      "timestamp": "2025-10-01T11:16:40.620728",
+      "request_id": "7f7ae1e5-5d19-4896-8eb6-9e828452424b"
+    },
+    {
+      "endpoint": "/api/v1/events",
+      "method": "GET",
+      "response_time": 0.002846956253051758,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:16:40.633108",
+      "request_id": "bee055ad-e7e9-44b0-86c5-45dedee182c4"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0020096302032470703,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:16:42.947416",
+      "request_id": "c7e5dd0c-b6bd-4d90-9d67-6604d6e23c22"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.001035928726196289,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:16:42.961963",
+      "request_id": "2399c4cd-b128-4375-a9d4-413fe83062f6"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.0009942054748535156,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:18:28.504169",
+      "request_id": "6c5b876b-cc51-42a6-aa2b-1cac930c556f"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.0015149116516113281,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:18:30.111271",
+      "request_id": "1939da16-6dd0-462c-99ed-219f913175c9"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.0009984970092773438,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:18:32.132454",
+      "request_id": "4ad9d7cd-dfb1-41b7-8c4a-0bee4cf84a91"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.0010025501251220703,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:18:36.175671",
+      "request_id": "683adc09-b14b-4bea-b04c-41c2b7967668"
+    },
+    {
+      "endpoint": "/api/v1/auth/login",
+      "method": "POST",
+      "response_time": 0.6228847503662109,
+      "status_code": 200,
+      "timestamp": "2025-10-01T11:18:50.589654",
+      "request_id": "b2e024b7-67bd-4c4c-bb5b-94d07aa81bbc"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:18:50.626580",
+      "request_id": "9cd852ba-5a8e-48a4-a663-93d1700bbb1d"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:18:50.641106",
+      "request_id": "05e28dba-08b7-45a7-b6a2-5e52cc2c89ac"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.001010894775390625,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:18:50.661028",
+      "request_id": "0adc6a27-f2f8-426e-8fd6-f2071781003b"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0065228939056396484,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:18:50.671674",
+      "request_id": "783300e0-d02b-464e-b003-461000114cb8"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0010004043579101562,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:18:51.682820",
+      "request_id": "28b61132-ff0f-4bcc-b56e-98565326d986"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.001009225845336914,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:18:51.744740",
+      "request_id": "9454cf54-061c-44eb-bef9-8172bf742fe1"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:18:51.768199",
+      "request_id": "9029e6d5-4fba-47df-aa01-b4fe1b16d43f"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0014166831970214844,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:18:51.787316",
+      "request_id": "c78bef17-66f1-4497-b9ff-9446b3625691"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0012671947479248047,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:18:53.745383",
+      "request_id": "54425ede-cafc-46d6-bad4-ec9fd246f7c4"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.001271963119506836,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:18:53.795414",
+      "request_id": "5759d2ad-9b67-448d-bb3d-942999f62baa"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0020003318786621094,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:18:53.830682",
+      "request_id": "029136e2-1cd6-45cf-b39f-697a6a10c3d3"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0010023117065429688,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:18:53.857804",
+      "request_id": "2b988244-bb03-4655-a48d-e028a82c13f3"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.002473115921020508,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:18:57.775821",
+      "request_id": "e8ab03e9-732d-4542-b997-7aadc90db19f"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.002938985824584961,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:18:57.822359",
+      "request_id": "e2222afb-558d-4f86-ad54-c58ecfb427cd"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:18:57.854805",
+      "request_id": "8b6ff86d-70b4-4de6-9528-f40526b62658"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:18:57.906665",
+      "request_id": "859bd403-2318-4d53-b22a-633aa9e666a0"
+    },
+    {
+      "endpoint": "/api/v1/auth/login",
+      "method": "POST",
+      "response_time": 0.566774845123291,
+      "status_code": 200,
+      "timestamp": "2025-10-01T11:19:58.936663",
+      "request_id": "4bb44b74-7394-4de8-b4d6-d6751264f188"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:19:58.985840",
+      "request_id": "b5d1539c-15d9-4da0-bfe4-bbd92c628a6b"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:19:59.004244",
+      "request_id": "2b8a7100-4a31-46c1-adc0-854e6e9229db"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.002003908157348633,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:19:59.025666",
+      "request_id": "df20b5cd-f9aa-4abe-9879-d6d85119faad"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0010581016540527344,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:19:59.052946",
+      "request_id": "5063bd2c-4beb-4b79-8d98-a8c6a122fe46"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0009987354278564453,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:19:59.070395",
+      "request_id": "bc84911d-884c-4bd8-b789-d8bf2d498696"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:19:59.090663",
+      "request_id": "910f73d3-ac8e-4c16-83ba-db9cce20fef5"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0010018348693847656,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:19:59.108999",
+      "request_id": "7bf2fdc5-6923-40a9-b686-52b3d3dc8190"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0010111331939697266,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:19:59.133546",
+      "request_id": "6e22ff0d-4d83-4088-a737-e9f5337f1010"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.00202178955078125,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:19:59.156587",
+      "request_id": "bdde4c9b-f40c-4cf3-ae66-30765a062e44"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0009911060333251953,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:19:59.172964",
+      "request_id": "8d6ffd1b-405e-4608-b6f7-c2c5c86f816f"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0021381378173828125,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:19:59.194586",
+      "request_id": "5d6b5405-0732-4b4d-956f-ae190756e3b8"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.002010822296142578,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:19:59.225631",
+      "request_id": "5093b546-9aaa-4b60-9d41-b4dd0a23d3f6"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0012981891632080078,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:19:59.256098",
+      "request_id": "7c89ed85-fd98-4be8-b5f6-00fffb55b69e"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0019986629486083984,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:19:59.285523",
+      "request_id": "91113ad9-91ba-4acf-9799-d1e4237604a0"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.001168966293334961,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:19:59.303835",
+      "request_id": "d9e87459-8a37-4484-8938-6714106fbecd"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0020036697387695312,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:19:59.319825",
+      "request_id": "b7233e3d-1584-47fc-93e0-41b51fa47e8c"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0014202594757080078,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:19:59.342082",
+      "request_id": "0014393e-1b69-4b8d-bb80-6ea89de85cb6"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.002026081085205078,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:19:59.377643",
+      "request_id": "ce1f98bf-6f31-4f8c-9422-77f027e746d7"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0020139217376708984,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:19:59.400766",
+      "request_id": "c8b8a7dd-cae9-4a44-a660-aab003227015"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.002110719680786133,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:19:59.440199",
+      "request_id": "7ad903b1-4b4f-4e65-8da2-bdb94390f4f8"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0009658336639404297,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:19:59.469072",
+      "request_id": "9e579a47-9dcd-438c-8164-35b15689ffeb"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0020134449005126953,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:19:59.502390",
+      "request_id": "0814f1e9-22a8-4cb7-95ec-1d042a282504"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.001999378204345703,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:19:59.531519",
+      "request_id": "050ba369-eb32-4bae-8284-bb206f3923c8"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0009980201721191406,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:19:59.552025",
+      "request_id": "c2a7f90f-736f-48c2-a2ce-3065051d02c2"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0009984970092773438,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:00.106414",
+      "request_id": "8ed3912b-2997-42e9-bd97-7befea7e8fae"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0010569095611572266,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:00.122195",
+      "request_id": "99eb94d6-0c54-4b46-ae64-49c15278121b"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0019876956939697266,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:00.138188",
+      "request_id": "017300f6-4822-420a-99bd-6a495375b078"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:00.152723",
+      "request_id": "19fec6f3-8462-46f6-8825-a5c1d17b753d"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0010035037994384766,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:00.169252",
+      "request_id": "74a246a0-d1e7-49da-a327-f4385c7afd23"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.002051115036010742,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:00.191789",
+      "request_id": "234f2101-ac55-4a21-a055-fdb7c005f18c"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.001988649368286133,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:00.212734",
+      "request_id": "261168c1-66ba-4502-aa7c-e120918a4d55"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0010046958923339844,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:00.232856",
+      "request_id": "05c6d3e4-3634-40ce-aa73-4cf6df1f2603"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0010027885437011719,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:00.275187",
+      "request_id": "dff5aef6-c795-4644-915f-7085f28cfb38"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0010113716125488281,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:00.306596",
+      "request_id": "161e257a-f566-4481-be77-2d0aab301003"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0019948482513427734,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:00.324369",
+      "request_id": "bdcd908e-ee89-425a-a0d3-99869ecdac30"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0012423992156982422,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:00.339695",
+      "request_id": "af8b781e-56db-42bb-a32f-cbeae0ef5e9e"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.002002239227294922,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:00.374801",
+      "request_id": "47898e0b-2f7a-4bab-aad6-1102a7e2dfe6"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0009982585906982422,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:00.398050",
+      "request_id": "38a4f74e-b576-421a-b08a-833fbc464c25"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0009975433349609375,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:00.427732",
+      "request_id": "e0b5ef01-6f1c-455b-b747-47e4d53d85d8"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0009951591491699219,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:00.446282",
+      "request_id": "080f53b8-3b0b-4260-85f1-b4fd411145fa"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0010099411010742188,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:00.461978",
+      "request_id": "e3eaeab3-2ca6-4b20-9bca-f7fa01ecab38"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0019969940185546875,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:00.477725",
+      "request_id": "ee234336-bb91-49d4-9bf5-cb606393056d"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0009992122650146484,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:00.492730",
+      "request_id": "a78b471d-0268-4ad7-b714-1bb2007e2f4e"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.002048969268798828,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:00.507775",
+      "request_id": "27e87509-d452-4afe-9ece-77ac39348693"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0020017623901367188,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:00.527001",
+      "request_id": "cd7c7472-aa7d-44aa-9435-0abc23c3a2b9"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0010285377502441406,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:00.543026",
+      "request_id": "e6ede779-da85-4d8e-ab9c-66fa717153f8"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0010018348693847656,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:00.561105",
+      "request_id": "78b96daf-30e1-4f11-aa10-79b2788d4342"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0020456314086914062,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:00.585682",
+      "request_id": "b3850d78-9361-4033-8a9e-81acac5e8759"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0010302066802978516,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:02.141563",
+      "request_id": "74cd00b1-87fe-41a1-b23c-9b4b7e8af547"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0010004043579101562,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:02.158330",
+      "request_id": "3684c60c-1394-4d5b-9ff3-6adae18cb660"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0009953975677490234,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:02.175129",
+      "request_id": "f413d18f-6c17-4880-b769-4eb9b34cb91f"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.001004934310913086,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:02.188311",
+      "request_id": "3a7f2569-3901-4352-be4c-ae2c7bf5ed39"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0009961128234863281,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:02.205291",
+      "request_id": "00161054-cba4-47a4-9a0e-6dc42a7bd6a3"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0009999275207519531,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:02.231962",
+      "request_id": "0ac3b781-6ea4-4d71-98a1-71b58ee82ffd"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.00099945068359375,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:02.244029",
+      "request_id": "dc28f8fe-6e4a-48a1-8eb2-8cf73572800b"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0016336441040039062,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:02.259616",
+      "request_id": "2dc889af-33c9-4f4d-b950-d72696790599"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0010004043579101562,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:02.309914",
+      "request_id": "6b2c9c31-5fd6-4a13-808f-960d7e747981"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0010018348693847656,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:02.337085",
+      "request_id": "3426f093-0af5-43f7-b391-bebbb9c07def"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0009989738464355469,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:02.356854",
+      "request_id": "f3faa3b2-65c1-4caf-a48a-2c759a0fa105"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0009961128234863281,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:02.375451",
+      "request_id": "b00e69de-5720-44f6-98f0-36c5ef4313e3"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0009963512420654297,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:02.406028",
+      "request_id": "5d05d0e4-6de9-482d-9c93-6ae7de24ae60"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0010006427764892578,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:02.431693",
+      "request_id": "a6d2f493-64a9-41a0-8586-3c1a790a44fb"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0010001659393310547,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:02.449229",
+      "request_id": "56305bf5-c7f1-4353-be0d-522e62c13a33"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0010004043579101562,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:02.468104",
+      "request_id": "480df26e-b529-49c5-9ca2-cdcf3d82a51e"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0009951591491699219,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:02.490412",
+      "request_id": "b0d47dba-11da-49f1-be94-cdeae42c947b"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0010044574737548828,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:02.502866",
+      "request_id": "ce1ee7ea-541f-4c24-a00b-28ba545dec46"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.002529144287109375,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:02.543620",
+      "request_id": "79d0a647-6ef9-48a7-9b30-570b312fa301"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0031824111938476562,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:02.571736",
+      "request_id": "f20415f5-e146-4e1d-a9ee-0c8684f0c9dc"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:02.586890",
+      "request_id": "b9b5f6d4-b284-4ef7-936e-ab6060a0f2e4"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0013401508331298828,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:02.599799",
+      "request_id": "1042c85d-821f-4ab6-a87d-7772555e190a"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:02.616427",
+      "request_id": "5dcedf08-87ff-452b-8490-b626d58ddd37"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:02.634362",
+      "request_id": "e08606a0-4ab9-4fbf-b5d2-3dedfcfa63b9"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0015003681182861328,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:06.171730",
+      "request_id": "0e40e30e-590b-430f-9f93-8f4d3058192c"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0009996891021728516,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:06.183741",
+      "request_id": "7bd1247a-b78d-4310-a357-af872b5dac4e"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0010013580322265625,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:06.206016",
+      "request_id": "cd9c69d3-e080-4ecb-b1aa-851f61e26334"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0010004043579101562,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:06.218016",
+      "request_id": "0f6eebea-ad16-49b6-b9e6-1eba4911a0bb"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0010044574737548828,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:06.228885",
+      "request_id": "fdda81af-0f12-408f-a561-5cdac372d4da"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0010111331939697266,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:06.250994",
+      "request_id": "d6463252-da56-4afe-82d0-bff848cd65af"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0010018348693847656,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:06.268287",
+      "request_id": "07bf6741-004f-4ec5-a799-6b17d20005af"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0010018348693847656,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:06.284180",
+      "request_id": "c01bdefb-a1f6-430d-8231-6645a7f6b2cd"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0010030269622802734,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:06.331805",
+      "request_id": "e96d3e28-f511-4079-ac7f-aeeac797c27f"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.001001596450805664,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:06.368271",
+      "request_id": "02c93280-709d-45f3-a720-54dd25527309"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0010089874267578125,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:06.388627",
+      "request_id": "8d1dfb61-5a02-44ee-90db-b7a80dcb9ee8"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.001997709274291992,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:06.408728",
+      "request_id": "70a42265-81c3-462d-9452-f8217771924b"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:06.450111",
+      "request_id": "b76a9646-8704-429e-bcc6-79f769b851ab"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0009968280792236328,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:06.481124",
+      "request_id": "77110665-dc8a-4f8b-b96d-dea6dfb7d34f"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.002001523971557617,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:06.498121",
+      "request_id": "58731d50-8229-4b40-accd-c4213debad78"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0020008087158203125,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:06.517139",
+      "request_id": "56d025f9-715c-48e7-987a-4b8963f8f47a"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0010013580322265625,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:06.543423",
+      "request_id": "9e3b505e-4586-401f-9369-1aedb47dbd03"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0009970664978027344,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:06.560707",
+      "request_id": "8d6a197c-4bf0-4f81-ade2-9fd0118ea711"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0020072460174560547,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:06.579087",
+      "request_id": "2882fe9d-8ab5-4e8f-9420-d3f83f7dc724"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0010027885437011719,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:06.599509",
+      "request_id": "c440a163-56b7-4254-87e4-77d095bae153"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0009908676147460938,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:06.618939",
+      "request_id": "f93eab48-656a-4304-b080-7f28315a5f47"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0020008087158203125,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:06.633994",
+      "request_id": "7c74e185-29c9-4dc6-9723-19acd42797ca"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.0010144710540771484,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:06.648596",
+      "request_id": "81468680-e565-46d2-8674-c901a3924a3c"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.001949310302734375,
+      "status_code": 401,
+      "timestamp": "2025-10-01T11:20:06.681142",
+      "request_id": "5f6b72b3-389f-4fc3-a160-b4e92a8a4473"
+    },
+    {
+      "endpoint": "/api/v1/events/",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 307,
+      "timestamp": "2025-10-01T11:20:13.364434",
+      "request_id": "aad6e691-4db9-4a8c-9136-aa637741b71f"
+    },
+    {
+      "endpoint": "/api/v1/events/",
+      "method": "GET",
+      "response_time": 0.0010325908660888672,
+      "status_code": 307,
+      "timestamp": "2025-10-01T11:20:13.380439",
+      "request_id": "0edcef88-494c-45cb-b00e-f30a2f940c0c"
+    },
+    {
+      "endpoint": "/api/v1/events/",
+      "method": "GET",
+      "response_time": 0.000997304916381836,
+      "status_code": 307,
+      "timestamp": "2025-10-01T11:20:14.424751",
+      "request_id": "3fd44d2c-74dd-4ff4-bc3b-db3b297ed5c0"
+    },
+    {
+      "endpoint": "/api/v1/events/",
+      "method": "GET",
+      "response_time": 0.0009984970092773438,
+      "status_code": 307,
+      "timestamp": "2025-10-01T11:20:14.451595",
+      "request_id": "54ed7e10-c1bb-4fbd-8984-1bbf59c061f6"
+    },
+    {
+      "endpoint": "/api/v1/events/",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 307,
+      "timestamp": "2025-10-01T11:20:16.467943",
+      "request_id": "03010abb-ea39-442e-8d31-46cfdf63db32"
+    },
+    {
+      "endpoint": "/api/v1/events/",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 307,
+      "timestamp": "2025-10-01T11:20:16.490735",
+      "request_id": "50efd221-b95b-4b98-8783-903cf862cb6f"
+    },
+    {
+      "endpoint": "/api/v1/events/",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 307,
+      "timestamp": "2025-10-01T11:20:20.508677",
+      "request_id": "17299de0-6815-438e-b6e1-d3535ad0fd49"
+    },
+    {
+      "endpoint": "/api/v1/events/",
+      "method": "GET",
+      "response_time": 0.0013628005981445312,
+      "status_code": 307,
+      "timestamp": "2025-10-01T11:20:20.523151",
+      "request_id": "4181c623-fede-405f-902c-ce52397c2a6d"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0010259151458740234,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:20:32.156650",
+      "request_id": "b6021b0e-c3e1-4e5d-9db0-9f6054fc011a"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.000997781753540039,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:20:32.168642",
+      "request_id": "b7d203e1-d24e-4a48-96b9-a63a5ebb2c3e"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0009951591491699219,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:20:33.187437",
+      "request_id": "cd3eda13-1b43-4594-8d16-cb4cb1eca9ba"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0009906291961669922,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:20:33.199633",
+      "request_id": "895584a3-05ca-46b3-bce2-6d4acc73068b"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0009992122650146484,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:20:35.233800",
+      "request_id": "e10ab834-0907-4c89-88b1-d10dd3494fc2"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.001003265380859375,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:20:35.258092",
+      "request_id": "49eb6e3b-1ec1-4a20-ae70-e8a142fccff4"
+    },
+    {
+      "endpoint": "/api/v1/events/",
+      "method": "GET",
+      "response_time": 0.001009225845336914,
+      "status_code": 307,
+      "timestamp": "2025-10-01T11:20:38.182588",
+      "request_id": "d8ef6727-555c-4814-b3a1-8b68abad585b"
+    },
+    {
+      "endpoint": "/api/v1/events/",
+      "method": "GET",
+      "response_time": 0.0014815330505371094,
+      "status_code": 307,
+      "timestamp": "2025-10-01T11:20:39.241606",
+      "request_id": "f4a52eaf-4e99-43b5-a39a-78b38df9b9d5"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0010006427764892578,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:20:39.268309",
+      "request_id": "55782269-4503-4b5c-a514-3c5ed2e75f6d"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0010004043579101562,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:20:39.293419",
+      "request_id": "a2ce6cee-6a69-4e60-b155-ab2f66869973"
+    },
+    {
+      "endpoint": "/api/v1/events/",
+      "method": "GET",
+      "response_time": 0.00099945068359375,
+      "status_code": 307,
+      "timestamp": "2025-10-01T11:20:41.283230",
+      "request_id": "3b79a150-9def-44f5-9e0e-fe92f6e9e281"
+    },
+    {
+      "endpoint": "/api/v1/events/",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 307,
+      "timestamp": "2025-10-01T11:20:45.313236",
+      "request_id": "04fc6d1a-973d-45d4-8e85-a3b9fea04d69"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:22:03.219983",
+      "request_id": "febfd485-735a-4982-852b-a44e9c94d10f"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.001007080078125,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:22:05.090675",
+      "request_id": "660395fa-c979-4ccf-857e-38970a8b687a"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.0030133724212646484,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:22:08.079226",
+      "request_id": "d6fa5c56-ad13-4be4-9980-175b4e810570"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.003278493881225586,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:22:13.096982",
+      "request_id": "82b60b9f-1768-4e4e-9a34-6c86c833aac4"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.000993490219116211,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:22:17.528428",
+      "request_id": "0968611c-d2d6-49f9-9295-493b0b1f17c6"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:22:21.029941",
+      "request_id": "55d51d52-88ec-4b7b-94ce-e04d42af7c9e"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:22:26.014418",
+      "request_id": "f931959b-c0bd-4e19-af90-0f694e0741ff"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.001998424530029297,
+      "status_code": 404,
+      "timestamp": "2025-10-01T11:22:33.034743",
+      "request_id": "11e3f358-054b-4aea-9623-bc5d07cf64e7"
+    }
+  ],
+  "error_counts": {
+    "404": 145,
+    "401": 256
+  },
+  "time_range": {
+    "start": "2025-10-01T10:55:07.959158",
+    "end": "2025-10-01T11:25:07.965604"
+  }
+}

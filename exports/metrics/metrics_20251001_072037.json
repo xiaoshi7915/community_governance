@@ -1,0 +1,21 @@
+{
+  "system_metrics": [
+    {
+      "timestamp": "2025-10-01T07:20:35.937510",
+      "cpu_percent": 8.7,
+      "memory_percent": 93.8,
+      "memory_used_mb": 15028.671875,
+      "memory_available_mb": 987.8046875,
+      "disk_percent": 92.23951436201303,
+      "disk_used_gb": 218.74546432495117,
+      "disk_free_gb": 18.403945922851562,
+      "active_connections": 316
+    }
+  ],
+  "api_metrics": [],
+  "error_counts": {},
+  "time_range": {
+    "start": "2025-10-01T06:50:37.542096",
+    "end": "2025-10-01T07:20:37.542096"
+  }
+}

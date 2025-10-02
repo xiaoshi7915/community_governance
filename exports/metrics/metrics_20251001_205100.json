@@ -1,0 +1,1702 @@
+{
+  "system_metrics": [
+    {
+      "timestamp": "2025-10-01T20:21:29.423830",
+      "cpu_percent": 7.3,
+      "memory_percent": 83.7,
+      "memory_used_mb": 13403.8125,
+      "memory_available_mb": 2612.6640625,
+      "disk_percent": 92.8155760999413,
+      "disk_used_gb": 220.11159133911133,
+      "disk_free_gb": 17.037818908691406,
+      "active_connections": 289
+    },
+    {
+      "timestamp": "2025-10-01T20:22:30.425153",
+      "cpu_percent": 4.6,
+      "memory_percent": 83.2,
+      "memory_used_mb": 13324.61328125,
+      "memory_available_mb": 2691.86328125,
+      "disk_percent": 92.81571604490753,
+      "disk_used_gb": 220.11192321777344,
+      "disk_free_gb": 17.037487030029297,
+      "active_connections": 289
+    },
+    {
+      "timestamp": "2025-10-01T20:23:31.469256",
+      "cpu_percent": 2.1,
+      "memory_percent": 83.3,
+      "memory_used_mb": 13341.76171875,
+      "memory_available_mb": 2674.71484375,
+      "disk_percent": 92.81577395316943,
+      "disk_used_gb": 220.112060546875,
+      "disk_free_gb": 17.037349700927734,
+      "active_connections": 289
+    },
+    {
+      "timestamp": "2025-10-01T20:24:36.320036",
+      "cpu_percent": 0.7,
+      "memory_percent": 83.3,
+      "memory_used_mb": 13338.68359375,
+      "memory_available_mb": 2677.79296875,
+      "disk_percent": 92.81577877885792,
+      "disk_used_gb": 220.1120719909668,
+      "disk_free_gb": 17.037338256835938,
+      "active_connections": 288
+    },
+    {
+      "timestamp": "2025-10-01T20:25:37.330133",
+      "cpu_percent": 0.7,
+      "memory_percent": 83.3,
+      "memory_used_mb": 13337.421875,
+      "memory_available_mb": 2679.0546875,
+      "disk_percent": 92.8158302528685,
+      "disk_used_gb": 220.1121940612793,
+      "disk_free_gb": 17.037216186523438,
+      "active_connections": 290
+    },
+    {
+      "timestamp": "2025-10-01T20:26:38.343329",
+      "cpu_percent": 4.0,
+      "memory_percent": 81.5,
+      "memory_used_mb": 13052.40234375,
+      "memory_available_mb": 2964.07421875,
+      "disk_percent": 92.81651067494573,
+      "disk_used_gb": 220.11380767822266,
+      "disk_free_gb": 17.035602569580078,
+      "active_connections": 294
+    },
+    {
+      "timestamp": "2025-10-01T20:27:39.341534",
+      "cpu_percent": 3.7,
+      "memory_percent": 80.8,
+      "memory_used_mb": 12946.05078125,
+      "memory_available_mb": 3070.42578125,
+      "disk_percent": 92.81661844865536,
+      "disk_used_gb": 220.11406326293945,
+      "disk_free_gb": 17.03534698486328,
+      "active_connections": 296
+    },
+    {
+      "timestamp": "2025-10-01T20:28:40.356038",
+      "cpu_percent": 2.1,
+      "memory_percent": 80.9,
+      "memory_used_mb": 12951.1796875,
+      "memory_available_mb": 3065.296875,
+      "disk_percent": 92.8165621489563,
+      "disk_used_gb": 220.11392974853516,
+      "disk_free_gb": 17.035480499267578,
+      "active_connections": 303
+    },
+    {
+      "timestamp": "2025-10-01T20:29:42.983884",
+      "cpu_percent": 3.1,
+      "memory_percent": 86.2,
+      "memory_used_mb": 13806.42578125,
+      "memory_available_mb": 2210.05078125,
+      "disk_percent": 92.8170656291222,
+      "disk_used_gb": 220.1151237487793,
+      "disk_free_gb": 17.034286499023438,
+      "active_connections": 318
+    },
+    {
+      "timestamp": "2025-10-01T20:30:44.007978",
+      "cpu_percent": 1.0,
+      "memory_percent": 85.3,
+      "memory_used_mb": 13662.2421875,
+      "memory_available_mb": 2354.234375,
+      "disk_percent": 92.8175272866545,
+      "disk_used_gb": 220.11621856689453,
+      "disk_free_gb": 17.033191680908203,
+      "active_connections": 331
+    },
+    {
+      "timestamp": "2025-10-01T20:31:45.016198",
+      "cpu_percent": 1.0,
+      "memory_percent": 85.9,
+      "memory_used_mb": 13751.6328125,
+      "memory_available_mb": 2264.84375,
+      "disk_percent": 92.81813210627871,
+      "disk_used_gb": 220.1176528930664,
+      "disk_free_gb": 17.031757354736328,
+      "active_connections": 319
+    },
+    {
+      "timestamp": "2025-10-01T20:32:46.047814",
+      "cpu_percent": 14.1,
+      "memory_percent": 85.4,
+      "memory_used_mb": 13674.53125,
+      "memory_available_mb": 2341.9453125,
+      "disk_percent": 92.8182640084308,
+      "disk_used_gb": 220.1179656982422,
+      "disk_free_gb": 17.031444549560547,
+      "active_connections": 327
+    },
+    {
+      "timestamp": "2025-10-01T20:33:47.074970",
+      "cpu_percent": 7.6,
+      "memory_percent": 86.8,
+      "memory_used_mb": 13909.98046875,
+      "memory_available_mb": 2106.49609375,
+      "disk_percent": 92.81838947633156,
+      "disk_used_gb": 220.1182632446289,
+      "disk_free_gb": 17.031147003173828,
+      "active_connections": 329
+    },
+    {
+      "timestamp": "2025-10-01T20:34:49.428884",
+      "cpu_percent": 2.9,
+      "memory_percent": 85.5,
+      "memory_used_mb": 13692.140625,
+      "memory_available_mb": 2324.3359375,
+      "disk_percent": 92.81843612465364,
+      "disk_used_gb": 220.1183738708496,
+      "disk_free_gb": 17.031036376953125,
+      "active_connections": 321
+    },
+    {
+      "timestamp": "2025-10-01T20:35:50.465245",
+      "cpu_percent": 1.0,
+      "memory_percent": 86.4,
+      "memory_used_mb": 13845.59375,
+      "memory_available_mb": 2170.8828125,
+      "disk_percent": 92.82164038181169,
+      "disk_used_gb": 220.12597274780273,
+      "disk_free_gb": 17.0234375,
+      "active_connections": 319
+    },
+    {
+      "timestamp": "2025-10-01T20:36:51.473458",
+      "cpu_percent": 2.6,
+      "memory_percent": 85.6,
+      "memory_used_mb": 13702.37109375,
+      "memory_available_mb": 2314.10546875,
+      "disk_percent": 92.8229449262671,
+      "disk_used_gb": 220.12906646728516,
+      "disk_free_gb": 17.020343780517578,
+      "active_connections": 359
+    },
+    {
+      "timestamp": "2025-10-01T20:37:52.480443",
+      "cpu_percent": 3.9,
+      "memory_percent": 85.7,
+      "memory_used_mb": 13719.6484375,
+      "memory_available_mb": 2296.828125,
+      "disk_percent": 92.82702424160485,
+      "disk_used_gb": 220.13874053955078,
+      "disk_free_gb": 17.010669708251953,
+      "active_connections": 386
+    },
+    {
+      "timestamp": "2025-10-01T20:38:53.494700",
+      "cpu_percent": 2.6,
+      "memory_percent": 85.4,
+      "memory_used_mb": 13683.03515625,
+      "memory_available_mb": 2333.44140625,
+      "disk_percent": 92.82682960550238,
+      "disk_used_gb": 220.13827896118164,
+      "disk_free_gb": 17.011131286621094,
+      "active_connections": 351
+    },
+    {
+      "timestamp": "2025-10-01T20:39:56.191289",
+      "cpu_percent": 2.1,
+      "memory_percent": 85.4,
+      "memory_used_mb": 13679.44921875,
+      "memory_available_mb": 2337.02734375,
+      "disk_percent": 92.82696633334295,
+      "disk_used_gb": 220.13860321044922,
+      "disk_free_gb": 17.010807037353516,
+      "active_connections": 325
+    },
+    {
+      "timestamp": "2025-10-01T20:40:57.224623",
+      "cpu_percent": 1.3,
+      "memory_percent": 85.6,
+      "memory_used_mb": 13715.3828125,
+      "memory_available_mb": 2301.09375,
+      "disk_percent": 92.82711110399768,
+      "disk_used_gb": 220.13894653320312,
+      "disk_free_gb": 17.01046371459961,
+      "active_connections": 301
+    },
+    {
+      "timestamp": "2025-10-01T20:41:58.270049",
+      "cpu_percent": 3.0,
+      "memory_percent": 85.5,
+      "memory_used_mb": 13700.01171875,
+      "memory_available_mb": 2316.46484375,
+      "disk_percent": 92.82726230890374,
+      "disk_used_gb": 220.1393051147461,
+      "disk_free_gb": 17.01010513305664,
+      "active_connections": 289
+    },
+    {
+      "timestamp": "2025-10-01T20:42:59.280516",
+      "cpu_percent": 1.2,
+      "memory_percent": 85.7,
+      "memory_used_mb": 13726.58984375,
+      "memory_available_mb": 2289.88671875,
+      "disk_percent": 92.82729448016035,
+      "disk_used_gb": 220.1393814086914,
+      "disk_free_gb": 17.010028839111328,
+      "active_connections": 291
+    },
+    {
+      "timestamp": "2025-10-01T20:44:00.277623",
+      "cpu_percent": 4.4,
+      "memory_percent": 85.6,
+      "memory_used_mb": 13716.8828125,
+      "memory_available_mb": 2299.59375,
+      "disk_percent": 92.82732021716564,
+      "disk_used_gb": 220.13944244384766,
+      "disk_free_gb": 17.009967803955078,
+      "active_connections": 299
+    },
+    {
+      "timestamp": "2025-10-01T20:45:22.042063",
+      "cpu_percent": 0.7,
+      "memory_percent": 85.8,
+      "memory_used_mb": 13750.078125,
+      "memory_available_mb": 2266.3984375,
+      "disk_percent": 92.82745694500622,
+      "disk_used_gb": 220.13976669311523,
+      "disk_free_gb": 17.0096435546875,
+      "active_connections": 295
+    },
+    {
+      "timestamp": "2025-10-01T20:46:23.049825",
+      "cpu_percent": 4.7,
+      "memory_percent": 86.0,
+      "memory_used_mb": 13775.421875,
+      "memory_available_mb": 2241.0546875,
+      "disk_percent": 92.82766123248567,
+      "disk_used_gb": 220.14025115966797,
+      "disk_free_gb": 17.009159088134766,
+      "active_connections": 288
+    },
+    {
+      "timestamp": "2025-10-01T20:47:24.073594",
+      "cpu_percent": 3.1,
+      "memory_percent": 85.5,
+      "memory_used_mb": 13699.32421875,
+      "memory_available_mb": 2317.15234375,
+      "disk_percent": 92.8278220887687,
+      "disk_used_gb": 220.14063262939453,
+      "disk_free_gb": 17.008777618408203,
+      "active_connections": 285
+    },
+    {
+      "timestamp": "2025-10-01T20:48:25.105691",
+      "cpu_percent": 4.4,
+      "memory_percent": 85.8,
+      "memory_used_mb": 13749.5390625,
+      "memory_available_mb": 2266.9375,
+      "disk_percent": 92.8278430000855,
+      "disk_used_gb": 220.14068222045898,
+      "disk_free_gb": 17.00872802734375,
+      "active_connections": 318
+    },
+    {
+      "timestamp": "2025-10-01T20:49:26.124199",
+      "cpu_percent": 1.3,
+      "memory_percent": 85.7,
+      "memory_used_mb": 13723.25390625,
+      "memory_available_mb": 2293.22265625,
+      "disk_percent": 92.82791055972437,
+      "disk_used_gb": 220.14084243774414,
+      "disk_free_gb": 17.008567810058594,
+      "active_connections": 323
+    },
+    {
+      "timestamp": "2025-10-01T20:50:30.920311",
+      "cpu_percent": 6.7,
+      "memory_percent": 84.8,
+      "memory_used_mb": 13578.63671875,
+      "memory_available_mb": 2437.83984375,
+      "disk_percent": 92.82793629672965,
+      "disk_used_gb": 220.1409034729004,
+      "disk_free_gb": 17.008506774902344,
+      "active_connections": 297
+    }
+  ],
+  "api_metrics": [
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.002357006072998047,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:21:01.031809",
+      "request_id": "05a2946e-380d-4134-b7f0-14f2e1ec43af"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0021903514862060547,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:21:01.032988",
+      "request_id": "69e5a9c7-7690-4422-8f82-a1d0e495c14b"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0019986629486083984,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:22:01.031396",
+      "request_id": "bbf623a0-235b-4851-b906-190a65ab96c4"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0010983943939208984,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:22:01.341715",
+      "request_id": "5c210149-80d6-4322-8b49-e2e115f864af"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0015118122100830078,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:23:01.027511",
+      "request_id": "3ad88949-1392-4626-816c-ac4460263ac1"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0010001659393310547,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:23:01.029524",
+      "request_id": "9db4bb6c-3c2f-4f1c-a960-3fae083a51ab"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0011153221130371094,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:24:01.024993",
+      "request_id": "cbdda73c-7265-4530-be2a-beca495055d6"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:24:01.324619",
+      "request_id": "52e8d9eb-7bac-47ef-8dc3-1ba6b3470682"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0013418197631835938,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:25:01.020191",
+      "request_id": "1b170abd-6b3f-4784-9589-8d24d3538e0a"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0013418197631835938,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:25:01.020191",
+      "request_id": "e97d15e8-7382-44cb-9829-d166a566407f"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:26:01.031870",
+      "request_id": "b999bde3-ac84-4584-a434-7a8b2e12564b"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:26:01.339168",
+      "request_id": "121f7ec9-9091-48ad-b18e-716d17448acd"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0019958019256591797,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:27:01.030061",
+      "request_id": "74ef2317-878a-4c2b-89ff-f01d140b6447"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0009953975677490234,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:27:01.032092",
+      "request_id": "2a1ec5d0-41b3-4977-aa4b-d651ab171e5a"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.001233816146850586,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:28:01.032142",
+      "request_id": "722666f1-5fa2-4611-b075-6ec4a10ed2ae"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0010020732879638672,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:28:01.335797",
+      "request_id": "f20060b5-8641-4cb0-843e-7503584383f8"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0025277137756347656,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:29:01.034550",
+      "request_id": "44393d86-5f35-4b2c-8d29-ffbc45b7fbcb"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0030159950256347656,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:29:01.038566",
+      "request_id": "7d4aeee3-25fa-481a-82a6-c0da2f40fc0f"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.00099945068359375,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:30:01.019870",
+      "request_id": "4a6f322f-ff43-488f-a97a-bc6ba2e2c274"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0011487007141113281,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:30:01.324310",
+      "request_id": "b6411b9f-0c0c-43c4-bb40-b95df971ecd2"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0010006427764892578,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:30:18.189582",
+      "request_id": "3a627f62-0124-4732-8c03-a394de5b1d19"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:30:18.196684",
+      "request_id": "bf86600f-6ed0-4c10-a1c7-f756919cdb86"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:30:18.203286",
+      "request_id": "1c0fe1c8-6e2f-46d9-9712-b6360df5f9e8"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:30:18.203286",
+      "request_id": "35f452a1-2803-4f69-a209-66202eeb346b"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:30:18.218549",
+      "request_id": "608c1404-d907-4f00-82a3-c5f1529a8ad9"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:30:18.223118",
+      "request_id": "b3d923a6-76d0-4299-99fa-531171f25bc5"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0010623931884765625,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:31:01.022978",
+      "request_id": "1def3deb-9a16-475d-9fd1-a3b2edd25e65"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0020046234130859375,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:31:01.026600",
+      "request_id": "b6b3df16-d72f-4b09-ae83-85414fbc9481"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:31:26.167139",
+      "request_id": "634de9e2-3575-4752-8c6b-711d7f1067fa"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0010013580322265625,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:31:26.185021",
+      "request_id": "f23319c4-2b79-4f0f-b234-5a20021e7c7d"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0010161399841308594,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:31:28.345987",
+      "request_id": "a31e9d61-4ca1-4945-a45b-8874ab0c641f"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0010001659393310547,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:31:28.995803",
+      "request_id": "c4c090d3-c73c-4789-9679-f1c1bf2c3859"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0030312538146972656,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:31:54.000527",
+      "request_id": "f80d63d2-0e46-467a-8876-03b68232b702"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0010335445404052734,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:32:01.333135",
+      "request_id": "46060927-8be2-4dbf-92ee-92db651b0a07"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:32:12.684703",
+      "request_id": "b97fab2e-4e6f-4a17-9d94-0bb350aaf795"
+    },
+    {
+      "endpoint": "/api/v1/auth/login",
+      "method": "POST",
+      "response_time": 21.02570652961731,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:32:33.548875",
+      "request_id": "f9c826a9-cbf5-43bc-b5d3-dab286f59189"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0032706260681152344,
+      "status_code": 404,
+      "timestamp": "2025-10-01T20:32:40.003324",
+      "request_id": "d315d132-a099-4344-9340-d3f2bcf8e611"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0012578964233398438,
+      "status_code": 404,
+      "timestamp": "2025-10-01T20:32:40.006608",
+      "request_id": "78d97e41-b931-49da-9244-f50a77005864"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.001800537109375,
+      "status_code": 404,
+      "timestamp": "2025-10-01T20:32:41.014729",
+      "request_id": "0b5fd1e4-8399-471a-bfb2-de5389e169da"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 404,
+      "timestamp": "2025-10-01T20:32:41.016757",
+      "request_id": "87c0b9dd-480e-4153-8d0a-3470da363e3b"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0009405612945556641,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:32:42.684189",
+      "request_id": "01b32385-9640-4e40-8b98-fb8347597d3b"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.001003265380859375,
+      "status_code": 404,
+      "timestamp": "2025-10-01T20:32:43.028899",
+      "request_id": "3ab2497e-ed24-4fb2-88c8-96fbf17f7630"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0011339187622070312,
+      "status_code": 404,
+      "timestamp": "2025-10-01T20:32:43.031540",
+      "request_id": "4cc62860-3db6-4a5c-a2f5-008a48cc11db"
+    },
+    {
+      "endpoint": "/api/v1/events/",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 307,
+      "timestamp": "2025-10-01T20:32:46.332703",
+      "request_id": "c2459e3b-5ddd-4264-b1f0-81ed7462517e"
+    },
+    {
+      "endpoint": "/api/v1/events/",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 307,
+      "timestamp": "2025-10-01T20:32:46.332703",
+      "request_id": "b3189b87-f185-4eea-b964-2c35992384dc"
+    },
+    {
+      "endpoint": "/api/v1/events",
+      "method": "GET",
+      "response_time": 0.001188516616821289,
+      "status_code": 401,
+      "timestamp": "2025-10-01T20:32:46.342630",
+      "request_id": "62253df2-084c-446e-b97e-14f6771a0596"
+    },
+    {
+      "endpoint": "/api/v1/events",
+      "method": "GET",
+      "response_time": 0.0001289844512939453,
+      "status_code": 401,
+      "timestamp": "2025-10-01T20:32:46.348005",
+      "request_id": "446ae2b5-1eea-40b7-9478-ac5b4a01d0ac"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 404,
+      "timestamp": "2025-10-01T20:32:47.034334",
+      "request_id": "4e46a9a7-d33c-4cac-99d0-aa493b3ae5a9"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0009984970092773438,
+      "status_code": 404,
+      "timestamp": "2025-10-01T20:32:47.037349",
+      "request_id": "5ade7277-2772-45b0-805c-d04c538d89bc"
+    },
+    {
+      "endpoint": "/api/v1/events/",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 307,
+      "timestamp": "2025-10-01T20:32:47.349944",
+      "request_id": "6bb0f1b9-f130-4c9c-bb55-85e0268c64c7"
+    },
+    {
+      "endpoint": "/api/v1/events/",
+      "method": "GET",
+      "response_time": 0.0010099411010742188,
+      "status_code": 307,
+      "timestamp": "2025-10-01T20:32:47.354021",
+      "request_id": "2bbeccf5-c9fb-418a-a95a-125cba90e00b"
+    },
+    {
+      "endpoint": "/api/v1/events",
+      "method": "GET",
+      "response_time": 0.0032248497009277344,
+      "status_code": 401,
+      "timestamp": "2025-10-01T20:32:47.356236",
+      "request_id": "b387645c-1bf5-4099-9c49-d11ec4c21472"
+    },
+    {
+      "endpoint": "/api/v1/events",
+      "method": "GET",
+      "response_time": 0.0010004043579101562,
+      "status_code": 401,
+      "timestamp": "2025-10-01T20:32:47.362710",
+      "request_id": "b1d2e0a4-f6c8-406f-ac26-47a9cc17a12d"
+    },
+    {
+      "endpoint": "/api/v1/events/",
+      "method": "GET",
+      "response_time": 0.0013229846954345703,
+      "status_code": 307,
+      "timestamp": "2025-10-01T20:32:49.080228",
+      "request_id": "a4f14915-85d8-44b8-86d6-6b22fea8878b"
+    },
+    {
+      "endpoint": "/api/v1/events/",
+      "method": "GET",
+      "response_time": 0.0011081695556640625,
+      "status_code": 307,
+      "timestamp": "2025-10-01T20:32:49.082790",
+      "request_id": "c12ad4ac-d5a0-44bd-a863-1a1836910ae6"
+    },
+    {
+      "endpoint": "/api/v1/events",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 401,
+      "timestamp": "2025-10-01T20:32:49.082790",
+      "request_id": "fbf68419-6632-46f8-a2e3-1c4a9ad3714d"
+    },
+    {
+      "endpoint": "/api/v1/events",
+      "method": "GET",
+      "response_time": 0.0016400814056396484,
+      "status_code": 401,
+      "timestamp": "2025-10-01T20:32:49.092129",
+      "request_id": "adb3b28e-568c-444a-b1a3-6ef501632134"
+    },
+    {
+      "endpoint": "/api/v1/events/",
+      "method": "GET",
+      "response_time": 0.0013775825500488281,
+      "status_code": 307,
+      "timestamp": "2025-10-01T20:32:49.364516",
+      "request_id": "9eb3f7f2-0108-4be6-8233-2ba862deb5d9"
+    },
+    {
+      "endpoint": "/api/v1/events/",
+      "method": "GET",
+      "response_time": 0.0010190010070800781,
+      "status_code": 307,
+      "timestamp": "2025-10-01T20:32:49.369085",
+      "request_id": "a065675f-81e8-48cf-a79d-11ef2954ac10"
+    },
+    {
+      "endpoint": "/api/v1/events",
+      "method": "GET",
+      "response_time": 0.0025246143341064453,
+      "status_code": 401,
+      "timestamp": "2025-10-01T20:32:49.369085",
+      "request_id": "8cf0d27d-ced9-40cb-b9dd-ef1b964fa7ed"
+    },
+    {
+      "endpoint": "/api/v1/events",
+      "method": "GET",
+      "response_time": 0.00099945068359375,
+      "status_code": 401,
+      "timestamp": "2025-10-01T20:32:49.375360",
+      "request_id": "1f6c370d-30e9-4fb6-9d9a-8949e32c0b95"
+    },
+    {
+      "endpoint": "/api/v1/events/",
+      "method": "GET",
+      "response_time": 0.0009961128234863281,
+      "status_code": 307,
+      "timestamp": "2025-10-01T20:32:50.099444",
+      "request_id": "112e2e76-d3f4-4996-91e8-e6cf529255ae"
+    },
+    {
+      "endpoint": "/api/v1/events/",
+      "method": "GET",
+      "response_time": 0.0010025501251220703,
+      "status_code": 307,
+      "timestamp": "2025-10-01T20:32:50.101448",
+      "request_id": "2b1edd76-ba40-4c1a-b5fd-1e05791ae367"
+    },
+    {
+      "endpoint": "/api/v1/events",
+      "method": "GET",
+      "response_time": 0.003070831298828125,
+      "status_code": 401,
+      "timestamp": "2025-10-01T20:32:50.104520",
+      "request_id": "d4a6f749-a506-42a2-80e8-e477cf8d33e5"
+    },
+    {
+      "endpoint": "/api/v1/events",
+      "method": "GET",
+      "response_time": 0.0010132789611816406,
+      "status_code": 401,
+      "timestamp": "2025-10-01T20:32:50.108643",
+      "request_id": "f2e9386c-d39c-49b4-8177-f37259a3c38b"
+    },
+    {
+      "endpoint": "/api/v1/events/",
+      "method": "GET",
+      "response_time": 0.0010793209075927734,
+      "status_code": 307,
+      "timestamp": "2025-10-01T20:32:52.122698",
+      "request_id": "31b2de3f-ebcb-40a8-954a-71d7f0b37b0d"
+    },
+    {
+      "endpoint": "/api/v1/events/",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 307,
+      "timestamp": "2025-10-01T20:32:52.124641",
+      "request_id": "bed561af-130b-4a22-a206-29d5bfbc3cc7"
+    },
+    {
+      "endpoint": "/api/v1/events",
+      "method": "GET",
+      "response_time": 0.0009984970092773438,
+      "status_code": 401,
+      "timestamp": "2025-10-01T20:32:52.127644",
+      "request_id": "c750b6c2-6bd1-4973-82e8-cbdf3d5eb895"
+    },
+    {
+      "endpoint": "/api/v1/events",
+      "method": "GET",
+      "response_time": 0.0012290477752685547,
+      "status_code": 401,
+      "timestamp": "2025-10-01T20:32:52.130273",
+      "request_id": "3f967b63-2e17-4c12-9d29-11d4854d86ae"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0014133453369140625,
+      "status_code": 404,
+      "timestamp": "2025-10-01T20:32:53.145420",
+      "request_id": "cd751665-a75f-4ec5-a1d0-6fac1e6deafd"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0013778209686279297,
+      "status_code": 404,
+      "timestamp": "2025-10-01T20:32:53.149815",
+      "request_id": "496a4be4-b0e3-4cb6-805e-a025c89794bd"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 19.696864366531372,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:32:53.330020",
+      "request_id": "e62ceca2-1e4b-4bde-afe6-675227564959"
+    },
+    {
+      "endpoint": "/api/v1/events/",
+      "method": "GET",
+      "response_time": 0.001012563705444336,
+      "status_code": 307,
+      "timestamp": "2025-10-01T20:32:53.388607",
+      "request_id": "cf53ac55-8eb8-40a5-8bb7-f6fc5b1696b7"
+    },
+    {
+      "endpoint": "/api/v1/events/",
+      "method": "GET",
+      "response_time": 0.0009796619415283203,
+      "status_code": 307,
+      "timestamp": "2025-10-01T20:32:53.395149",
+      "request_id": "495f34fe-865f-418c-b607-d55c69ddccc9"
+    },
+    {
+      "endpoint": "/api/v1/events",
+      "method": "GET",
+      "response_time": 0.0019991397857666016,
+      "status_code": 401,
+      "timestamp": "2025-10-01T20:32:53.399668",
+      "request_id": "b9cbe121-557a-43f6-a7a9-189d62a98240"
+    },
+    {
+      "endpoint": "/api/v1/events",
+      "method": "GET",
+      "response_time": 0.003512144088745117,
+      "status_code": 401,
+      "timestamp": "2025-10-01T20:32:53.410771",
+      "request_id": "e656400f-9ce1-4f48-9f5c-7c2ab1d879ae"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0009908676147460938,
+      "status_code": 404,
+      "timestamp": "2025-10-01T20:32:54.155448",
+      "request_id": "f823f798-abc8-4107-9efb-4f5e2d7793bb"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 404,
+      "timestamp": "2025-10-01T20:32:54.159446",
+      "request_id": "9a2ce804-d4d3-4002-9337-45678dbe9b45"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 2.505215883255005,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:32:55.841808",
+      "request_id": "a1c0f0fe-a104-4cfa-afea-0518b998b2c6"
+    },
+    {
+      "endpoint": "/api/v1/events/",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 307,
+      "timestamp": "2025-10-01T20:32:56.145154",
+      "request_id": "5eacf1e8-afb7-4ee3-9e20-726287a7a57c"
+    },
+    {
+      "endpoint": "/api/v1/events/",
+      "method": "GET",
+      "response_time": 0.0010039806365966797,
+      "status_code": 307,
+      "timestamp": "2025-10-01T20:32:56.148149",
+      "request_id": "f055b74e-9580-45f8-8d32-35f1a022a07f"
+    },
+    {
+      "endpoint": "/api/v1/events",
+      "method": "GET",
+      "response_time": 0.001007080078125,
+      "status_code": 401,
+      "timestamp": "2025-10-01T20:32:56.150156",
+      "request_id": "4af418f2-60f4-43d1-8464-bcd9622ac17e"
+    },
+    {
+      "endpoint": "/api/v1/events",
+      "method": "GET",
+      "response_time": 0.0009338855743408203,
+      "status_code": 401,
+      "timestamp": "2025-10-01T20:32:56.153680",
+      "request_id": "31ad3bcf-4d83-4765-9c99-776122cc148a"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 404,
+      "timestamp": "2025-10-01T20:32:56.159679",
+      "request_id": "f80f87f3-afbd-4196-967a-466f9e8cc647"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 2.5271506309509277,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:32:56.163193",
+      "request_id": "d0d6424c-5365-457d-860d-586a95bd999e"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0015709400177001953,
+      "status_code": 404,
+      "timestamp": "2025-10-01T20:32:56.202852",
+      "request_id": "446063bb-bd93-448a-ba9f-5a1b88b731ea"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.592557430267334,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:32:56.436896",
+      "request_id": "fce325a4-aeff-47b7-a7ac-4f3e15aab841"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.5514504909515381,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:32:59.472815",
+      "request_id": "2d26d54f-5608-42b1-95bd-9d383ec8080a"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.193314790725708,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:32:59.671192",
+      "request_id": "e6bb6e9a-807c-4b9e-8a98-1d51177c5201"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0010001659393310547,
+      "status_code": 404,
+      "timestamp": "2025-10-01T20:33:00.166913",
+      "request_id": "363615d4-440f-46fe-80cb-0b028332aedd"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0020265579223632812,
+      "status_code": 404,
+      "timestamp": "2025-10-01T20:33:00.215320",
+      "request_id": "c5585642-e9d8-40dc-83df-a3fed40d61bf"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0022611618041992188,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:33:01.025094",
+      "request_id": "f116b119-aef9-4459-a5a6-7fdc502c7712"
+    },
+    {
+      "endpoint": "/api/v1/files/upload",
+      "method": "POST",
+      "response_time": 1.5465481281280518,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:33:10.562747",
+      "request_id": "90312ccb-e14a-4d12-a142-f81729d21440"
+    },
+    {
+      "endpoint": "/api/v1/ai/analyze-image",
+      "method": "POST",
+      "response_time": 0.6029510498046875,
+      "status_code": 422,
+      "timestamp": "2025-10-01T20:33:11.195741",
+      "request_id": "becf4107-5aa1-47a4-bb19-0b965cedea74"
+    },
+    {
+      "endpoint": "/api/v1/ai/analyze-image",
+      "method": "POST",
+      "response_time": 0.2688577175140381,
+      "status_code": 422,
+      "timestamp": "2025-10-01T20:33:12.473200",
+      "request_id": "ea58a370-a013-48f2-9cb4-52b8985dcb60"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0020062923431396484,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:33:12.689933",
+      "request_id": "7e274e5f-f3c4-464d-977c-487a1881b9a9"
+    },
+    {
+      "endpoint": "/api/v1/ai/analyze-image",
+      "method": "POST",
+      "response_time": 0.2509958744049072,
+      "status_code": 422,
+      "timestamp": "2025-10-01T20:33:14.761240",
+      "request_id": "bac617de-4d4c-4868-aec0-7b9f03aa06f6"
+    },
+    {
+      "endpoint": "/api/v1/ai/analyze-image",
+      "method": "POST",
+      "response_time": 0.17753148078918457,
+      "status_code": 422,
+      "timestamp": "2025-10-01T20:33:18.960187",
+      "request_id": "36cf5aad-d13e-4b97-8083-0f35b0c17bd4"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:33:42.695780",
+      "request_id": "df0c1d06-136b-44d9-891b-ea97bdf44706"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0008120536804199219,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:34:01.347420",
+      "request_id": "736601a8-0027-46de-a894-c833b46a36a2"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.001312255859375,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:34:13.030585",
+      "request_id": "96bc3161-7997-4100-8582-a1b6095bf19b"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.001003265380859375,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:34:43.022150",
+      "request_id": "1d3fc1a9-979d-4318-809c-df7b1af942a7"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0010101795196533203,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:35:01.019940",
+      "request_id": "6e200cd6-948b-4a1c-810b-8a18b5ca9430"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:35:11.525317",
+      "request_id": "c5b296de-04ed-4aaf-8a41-10a257287e2b"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0022993087768554688,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:35:11.537706",
+      "request_id": "c045977a-b807-41a8-938b-391a32cedb11"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0030133724212646484,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:35:11.540719",
+      "request_id": "d3a84ed4-409c-48c5-8d54-04cdd964b006"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.00099945068359375,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:35:11.549794",
+      "request_id": "78afe3b7-f67c-40c4-aa75-3ea638d6e220"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0019981861114501953,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:35:11.550793",
+      "request_id": "4fd63d69-e6c6-4749-8651-0200579c1466"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:35:11.556314",
+      "request_id": "abcbb794-2f07-4d9e-a7b6-102eb2bcd6f3"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0015087127685546875,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:35:11.562367",
+      "request_id": "1bb8eebd-084d-473c-baa3-bbe0de0faca8"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:35:12.782376",
+      "request_id": "27971650-e875-41aa-a128-1e14fbc46ef9"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0010008811950683594,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:35:13.234262",
+      "request_id": "95e3e699-7759-4099-b490-31790f70d0f5"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0010366439819335938,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:35:13.538448",
+      "request_id": "e9f4897e-7131-47cc-8032-52da2da2f2ba"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:35:14.163906",
+      "request_id": "e5d5424c-4183-4064-9dff-148a652858a7"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0012230873107910156,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:35:26.567610",
+      "request_id": "c4ec785c-6544-43f2-86fb-497ca6aa310f"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0005097389221191406,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:35:26.753310",
+      "request_id": "1a8e5a5a-e22f-45ef-a5ab-5ac879747eb1"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.008163928985595703,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:35:42.942402",
+      "request_id": "16c785ad-e6a5-49d7-95c4-d767cad86f5d"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0017979145050048828,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:35:44.992160",
+      "request_id": "81ad6e1e-4a2e-4924-958f-1928a04301bd"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.0010085105895996094,
+      "status_code": 404,
+      "timestamp": "2025-10-01T20:35:44.999299",
+      "request_id": "16e8ac49-f57c-4c3c-94ed-b1cfc26b3a07"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.0009791851043701172,
+      "status_code": 404,
+      "timestamp": "2025-10-01T20:35:49.017194",
+      "request_id": "812d2be0-83a2-43df-be73-52eb65f6b5c6"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.0008697509765625,
+      "status_code": 404,
+      "timestamp": "2025-10-01T20:35:54.023818",
+      "request_id": "8626d509-b50f-41c0-be61-6ccae6336245"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0012180805206298828,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:35:57.030455",
+      "request_id": "797ab94e-0c99-4d71-a536-4366c4b39f95"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.0009920597076416016,
+      "status_code": 404,
+      "timestamp": "2025-10-01T20:36:01.019482",
+      "request_id": "ef55cbe2-c1b7-495b-9fc7-0b392d618f7f"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:36:27.026901",
+      "request_id": "8cbf0e4f-8fbb-4045-adfe-7d36d15fbc22"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0010094642639160156,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:36:57.033072",
+      "request_id": "c1037856-8691-4345-ba4d-39bd12cea5a2"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.000997781753540039,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:37:27.019984",
+      "request_id": "97330ce8-b9a3-4fde-9416-e4492c34af75"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0015251636505126953,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:37:36.477272",
+      "request_id": "eb8cce60-2929-4dae-a1ae-95eed9a83e04"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.002033233642578125,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:37:36.669950",
+      "request_id": "885b6087-b58d-4ec9-95e8-86b6fdf1d4d8"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:37:52.482959",
+      "request_id": "689d1a98-5f5f-43b5-a3bd-0e893d7b9835"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0014357566833496094,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:37:54.439861",
+      "request_id": "e7886bbe-c59f-4e61-9a75-ff0123ae5219"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.001535654067993164,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:37:55.463206",
+      "request_id": "28578f5d-4920-41f1-9ae2-05c40ec5b840"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.001009225845336914,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:37:55.726903",
+      "request_id": "6d903e4e-c152-4bf3-8742-a064e0a87ad7"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0010380744934082031,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:37:56.336291",
+      "request_id": "c6abae3b-209e-463d-a847-f48b0ba1a3f5"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0015094280242919922,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:38:11.384141",
+      "request_id": "d86ab975-889c-43d8-9864-d02b453a938a"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0012669563293457031,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:38:13.404078",
+      "request_id": "72d372a0-380c-45db-b911-8e315b8816c7"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:38:15.026844",
+      "request_id": "e217f2c1-5612-46a9-ba79-127a43664c18"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0009996891021728516,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:38:26.024795",
+      "request_id": "a15ab5e7-841a-4218-857d-1341075d8ff1"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.001001596450805664,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:38:56.019930",
+      "request_id": "f7997681-7bfc-4eb5-9825-1d0279ad2372"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0010068416595458984,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:39:26.031401",
+      "request_id": "288bae42-85a2-4798-8578-d5b5a48b8c52"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0016148090362548828,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:39:56.193960",
+      "request_id": "cc71dd09-36e8-4d73-a52a-c410e0f51bee"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0010111331939697266,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:41:01.020944",
+      "request_id": "68e1d805-647f-48d8-ad57-6229f6ca505b"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:42:01.022823",
+      "request_id": "c3b54da8-63dd-4719-bdf1-d7623bfac2a0"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:43:01.024981",
+      "request_id": "3ae9304d-a95a-48be-a67d-e6d28b6a3564"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0015294551849365234,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:44:01.024225",
+      "request_id": "e7bcfa68-a3ce-4f64-ae79-bb3aa5c66ee2"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:45:01.023794",
+      "request_id": "89db6bbf-f832-4000-9c87-327bdb59e0b5"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0005466938018798828,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:46:01.030511",
+      "request_id": "bfd86074-351d-4f03-9043-93e81fedd3b9"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:47:01.025120",
+      "request_id": "0186f13f-6b93-4edf-91ee-f1552b5c5dae"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:47:37.264019",
+      "request_id": "0c05b912-4653-4cc0-9764-d91f6814996e"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:47:37.271646",
+      "request_id": "fbd123aa-629a-4ab4-a8a4-06dad220fdfd"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.001142263412475586,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:47:37.281352",
+      "request_id": "f403ef13-ed62-48be-ba96-61b28110e0d2"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0010066032409667969,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:47:37.287309",
+      "request_id": "6ff282e1-b074-43bb-bab4-aec8f09b2723"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0010082721710205078,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:47:37.293902",
+      "request_id": "7bade21e-364a-4eba-8ae5-00fecd016fb9"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0010004043579101562,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:47:37.301493",
+      "request_id": "10f2c8d5-909d-4927-82b7-a594f599fab2"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0010116100311279297,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:47:37.306502",
+      "request_id": "fcdb15e0-3055-4b5c-9785-8c289f7d7663"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:47:37.317096",
+      "request_id": "20b21aa0-e93f-47df-8acb-3ada2518599f"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0009965896606445312,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:47:37.328697",
+      "request_id": "9e62f1a4-e85b-43fe-996a-ffb7437a2dfd"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:47:47.998650",
+      "request_id": "afae7e60-ae34-49b9-8a0f-89bb0f69f552"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:47:48.016535",
+      "request_id": "fbd4e9a1-8f96-4fde-b118-f505e6108f89"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0010111331939697266,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:47:52.195863",
+      "request_id": "350bfcde-8929-42b0-bb61-046f66ba6758"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0009925365447998047,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:47:53.016923",
+      "request_id": "703f6790-6dd5-40c4-800a-7b36b90b5f07"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0010135173797607422,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:48:01.024363",
+      "request_id": "68cc82e1-b4cc-4870-9720-01ace6bb6d74"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.00099945068359375,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:48:26.133464",
+      "request_id": "d8982e2f-884f-474b-ba39-7d8b5e1806ec"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:48:26.155555",
+      "request_id": "52d584fc-0a1d-48cc-a585-25102e160c5e"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:48:26.178214",
+      "request_id": "ea20736d-f0b1-4b44-8b84-b2d7145bf9f0"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0015125274658203125,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:48:26.206133",
+      "request_id": "2246f7b7-51f9-4277-b0b7-24019db6cec2"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0010046958923339844,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:48:26.208148",
+      "request_id": "5d378ed4-1528-441c-a796-0aa77bf14575"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0010077953338623047,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:48:26.220866",
+      "request_id": "de5b2616-d935-47e9-8b47-a7962202ac8f"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0010516643524169922,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:48:26.241475",
+      "request_id": "fee887e9-0621-4371-94f3-f356c36cd409"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:48:26.277619",
+      "request_id": "b1dfcabc-1d2c-4ac3-a8df-d469d7468097"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:49:01.024546",
+      "request_id": "7df2b316-4d4f-4743-8304-1922c6cf09e6"
+    },
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "response_time": 0.000997304916381836,
+      "status_code": 200,
+      "timestamp": "2025-10-01T20:50:01.026300",
+      "request_id": "7fe70127-b1d1-4b48-9f9a-76310b7e2548"
+    }
+  ],
+  "error_counts": {
+    "404": 536,
+    "401": 165,
+    "422": 5
+  },
+  "time_range": {
+    "start": "2025-10-01T20:21:00.931848",
+    "end": "2025-10-01T20:51:00.933818"
+  }
+}

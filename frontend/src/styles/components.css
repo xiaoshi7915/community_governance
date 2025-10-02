@@ -1,0 +1,137 @@
+/* 组件专用样式 */
+
+/* 导航组件 */
+.navigation {
+  @apply nav-bottom;
+}
+
+.navigation-item {
+  @apply nav-item flex flex-col items-center space-y-1 text-gray-500 hover:text-primary-600 transition-colors duration-200;
+}
+
+.navigation-item.active {
+  @apply text-primary-600 transform -translate-y-0.5;
+}
+
+/* 模态框组件 */
+.modal {
+  @apply modal-overlay;
+}
+
+.modal.show {
+  @apply animate-fade-in;
+}
+
+.modal-dialog {
+  @apply modal-content animate-slide-up;
+}
+
+/* 通知组件 */
+.toast {
+  @apply notification animate-slide-down;
+}
+
+.toast.hide {
+  @apply animate-fade-out;
+}
+
+/* 按钮组件 */
+.button {
+  @apply inline-flex items-center justify-center px-4 py-2 rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
+}
+
+.button:disabled {
+  @apply opacity-50 cursor-not-allowed;
+}
+
+.button.primary {
+  @apply btn-primary focus:ring-primary-500;
+}
+
+.button.secondary {
+  @apply btn-secondary focus:ring-gray-500;
+}
+
+.button.success {
+  @apply btn-success focus:ring-success-500;
+}
+
+.button.danger {
+  @apply btn-danger focus:ring-danger-500;
+}
+
+.button.loading {
+  @apply cursor-wait;
+}
+
+/* 输入框组件 */
+.input {
+  @apply form-input;
+}
+
+.input:focus {
+  @apply ring-primary-500 border-transparent;
+}
+
+.input.error {
+  @apply border-danger-300 focus:ring-danger-500;
+}
+
+.input.success {
+  @apply border-success-300 focus:ring-success-500;
+}
+
+/* 文件上传组件 */
+.file-upload {
+  @apply upload-area rounded-xl p-8 text-center cursor-pointer;
+}
+
+.file-upload.dragover {
+  @apply border-success-600 bg-success-50;
+}
+
+.file-upload-icon {
+  @apply w-16 h-16 text-primary-400 mx-auto mb-4;
+}
+
+.file-upload-text {
+  @apply text-gray-600 mb-2;
+}
+
+.file-upload-hint {
+  @apply text-sm text-gray-500;
+}
+
+/* 媒体预览组件 */
+.media-preview {
+  @apply relative rounded-lg overflow-hidden;
+}
+
+.media-preview-image {
+  @apply w-full h-32 object-cover;
+}
+
+.media-preview-remove {
+  @apply absolute top-2 right-2 w-6 h-6 bg-danger-500 text-white rounded-full flex items-center justify-center text-sm hover:bg-danger-600 transition-colors;
+}
+
+/* 加载动画组件 */
+.loading-spinner {
+  @apply w-5 h-5 border-2 border-current border-t-transparent rounded-full animate-spin;
+}
+
+.loading-dots {
+  @apply flex space-x-1;
+}
+
+.loading-dot {
+  @apply w-2 h-2 bg-current rounded-full animate-pulse;
+}
+
+.loading-dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.loading-dot:nth-child(3) {
+  animation-delay: 0.4s;
+}

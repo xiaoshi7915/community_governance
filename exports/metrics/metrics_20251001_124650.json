@@ -1,0 +1,2444 @@
+{
+  "system_metrics": [
+    {
+      "timestamp": "2025-10-01T12:17:43.000611",
+      "cpu_percent": 17.2,
+      "memory_percent": 93.4,
+      "memory_used_mb": 14953.34765625,
+      "memory_available_mb": 1063.12890625,
+      "disk_percent": 92.09682357902173,
+      "disk_used_gb": 218.40707397460938,
+      "disk_free_gb": 18.74233627319336,
+      "active_connections": 285
+    },
+    {
+      "timestamp": "2025-10-01T12:18:44.032440",
+      "cpu_percent": 27.8,
+      "memory_percent": 95.3,
+      "memory_used_mb": 15256.91796875,
+      "memory_available_mb": 759.55859375,
+      "disk_percent": 92.09842409903793,
+      "disk_used_gb": 218.41086959838867,
+      "disk_free_gb": 18.738540649414062,
+      "active_connections": 294
+    },
+    {
+      "timestamp": "2025-10-01T12:19:45.056363",
+      "cpu_percent": 25.9,
+      "memory_percent": 95.8,
+      "memory_used_mb": 15340.12109375,
+      "memory_available_mb": 676.35546875,
+      "disk_percent": 92.09902409297365,
+      "disk_used_gb": 218.41229248046875,
+      "disk_free_gb": 18.737117767333984,
+      "active_connections": 323
+    },
+    {
+      "timestamp": "2025-10-01T12:20:46.084184",
+      "cpu_percent": 15.8,
+      "memory_percent": 94.2,
+      "memory_used_mb": 15093.80078125,
+      "memory_available_mb": 922.67578125,
+      "disk_percent": 92.09976081474994,
+      "disk_used_gb": 218.4140396118164,
+      "disk_free_gb": 18.735370635986328,
+      "active_connections": 346
+    },
+    {
+      "timestamp": "2025-10-01T12:21:47.115797",
+      "cpu_percent": 18.4,
+      "memory_percent": 95.3,
+      "memory_used_mb": 15258.33203125,
+      "memory_available_mb": 758.14453125,
+      "disk_percent": 92.10001496767714,
+      "disk_used_gb": 218.41464233398438,
+      "disk_free_gb": 18.73476791381836,
+      "active_connections": 347
+    },
+    {
+      "timestamp": "2025-10-01T12:22:49.764705",
+      "cpu_percent": 20.7,
+      "memory_percent": 94.2,
+      "memory_used_mb": 15086.60546875,
+      "memory_available_mb": 929.87109375,
+      "disk_percent": 92.10193076600808,
+      "disk_used_gb": 218.41918563842773,
+      "disk_free_gb": 18.730224609375,
+      "active_connections": 397
+    },
+    {
+      "timestamp": "2025-10-01T12:23:50.773464",
+      "cpu_percent": 12.6,
+      "memory_percent": 91.2,
+      "memory_used_mb": 14612.01953125,
+      "memory_available_mb": 1404.45703125,
+      "disk_percent": 92.19464189329776,
+      "disk_used_gb": 218.6390495300293,
+      "disk_free_gb": 18.510360717773438,
+      "active_connections": 392
+    },
+    {
+      "timestamp": "2025-10-01T12:24:51.802908",
+      "cpu_percent": 16.2,
+      "memory_percent": 92.7,
+      "memory_used_mb": 14842.046875,
+      "memory_available_mb": 1174.4296875,
+      "disk_percent": 92.19473358137908,
+      "disk_used_gb": 218.63926696777344,
+      "disk_free_gb": 18.510143280029297,
+      "active_connections": 381
+    },
+    {
+      "timestamp": "2025-10-01T12:25:52.816074",
+      "cpu_percent": 12.3,
+      "memory_percent": 94.7,
+      "memory_used_mb": 15170.3125,
+      "memory_available_mb": 846.1640625,
+      "disk_percent": 92.19482526946041,
+      "disk_used_gb": 218.63948440551758,
+      "disk_free_gb": 18.509925842285156,
+      "active_connections": 335
+    },
+    {
+      "timestamp": "2025-10-01T12:26:53.846220",
+      "cpu_percent": 13.2,
+      "memory_percent": 93.0,
+      "memory_used_mb": 14889.1953125,
+      "memory_available_mb": 1127.28125,
+      "disk_percent": 92.19494912879836,
+      "disk_used_gb": 218.63977813720703,
+      "disk_free_gb": 18.509632110595703,
+      "active_connections": 385
+    },
+    {
+      "timestamp": "2025-10-01T12:27:56.561761",
+      "cpu_percent": 29.5,
+      "memory_percent": 95.0,
+      "memory_used_mb": 15207.64453125,
+      "memory_available_mb": 808.83203125,
+      "disk_percent": 92.19511802789555,
+      "disk_used_gb": 218.64017868041992,
+      "disk_free_gb": 18.509231567382812,
+      "active_connections": 382
+    },
+    {
+      "timestamp": "2025-10-01T12:28:57.614461",
+      "cpu_percent": 14.7,
+      "memory_percent": 96.0,
+      "memory_used_mb": 15374.6171875,
+      "memory_available_mb": 641.859375,
+      "disk_percent": 92.19553142854294,
+      "disk_used_gb": 218.6411590576172,
+      "disk_free_gb": 18.508251190185547,
+      "active_connections": 623
+    },
+    {
+      "timestamp": "2025-10-01T12:29:58.619801",
+      "cpu_percent": 14.2,
+      "memory_percent": 93.5,
+      "memory_used_mb": 14981.078125,
+      "memory_available_mb": 1035.3984375,
+      "disk_percent": 92.19558611967916,
+      "disk_used_gb": 218.64128875732422,
+      "disk_free_gb": 18.508121490478516,
+      "active_connections": 597
+    },
+    {
+      "timestamp": "2025-10-01T12:30:59.632903",
+      "cpu_percent": 20.4,
+      "memory_percent": 94.8,
+      "memory_used_mb": 15187.09375,
+      "memory_available_mb": 829.3828125,
+      "disk_percent": 92.19587083530013,
+      "disk_used_gb": 218.64196395874023,
+      "disk_free_gb": 18.5074462890625,
+      "active_connections": 303
+    },
+    {
+      "timestamp": "2025-10-01T12:32:00.664352",
+      "cpu_percent": 13.0,
+      "memory_percent": 93.5,
+      "memory_used_mb": 14977.40234375,
+      "memory_available_mb": 1039.07421875,
+      "disk_percent": 92.19799896392468,
+      "disk_used_gb": 218.64701080322266,
+      "disk_free_gb": 18.502399444580078,
+      "active_connections": 358
+    },
+    {
+      "timestamp": "2025-10-01T12:33:03.235878",
+      "cpu_percent": 42.5,
+      "memory_percent": 93.6,
+      "memory_used_mb": 14987.48828125,
+      "memory_available_mb": 1028.98828125,
+      "disk_percent": 92.19817590583602,
+      "disk_used_gb": 218.64743041992188,
+      "disk_free_gb": 18.50197982788086,
+      "active_connections": 361
+    },
+    {
+      "timestamp": "2025-10-01T12:34:04.289566",
+      "cpu_percent": 17.2,
+      "memory_percent": 94.1,
+      "memory_used_mb": 15071.3125,
+      "memory_available_mb": 945.1640625,
+      "disk_percent": 92.20069008953985,
+      "disk_used_gb": 218.65339279174805,
+      "disk_free_gb": 18.496017456054688,
+      "active_connections": 345
+    },
+    {
+      "timestamp": "2025-10-01T12:35:05.311713",
+      "cpu_percent": 11.2,
+      "memory_percent": 92.6,
+      "memory_used_mb": 14829.37890625,
+      "memory_available_mb": 1187.09765625,
+      "disk_percent": 92.2024160774568,
+      "disk_used_gb": 218.65748596191406,
+      "disk_free_gb": 18.491924285888672,
+      "active_connections": 330
+    },
+    {
+      "timestamp": "2025-10-01T12:36:06.303407",
+      "cpu_percent": 8.5,
+      "memory_percent": 93.4,
+      "memory_used_mb": 14958.93359375,
+      "memory_available_mb": 1057.54296875,
+      "disk_percent": 92.20261393068495,
+      "disk_used_gb": 218.65795516967773,
+      "disk_free_gb": 18.491455078125,
+      "active_connections": 311
+    },
+    {
+      "timestamp": "2025-10-01T12:37:07.321798",
+      "cpu_percent": 14.0,
+      "memory_percent": 93.5,
+      "memory_used_mb": 14972.72265625,
+      "memory_available_mb": 1043.75390625,
+      "disk_percent": 92.20266862182118,
+      "disk_used_gb": 218.65808486938477,
+      "disk_free_gb": 18.49132537841797,
+      "active_connections": 304
+    },
+    {
+      "timestamp": "2025-10-01T12:38:10.192118",
+      "cpu_percent": 11.1,
+      "memory_percent": 92.5,
+      "memory_used_mb": 14820.09765625,
+      "memory_available_mb": 1196.37890625,
+      "disk_percent": 92.20287934355194,
+      "disk_used_gb": 218.65858459472656,
+      "disk_free_gb": 18.490825653076172,
+      "active_connections": 289
+    },
+    {
+      "timestamp": "2025-10-01T12:39:11.213027",
+      "cpu_percent": 12.5,
+      "memory_percent": 92.2,
+      "memory_used_mb": 14762.39453125,
+      "memory_available_mb": 1254.08203125,
+      "disk_percent": 92.20293725181384,
+      "disk_used_gb": 218.65872192382812,
+      "disk_free_gb": 18.49068832397461,
+      "active_connections": 296
+    },
+    {
+      "timestamp": "2025-10-01T12:40:12.235047",
+      "cpu_percent": 14.9,
+      "memory_percent": 92.0,
+      "memory_used_mb": 14732.37109375,
+      "memory_available_mb": 1284.10546875,
+      "disk_percent": 92.20320427324367,
+      "disk_used_gb": 218.65935516357422,
+      "disk_free_gb": 18.490055084228516,
+      "active_connections": 296
+    },
+    {
+      "timestamp": "2025-10-01T12:41:13.289184",
+      "cpu_percent": 14.5,
+      "memory_percent": 92.8,
+      "memory_used_mb": 14858.7109375,
+      "memory_available_mb": 1157.765625,
+      "disk_percent": 92.20328470138519,
+      "disk_used_gb": 218.6595458984375,
+      "disk_free_gb": 18.489864349365234,
+      "active_connections": 297
+    },
+    {
+      "timestamp": "2025-10-01T12:42:14.297366",
+      "cpu_percent": 9.3,
+      "memory_percent": 92.1,
+      "memory_used_mb": 14743.94140625,
+      "memory_available_mb": 1272.53515625,
+      "disk_percent": 92.20322357599764,
+      "disk_used_gb": 218.6594009399414,
+      "disk_free_gb": 18.490009307861328,
+      "active_connections": 292
+    },
+    {
+      "timestamp": "2025-10-01T12:43:17.093247",
+      "cpu_percent": 10.9,
+      "memory_percent": 91.6,
+      "memory_used_mb": 14666.9609375,
+      "memory_available_mb": 1349.515625,
+      "disk_percent": 92.20345360048238,
+      "disk_used_gb": 218.6599464416504,
+      "disk_free_gb": 18.489463806152344,
+      "active_connections": 298
+    },
+    {
+      "timestamp": "2025-10-01T12:44:18.146842",
+      "cpu_percent": 15.1,
+      "memory_percent": 92.7,
+      "memory_used_mb": 14850.32421875,
+      "memory_available_mb": 1166.15234375,
+      "disk_percent": 92.20400372897035,
+      "disk_used_gb": 218.66125106811523,
+      "disk_free_gb": 18.4881591796875,
+      "active_connections": 294
+    },
+    {
+      "timestamp": "2025-10-01T12:45:19.155098",
+      "cpu_percent": 19.5,
+      "memory_percent": 91.8,
+      "memory_used_mb": 14696.6796875,
+      "memory_available_mb": 1319.796875,
+      "disk_percent": 92.20418549657018,
+      "disk_used_gb": 218.66168212890625,
+      "disk_free_gb": 18.487728118896484,
+      "active_connections": 285
+    },
+    {
+      "timestamp": "2025-10-01T12:46:20.172169",
+      "cpu_percent": 14.1,
+      "memory_percent": 91.6,
+      "memory_used_mb": 14668.97265625,
+      "memory_available_mb": 1347.50390625,
+      "disk_percent": 92.20432705009925,
+      "disk_used_gb": 218.66201782226562,
+      "disk_free_gb": 18.48739242553711,
+      "active_connections": 285
+    }
+  ],
+  "api_metrics": [
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:19:25.655992",
+      "request_id": "aa701247-d1ef-4e0b-8f24-ef47e7c66bc9"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.0029981136322021484,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:19:27.026640",
+      "request_id": "a32d7a96-1376-4574-9f23-2890df30d1ad"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.0024056434631347656,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:19:30.034230",
+      "request_id": "ab69428b-c967-4edb-a12c-c342d5986202"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.0013175010681152344,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:19:35.033625",
+      "request_id": "22d85c8c-3174-4ff3-b3c9-67b8cdb879e8"
+    },
+    {
+      "endpoint": "/api/v1/auth/login",
+      "method": "POST",
+      "response_time": 1.2480335235595703,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:21:25.664506",
+      "request_id": "948477bc-a904-45a1-af1c-fd05f7e1c82a"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.30247926712036133,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:21:38.070421",
+      "request_id": "cf581218-0b47-4852-95d9-a9f8af059a43"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.9810142517089844,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:21:39.065527",
+      "request_id": "b4f6d9c0-d289-4b44-9188-9b82d1fc1cfd"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.23380255699157715,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:21:39.318248",
+      "request_id": "da123431-601c-4fb9-a21f-b255f65074ce"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.3084282875061035,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:21:39.663310",
+      "request_id": "0cf9da8f-c2fb-417e-a50a-c334e0d2c95f"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.003991842269897461,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:21:40.827503",
+      "request_id": "8d4f8b1e-e0b8-41dd-8a0d-68338ced9406"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.002971649169921875,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:21:40.858093",
+      "request_id": "055483b3-f93e-4dd1-9cae-a08eae7da30f"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.001352548599243164,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:21:41.860651",
+      "request_id": "36b2273e-eaeb-4587-8f73-7b44bfebc71f"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0024220943450927734,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:21:41.879426",
+      "request_id": "55a2fdfe-4d19-4aaa-8104-91273904ad57"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.002191781997680664,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:21:43.887558",
+      "request_id": "9255073f-e29c-4c61-b954-c26caee1c168"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0024945735931396484,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:21:43.912831",
+      "request_id": "631a5f70-e98d-4fa1-8089-caa659c86a29"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.00099945068359375,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:21:48.744229",
+      "request_id": "bb63d38a-5bda-46e3-bc37-76e21ad6227d"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.002994537353515625,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:21:48.755711",
+      "request_id": "7d52ebc8-d353-42ac-a04b-36e19c3a331c"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.0024220943450927734,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:21:57.806212",
+      "request_id": "d35a2427-ea99-434c-80e5-d9ef5d7a6a76"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.0060122013092041016,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:21:58.839830",
+      "request_id": "861f35f3-db17-4045-b9af-8b9fde1d3534"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.001852273941040039,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:22:00.876484",
+      "request_id": "d0a4dd06-db09-4eb6-8f16-280fdff52735"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.0019969940185546875,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:22:04.906916",
+      "request_id": "84f80a7b-5d63-4840-8ede-57dbaa5e0acc"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.002416849136352539,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:22:38.859151",
+      "request_id": "b22e1911-0f44-4e67-b1ba-ff286753e392"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.0021681785583496094,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:22:39.901631",
+      "request_id": "775e4210-a230-43ae-9e0e-c2e8ebaadd80"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:22:41.937779",
+      "request_id": "fa64d847-e450-45e3-bb42-d7ad07454193"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.00099945068359375,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:22:45.989572",
+      "request_id": "1b717a1b-cb91-4c6b-a16b-4b418859a370"
+    },
+    {
+      "endpoint": "/api/v1/auth/login",
+      "method": "POST",
+      "response_time": 0.7068061828613281,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:23:02.372546",
+      "request_id": "4fc9ca7e-5d81-4fcd-bb29-3b9f2e10dea7"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.2516467571258545,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:23:02.659523",
+      "request_id": "ebb28179-3e93-4b1b-9eea-94c8875a70d1"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.27869582176208496,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:23:02.952030",
+      "request_id": "22b344ea-29d3-4fcd-b404-65a1b0b47dac"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.21740484237670898,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:23:03.188465",
+      "request_id": "2d6a4772-77f2-4d1c-9c90-16f8523be14b"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.2532229423522949,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:23:03.461056",
+      "request_id": "f6363595-ef59-4f55-92c4-c348e4cef570"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0009989738464355469,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:23:05.554514",
+      "request_id": "8697a1af-0ea8-47e1-bef9-76d3e8035815"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0013425350189208984,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:23:05.565369",
+      "request_id": "4dbc454a-df73-4eaf-a24f-cb8e097f1961"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0010001659393310547,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:23:06.585773",
+      "request_id": "ed25f758-4e1f-40b7-aa64-56db70fd8789"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0010061264038085938,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:23:06.603019",
+      "request_id": "4ed91ae7-6c6e-4c01-8958-c58142101910"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0035467147827148438,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:23:08.609305",
+      "request_id": "b064b74c-ee45-45c6-9291-99cf4db33e72"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:23:08.617383",
+      "request_id": "322782cd-e7d4-4217-af27-ac2a9537951d"
+    },
+    {
+      "endpoint": "/api/v1/events",
+      "method": "GET",
+      "response_time": 0.884221076965332,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:23:11.275635",
+      "request_id": "e5a572eb-bf67-4f19-b718-220525f5f1bf"
+    },
+    {
+      "endpoint": "/api/v1/events",
+      "method": "GET",
+      "response_time": 0.7452719211578369,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:23:12.039095",
+      "request_id": "c3097b73-d083-4d0f-b7ae-d5fb0588008d"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0009989738464355469,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:23:12.650612",
+      "request_id": "07ebc206-a8b3-4034-be7a-9be64115d51c"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0010943412780761719,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:23:12.670240",
+      "request_id": "a6882471-4b04-4949-a6ed-7df755cddf59"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:23:43.043092",
+      "request_id": "c3ccac5d-bf9d-4169-a814-3a7a75f66392"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.0010013580322265625,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:23:44.087531",
+      "request_id": "73fe4694-0ce7-4f7d-b3ac-cb345665009e"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:23:46.121778",
+      "request_id": "f018d33f-138a-4f83-ba90-6a825343db8c"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.001001119613647461,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:23:50.776456",
+      "request_id": "b901b134-82cc-4d83-a231-98ec19455700"
+    },
+    {
+      "endpoint": "/api/v1/auth/login",
+      "method": "POST",
+      "response_time": 0.5768649578094482,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:24:03.672808",
+      "request_id": "ba95ae24-1140-481b-95b5-bef1791452dc"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.22237944602966309,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:24:03.922908",
+      "request_id": "23b3835e-58bd-4829-ae58-db63c5c8faae"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.20846772193908691,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:24:04.145606",
+      "request_id": "b76d383b-fa1a-4d3d-9714-f30516d9f329"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.2238466739654541,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:24:04.385815",
+      "request_id": "6a129632-5506-497d-ad2c-44e1741eac59"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.20451045036315918,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:24:04.606819",
+      "request_id": "76a62120-d5e4-494a-b378-6ddc99dd9c02"
+    },
+    {
+      "endpoint": "/api/v1/events",
+      "method": "GET",
+      "response_time": 0.33684730529785156,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:24:37.107254",
+      "request_id": "20927b34-f770-4de7-bfe2-a6988f2f890e"
+    },
+    {
+      "endpoint": "/api/v1/events",
+      "method": "GET",
+      "response_time": 0.3563423156738281,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:24:37.476774",
+      "request_id": "839fee19-750d-40d2-959c-990fe6211670"
+    },
+    {
+      "endpoint": "/api/v1/auth/login",
+      "method": "POST",
+      "response_time": 0.5951225757598877,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:24:56.257036",
+      "request_id": "ff72be8c-79e6-40b9-92d5-a20f12843ed9"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.21402311325073242,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:24:56.587101",
+      "request_id": "02a3ac39-77a4-4e92-8457-a630b4aa5711"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.24888062477111816,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:24:56.845302",
+      "request_id": "4e73802a-2aec-499a-b38c-783b00140cb9"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.22908568382263184,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:24:57.085959",
+      "request_id": "b1697890-e6cb-4df4-918b-b8b436de60b8"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.2440779209136963,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:24:57.342995",
+      "request_id": "588662f4-87aa-409b-adea-ea29cf30e075"
+    },
+    {
+      "endpoint": "/api/v1/events",
+      "method": "GET",
+      "response_time": 0.3545875549316406,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:25:15.557349",
+      "request_id": "0a681fdd-deda-443c-bfb4-3b9ff69f14f4"
+    },
+    {
+      "endpoint": "/api/v1/events",
+      "method": "GET",
+      "response_time": 0.3787555694580078,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:25:15.945406",
+      "request_id": "33c0cf5b-0d1e-43f6-8201-3f574f3f0194"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.0009961128234863281,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:26:09.653050",
+      "request_id": "114481ae-1404-4c3c-8171-305160fd688d"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.0010154247283935547,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:26:10.684042",
+      "request_id": "506c5df2-3c32-4d75-a4f6-01c300dc4f27"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.0013539791107177734,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:26:12.699948",
+      "request_id": "b4945696-7229-4e60-a5a2-8833d572c8fa"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.002131938934326172,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:26:15.134020",
+      "request_id": "af6bc412-80e4-45d1-87d8-810b50aa2606"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.0009715557098388672,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:26:16.152193",
+      "request_id": "f70ee212-c16d-40a7-9152-a2ccb7f8e6fd"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.002044200897216797,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:26:18.174411",
+      "request_id": "2a764bd9-fc78-40d7-986b-1c9f91813618"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.002258777618408203,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:26:22.201054",
+      "request_id": "b9a08482-7fd3-4450-b927-c993e347a64b"
+    },
+    {
+      "endpoint": "/api/v1/auth/login",
+      "method": "POST",
+      "response_time": 0.694586992263794,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:26:35.751033",
+      "request_id": "47546b55-f3d6-4b17-b4c8-0470a08036e3"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.24577069282531738,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:26:36.011506",
+      "request_id": "8538a418-2d3c-43db-809c-51d42523d482"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.2357158660888672,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:26:36.259674",
+      "request_id": "65934348-daab-42fe-9c25-0564e0b86ca4"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.25420498847961426,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:26:36.525209",
+      "request_id": "a4bb769a-ca95-44fe-ab5a-667ca7e3fd1b"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.20792388916015625,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:26:36.748132",
+      "request_id": "b7ed71c3-6ad8-4fd1-a3c6-8b65ddd74ae3"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.24970078468322754,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:26:37.007960",
+      "request_id": "5d05dd4a-9d6d-4d86-bdc9-1d185805e6a2"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.2281489372253418,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:26:37.244433",
+      "request_id": "17478424-e4be-4da1-9d78-2efb1ac5341c"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.26402807235717773,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:26:37.530875",
+      "request_id": "e03792bd-2f51-4645-a184-eadb6b2ede74"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.21209096908569336,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:26:37.756074",
+      "request_id": "b1f36c3c-7133-40fa-8096-569b4b92656b"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.25993847846984863,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:26:38.025610",
+      "request_id": "e12b38d7-a6d1-4cf7-8e99-59723311efa1"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.21332883834838867,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:26:38.255682",
+      "request_id": "c4a3060c-9d03-4df1-868e-64577164ed38"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.24853944778442383,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:26:38.513952",
+      "request_id": "b5b68197-2577-48ee-a5bf-7a9b1005f0fc"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.002116680145263672,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:26:38.568496",
+      "request_id": "9153a70c-76a4-4505-b540-9ba8173af5a7"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0030431747436523438,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:26:38.585418",
+      "request_id": "af8982cf-0b83-4ff6-8ecd-9aa90bfbad2a"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.22504544258117676,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:26:38.763983",
+      "request_id": "62880afd-de94-41e5-a526-43639959c17a"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.24737882614135742,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:26:39.031244",
+      "request_id": "98143374-7bad-4685-bdf2-c974c4a34a18"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.2629580497741699,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:26:39.312345",
+      "request_id": "5adabef7-21ee-4555-99d2-29ef77afec69"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0010142326354980469,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:26:39.629104",
+      "request_id": "8c3cf310-b10c-4eb1-a1c3-f9715fd1b418"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0020036697387695312,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:26:39.641881",
+      "request_id": "46fa6921-7cef-47fd-bc48-150adc1b60f6"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0029993057250976562,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:26:41.649930",
+      "request_id": "039625b1-3bc0-4f8c-b33a-9356a1f8fdac"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0022346973419189453,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:26:41.668151",
+      "request_id": "7709e970-b8a1-4431-83b6-a3e6a8f77e32"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0030274391174316406,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:26:45.675172",
+      "request_id": "355c9492-4989-47da-a1d6-75187bc36acf"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0031845569610595703,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:26:45.700088",
+      "request_id": "5d4c90d0-c328-4e2f-9e3a-55334099da1d"
+    },
+    {
+      "endpoint": "/api/v1/auth/logout",
+      "method": "POST",
+      "response_time": 0.30460429191589355,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:27:07.242657",
+      "request_id": "f4c7ca80-b65c-4d0f-a916-29bc34652aeb"
+    },
+    {
+      "endpoint": "/api/v1/auth/login",
+      "method": "POST",
+      "response_time": 0.6431732177734375,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:27:54.875454",
+      "request_id": "8d10fd0f-f873-45a1-b2f8-d787ad91fe1e"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.2460181713104248,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:27:55.140996",
+      "request_id": "9363510f-8c77-41e3-adb7-5ff8b756f596"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.25440526008605957,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:27:55.409635",
+      "request_id": "bd36bab0-cb2c-4633-941f-9e9cb0cc5619"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 1.2533643245697021,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:27:56.675652",
+      "request_id": "e89715a9-b682-404b-ab85-e2e8f09ecddc"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.2766890525817871,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:27:56.965948",
+      "request_id": "58b10676-2e2b-4f19-8e68-26ca35d8baf8"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.25190114974975586,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:27:57.237048",
+      "request_id": "7c4eb27a-ef32-424d-bc21-7375cfd152d2"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.26130199432373047,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:27:57.509786",
+      "request_id": "bdee041e-541d-41fe-ba9a-28113c3cc152"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.22576642036437988,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:27:57.746056",
+      "request_id": "08f733b5-d44e-4e4f-b146-b18690719c72"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.25541162490844727,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:27:58.011965",
+      "request_id": "253b18b9-9aed-4141-8675-8ec5965ba8ec"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.20687389373779297,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:27:58.227788",
+      "request_id": "f5c42868-6628-4791-9dd5-125fda773435"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.27053260803222656,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:27:58.506683",
+      "request_id": "8b413543-cbb8-45cd-a752-599a898b1a39"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.21056461334228516,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:27:58.726052",
+      "request_id": "42db893d-c4d4-4b38-bc4c-30d9c5b00152"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.2669844627380371,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:27:59.006487",
+      "request_id": "25be844c-53b2-467c-b827-c7a1b9773ef5"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.21192216873168945,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:27:59.234102",
+      "request_id": "354f22b3-214f-4e4c-9fea-d4786a4a52f0"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.2403862476348877,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:27:59.487727",
+      "request_id": "17774477-0907-4604-9922-8506435d2564"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.2479870319366455,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:27:59.749409",
+      "request_id": "cc4bdb09-a875-4821-b1cd-bfc2008f9af0"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.25782299041748047,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:00.023212",
+      "request_id": "a51d2f05-5ece-4733-afac-290c25913018"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.23485708236694336,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:00.272420",
+      "request_id": "564b66a8-321c-40d0-82f3-3ff4be6c3b9f"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.251629114151001,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:00.538222",
+      "request_id": "0f48d55c-d273-45c6-8300-d1b199055adc"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.2297532558441162,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:00.780616",
+      "request_id": "1c78cf07-3d18-41a4-ab25-39e17477ae03"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.24127936363220215,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:01.033910",
+      "request_id": "d1f00bdb-5908-4674-9424-ba40b06f7408"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.23882412910461426,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:01.288100",
+      "request_id": "d0fdaacf-693f-4fdb-b5c0-f1c622475d67"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.2556934356689453,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:01.557393",
+      "request_id": "e042c375-6952-4e40-aac6-dcc84d467e87"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.25226521492004395,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:01.820208",
+      "request_id": "ecd56890-77ff-4771-8694-8ed5d8498649"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.26302599906921387,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:02.094518",
+      "request_id": "ce99d73c-8625-4430-9659-3074bd3e8556"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.24511194229125977,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:02.356175",
+      "request_id": "51476360-47f9-48b0-8ad9-c82baf504d79"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.25975894927978516,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:02.626461",
+      "request_id": "5d6ae2b1-e708-466e-8263-c79d878a6e3d"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.2341022491455078,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:02.875092",
+      "request_id": "426e0e26-c093-43f8-bf01-05a923117cca"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.2627415657043457,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:03.152819",
+      "request_id": "c0744c27-c14b-400c-b156-944792fb9cb9"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.27275586128234863,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:03.436588",
+      "request_id": "9d11a58f-9d9e-4c92-bdd2-e48ad175b625"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.2455143928527832,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:03.691306",
+      "request_id": "1e93b63a-3354-496d-b868-f137504beb14"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.23442697525024414,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:03.936932",
+      "request_id": "e4ac8dc5-f3a2-46f9-84e6-8c4ed768f72a"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.23485898971557617,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:04.182606",
+      "request_id": "9587d0ae-f468-4a77-a550-fb432e2b5186"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.22840166091918945,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:04.420854",
+      "request_id": "317e3b7f-e834-44e5-8edb-1ecbbad477c1"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.24767041206359863,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:04.678298",
+      "request_id": "339223eb-3495-4b80-8185-306035f20270"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.22753334045410156,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:04.916667",
+      "request_id": "7a187e86-00ad-402e-b655-441af75612a3"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.2300252914428711,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:05.157615",
+      "request_id": "a66fdb95-93e8-4fda-a4a0-603978569e92"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.21296381950378418,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:05.384485",
+      "request_id": "d9176397-4bad-4407-aef3-d7a17631eafe"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.25061917304992676,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:05.643903",
+      "request_id": "8b82adc0-6461-481f-967a-8d9c10cda496"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.23951983451843262,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:05.898022",
+      "request_id": "2e83b56e-2a1f-4a59-aa86-92b470aad0b7"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.223862886428833,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:06.131524",
+      "request_id": "864fa1aa-4035-4691-bb47-cc809f58152d"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.2194206714630127,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:06.362394",
+      "request_id": "5fd6e5b0-99c5-42a3-8937-d2054f992025"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.2501492500305176,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:06.622036",
+      "request_id": "723c0fdd-7319-4132-a57f-c5d4ad0feebc"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.24074125289916992,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:06.874973",
+      "request_id": "8676f625-e918-42b8-9a42-ee14b51792a9"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.2650566101074219,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:07.152894",
+      "request_id": "d4c960a8-a082-4908-8a81-552af002735b"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.22169899940490723,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:07.386677",
+      "request_id": "d224eade-2874-4258-bbe1-be7dbcdcf331"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.23563623428344727,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:07.633588",
+      "request_id": "9e69901c-2bf5-4e4f-88d2-0fd3c2036651"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.23027944564819336,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:07.875911",
+      "request_id": "21e61be1-cd80-4113-bfc7-0f57dd739cf2"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.26313161849975586,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:08.154019",
+      "request_id": "db864be7-1c2f-4964-ab3f-b0e788511c3a"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.24653053283691406,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:08.411545",
+      "request_id": "4739c047-84fe-4fa0-aad8-033d4d3a4061"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.24091601371765137,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:08.663222",
+      "request_id": "8244d169-38e9-4bd7-83f3-8add8d112644"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.2311403751373291,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:08.906912",
+      "request_id": "1a4d619a-058f-404c-92d9-951d0a2fb2ab"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.26050853729248047,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:09.182937",
+      "request_id": "eb95e390-c691-4b28-852e-21da762b346e"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.23050618171691895,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:09.428157",
+      "request_id": "020a0c4f-258f-433c-9da2-7af7986d0053"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.2643437385559082,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:09.706216",
+      "request_id": "0b23e541-cb27-4e71-aad8-9f15f563b299"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.21815276145935059,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:09.935605",
+      "request_id": "d78da061-d922-4f47-ae19-1faaec7a3ed7"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.25130152702331543,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:10.198327",
+      "request_id": "ff8e8409-e9b7-411a-9a0a-af2140c3bcd0"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.21771478652954102,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:10.432125",
+      "request_id": "9c91c83a-b1c5-4ba2-9eaf-977156d88647"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.2599146366119385,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:10.705480",
+      "request_id": "1d779f58-65f5-404e-8c13-4cd8dba7afcf"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.22955107688903809,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:10.943605",
+      "request_id": "c96d86b5-85f2-4817-872d-052e597a49a4"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.2446146011352539,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:11.197919",
+      "request_id": "ab635fd6-0cb9-4c28-9aeb-78a29f0961d1"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.23432350158691406,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:11.444304",
+      "request_id": "51a75c1f-860a-496c-a45d-315806ceb11c"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.27245044708251953,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:11.730016",
+      "request_id": "820e1b61-f1c5-4cf9-a59c-fd3c25251fce"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.22021198272705078,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:11.962026",
+      "request_id": "748c154c-6ad5-48c7-983a-ef8ca3639934"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.25258851051330566,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:12.226985",
+      "request_id": "55ab073a-a81b-4d1b-b342-bd7499545c7c"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.23270702362060547,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:12.475899",
+      "request_id": "a92885d7-b755-41c6-80b4-cf8d1198fd40"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.25252270698547363,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:12.741147",
+      "request_id": "d388ad29-f9ff-43a3-af37-cdf7c999b393"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.24984169006347656,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:13.003943",
+      "request_id": "4d8233f1-ab0d-4d5a-868c-2e84e7422c20"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.2383406162261963,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:13.256476",
+      "request_id": "c937b26c-8ae1-4a31-beb1-117c0219f6c3"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.23962807655334473,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:13.505612",
+      "request_id": "8b461863-6664-457e-b4fc-c1d008b454c6"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.24859905242919922,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:13.764620",
+      "request_id": "a90eae22-dece-47b8-be0a-1eedb44630eb"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.23383283615112305,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:14.010624",
+      "request_id": "f1697fc7-f24f-4a6e-9f0f-e90f738dbfc1"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.2371220588684082,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:14.260040",
+      "request_id": "e4069e8e-6abc-4869-8688-186c165d5b86"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.23806381225585938,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:14.510617",
+      "request_id": "e3ba087a-6d8e-467d-be26-fc4e7ec360ed"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.26270365715026855,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:14.784325",
+      "request_id": "d727b0d4-9340-456d-96f6-b7154ebcfa4b"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.23695755004882812,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:15.037599",
+      "request_id": "0d48b015-7f06-4cfc-b5a1-d45334687176"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.23379063606262207,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:15.283821",
+      "request_id": "ffacafca-ea12-4e9e-b55d-ed6faa07d731"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.21361541748046875,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:15.508030",
+      "request_id": "a6276535-3757-4ba4-a87e-e14550236390"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.23707151412963867,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:15.753846",
+      "request_id": "30a94665-3a77-42b7-a960-bacae2f7393f"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.23850584030151367,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:16.004374",
+      "request_id": "6b0d2296-9db0-4bf0-ac11-621fe1d9e33d"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.2580864429473877,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:16.272602",
+      "request_id": "b6e6c860-e2a3-4491-a351-a277f9802100"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.241471529006958,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:16.524105",
+      "request_id": "5f092d13-1e92-4298-bc88-dc8aaa1389c2"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.24015188217163086,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:16.775346",
+      "request_id": "43328227-8987-4f24-bf96-90dfb585db43"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.24744105339050293,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:17.034288",
+      "request_id": "60077444-1944-4975-8dbc-81f093805c51"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.2548823356628418,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:17.307344",
+      "request_id": "939d726e-4c1a-4e42-82eb-3cfdc65164aa"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.25406908988952637,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:17.574482",
+      "request_id": "718dc237-253e-4ac6-902e-f102ec7b685b"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.25582098960876465,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:17.843075",
+      "request_id": "1ba740a7-871f-41c0-8dc0-0650ccd6591c"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.21809959411621094,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:18.073437",
+      "request_id": "f2ac1add-100d-4a65-a759-89d64c9cdf78"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.26907944679260254,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:18.355364",
+      "request_id": "df25de97-d663-4902-9a0c-044f5418095f"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.22992920875549316,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:18.596665",
+      "request_id": "bd2f6386-4f28-484f-a0a7-f26876761494"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.26793861389160156,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:18.875344",
+      "request_id": "95e149ea-99bf-4958-a1a0-172fe4434852"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.2543528079986572,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:19.141515",
+      "request_id": "2c80a896-84c1-460a-be3a-a3955370f0b4"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.25078558921813965,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:19.409489",
+      "request_id": "42819aad-8bb4-4295-984c-dea6387061e3"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.23732852935791016,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:19.673549",
+      "request_id": "d5fbc691-7453-413d-a119-1ea3640927d8"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.23569369316101074,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:19.921590",
+      "request_id": "8ee82b01-8123-451b-b165-7b3e3130ac03"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.23476004600524902,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:20.169207",
+      "request_id": "239bceac-c869-4497-8949-b7e59d9936f0"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.24244284629821777,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:20.421728",
+      "request_id": "bab8f45b-5e7c-4f85-810b-ed61cde79426"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.2111988067626953,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:20.642626",
+      "request_id": "472d3fb2-4442-401a-b52e-fb602b6c94ce"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.24833178520202637,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:20.903487",
+      "request_id": "81115003-86a8-4fa9-be86-abf09ec3e9f4"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.22811269760131836,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:21.143474",
+      "request_id": "4cd13617-30ec-4e2b-a353-c46676eceb21"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.23872756958007812,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:21.392218",
+      "request_id": "b57a3b2e-6887-45c7-bdc9-ec72513e4ce6"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.24518203735351562,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:21.649737",
+      "request_id": "7b2bac35-c4a0-41c7-bba5-d4507627e9b1"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.22986912727355957,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:21.890897",
+      "request_id": "afce0003-f47b-4900-a748-81c516da0f65"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.22263050079345703,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:22.123971",
+      "request_id": "15822275-623d-4d1f-9f21-e9936f4a5275"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.2991209030151367,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:22.433206",
+      "request_id": "4867053d-4253-424d-b7b8-a8d6f4d97841"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.6421656608581543,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:23.021810",
+      "request_id": "65f6f5e7-50dc-4bc6-8738-fa13bcde97a4"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.2591135501861572,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:23.296012",
+      "request_id": "824bc152-0cbc-4979-888e-5f2dcb6cffea"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 1.0424931049346924,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:23.443974",
+      "request_id": "18872d5f-3f0d-4ab6-9fdf-c54733515d88"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 1.0752816200256348,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:23.462334",
+      "request_id": "518399e6-e45e-4151-ac69-bc4d5d5f5311"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 1.0663566589355469,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:23.466811",
+      "request_id": "e2832c61-66dd-4e00-8e28-efefa81140db"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 1.1209814548492432,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:23.521436",
+      "request_id": "72e37803-bd1c-4c2a-99da-e6df4ed85fcb"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 1.0848572254180908,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:23.530131",
+      "request_id": "4a02a204-8724-4e1d-b454-53e870099cdd"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.25128769874572754,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:23.563301",
+      "request_id": "3f6bfdbf-50b5-4012-9895-40996181ad5b"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.33759021759033203,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:23.805569",
+      "request_id": "7e1dbc96-a136-4433-a9c6-c6ac50661cf2"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.33088135719299316,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:23.850151",
+      "request_id": "17a17439-41a8-4235-84bb-4da4cd174587"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.3669605255126953,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:23.906403",
+      "request_id": "e60de35f-96db-4caa-83e5-79f00c8cce40"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.3632330894470215,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:23.909401",
+      "request_id": "3ef520c8-3f61-4ea4-ae53-1b3b484b176f"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.3693678379058838,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:23.949647",
+      "request_id": "b66dcd56-97f1-49b1-817d-21eb16289037"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.22730064392089844,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:24.095071",
+      "request_id": "021eb7ab-5b9b-4294-9800-dce9cabb7251"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.28794121742248535,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:24.106380",
+      "request_id": "b2274ab2-b327-4c72-9e89-cbcc561cb186"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.2392575740814209,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:24.170857",
+      "request_id": "9d6088ca-52d6-49bc-a5f1-5c97f281a78a"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.2133955955505371,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:24.173909",
+      "request_id": "ae28dd90-f70b-4707-b4e0-77bc05137429"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.2741968631744385,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:24.199654",
+      "request_id": "d24904fa-810e-45a6-abcc-516996f8cb32"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.8204138278961182,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:24.305353",
+      "request_id": "c0ae76d7-a5b0-44f5-8bb5-8a7ec14c840a"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.2639272212982178,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:24.384282",
+      "request_id": "a949ab10-01d1-4f88-971c-ceaea1a05eff"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.2760031223297119,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:24.403766",
+      "request_id": "90552f4b-5691-4483-ac91-4aad81e9ee0e"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.34786009788513184,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:24.548987",
+      "request_id": "6420a840-ab2f-45ff-b77f-8fc8abcca8da"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.3508727550506592,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:24.552000",
+      "request_id": "85d3d958-b0fe-4cf2-a73b-17eb6b4a4957"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.32036375999450684,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:24.640082",
+      "request_id": "79e9f442-2d36-4276-834b-0a1589db3994"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.28039097785949707,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:24.678138",
+      "request_id": "1168651c-9f9b-41fb-aff7-9eb170027642"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.33704376220703125,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:24.758768",
+      "request_id": "5055a55d-12e7-46da-80d7-15994455eeab"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.29006171226501465,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:24.855664",
+      "request_id": "7893ea62-4add-4b87-8ad2-19287e81c5be"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.28648805618286133,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:24.857086",
+      "request_id": "e442f60f-15a5-4636-917b-6f48f6c096c3"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.2688581943511963,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:24.924175",
+      "request_id": "67a2899b-5a34-4b68-9292-73b6416d8161"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.22623753547668457,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:24.924175",
+      "request_id": "222fef15-640e-4dff-a23c-a9fd0a16aef8"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.2514383792877197,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:25.025313",
+      "request_id": "575f39a8-e600-41c1-a838-f1ee7519843d"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.8214321136474609,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:25.040734",
+      "request_id": "b4a0f261-2e11-4985-ac6e-ff6dad4de49f"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.22673797607421875,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:25.104074",
+      "request_id": "2526ca60-03ac-4cad-92d0-e98b239c47a9"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.22450733184814453,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:25.109109",
+      "request_id": "53a227a2-7e34-45c9-bb98-6f7e4272ad39"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.24521803855895996,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:25.187669",
+      "request_id": "bb8dca5a-6692-4b74-99db-4b2cd1aa7cf6"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.24483084678649902,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:25.191673",
+      "request_id": "992d31c6-b878-4697-b489-ede94a1442c7"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.21428585052490234,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:25.278174",
+      "request_id": "d9704280-1041-4e56-af14-4510f34b1ec9"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.23823761940002441,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:25.282748",
+      "request_id": "abeaa4bc-4714-47f1-8df4-1c7caa227936"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.24416899681091309,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:25.366888",
+      "request_id": "8f5d7a49-a4e7-4e80-b08c-3b617b86275b"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.24114251136779785,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:25.368879",
+      "request_id": "f74d2b1d-589e-4e72-b6b2-69365dd86401"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.22616171836853027,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:25.442205",
+      "request_id": "760da401-1a29-448a-bece-af78bd029c63"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.29053521156311035,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:25.496855",
+      "request_id": "27b33e1d-7346-4da5-9bf8-ad74588e1c07"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.23023509979248047,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:25.522335",
+      "request_id": "bd6ca446-125f-4d26-baff-6c08d482efa6"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.2523062229156494,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:25.549723",
+      "request_id": "8b0622c0-9806-4cac-b846-4d99c6070989"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.20720553398132324,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:25.596059",
+      "request_id": "469ebbfd-8072-4e34-b59f-12ec5a6d470c"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.22998952865600586,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:25.613423",
+      "request_id": "93937417-2288-493f-bb25-75561dc4da41"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.24773931503295898,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:25.700627",
+      "request_id": "84532c51-86d7-43e1-88f2-79599ea00330"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.2269449234008789,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:25.739691",
+      "request_id": "dc49966b-3bde-4d7b-857a-1366be419d59"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.24565553665161133,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:25.779000",
+      "request_id": "ee52d461-a5bb-44b8-9fc0-deb6d2761d0a"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.22817158699035645,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:28:25.787959",
+      "request_id": "3a6b9083-ec33-4438-b03f-e64ece6a9689"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0023539066314697266,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:28:50.296086",
+      "request_id": "04b277b1-231b-4e56-92d4-d4b49b64e26e"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.003016233444213867,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:28:52.330563",
+      "request_id": "5b17f5bf-d3f9-4098-ad72-53c3e5fdec3c"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.001169443130493164,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:28:54.362988",
+      "request_id": "e1b03944-e173-42ff-9738-57f877c4e494"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.00263214111328125,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:28:56.408117",
+      "request_id": "b56c230c-9d9f-499e-a2a0-5f5839222f37"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0009996891021728516,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:28:58.446566",
+      "request_id": "1f96f8d3-047f-43c4-8e22-7f30e16d38a4"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0024900436401367188,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:29:00.804867",
+      "request_id": "b9f279db-ae80-479e-bdb2-c560e2353081"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.001016855239868164,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:29:05.156446",
+      "request_id": "3a90b629-0d7e-466a-aacf-ae12fed3d277"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0018131732940673828,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:29:07.183873",
+      "request_id": "926dbcec-4753-48ae-8982-79ebf4a3d797"
+    },
+    {
+      "endpoint": "/api/v1/auth/logout",
+      "method": "POST",
+      "response_time": 0.2764873504638672,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:29:08.994622",
+      "request_id": "60c5e6ef-8415-4ee1-9007-0fbdb8b82076"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.0022666454315185547,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:30:46.650871",
+      "request_id": "dd452655-e92b-4bdd-a0f8-8bf518c89dc2"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.0,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:31:27.053890",
+      "request_id": "32146c21-475e-4292-8b22-7682b7d65f35"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.0019927024841308594,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:31:28.090950",
+      "request_id": "5f3d494d-8389-441b-8e30-9635c6cd8aab"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.0005078315734863281,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:31:30.134861",
+      "request_id": "eafb93ea-272f-498a-8dce-303e06c7cba2"
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "method": "GET",
+      "response_time": 0.0009992122650146484,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:31:34.187314",
+      "request_id": "30b2ba83-33a7-43a3-9c9e-31d9fd75c8e4"
+    },
+    {
+      "endpoint": "/api/v1/auth/login",
+      "method": "POST",
+      "response_time": 0.7865526676177979,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:31:45.693014",
+      "request_id": "ccec4418-f4cc-4718-b021-fe8d36de58fb"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.24272680282592773,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:31:45.968851",
+      "request_id": "2e6e7f9e-c844-48a2-85de-f8a6a40425d9"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.2435135841369629,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:31:46.222762",
+      "request_id": "1d04b99f-1570-45a4-8241-ceca40cad73a"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.264324426651001,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:31:46.521955",
+      "request_id": "e30ac2dd-9040-430f-a3bb-29ef07896558"
+    },
+    {
+      "endpoint": "/api/v1/ai/event-types",
+      "method": "GET",
+      "response_time": 0.24059128761291504,
+      "status_code": 200,
+      "timestamp": "2025-10-01T12:31:46.785632",
+      "request_id": "640e7ffa-bffb-4c73-aa81-ed09cb1b77ea"
+    },
+    {
+      "endpoint": "/api/v1/events/user/stats",
+      "method": "GET",
+      "response_time": 0.0010006427764892578,
+      "status_code": 404,
+      "timestamp": "2025-10-01T12:32:07.270822",
+      "request_id": "f3e90c1a-cf54-474d-961f-d45591bf6422"
+    }
+  ],
+  "error_counts": {
+    "404": 61
+  },
+  "time_range": {
+    "start": "2025-10-01T12:16:50.181834",
+    "end": "2025-10-01T12:46:50.184835"
+  }
+}

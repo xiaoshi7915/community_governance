@@ -1,0 +1,291 @@
+/* 导入组件和动画样式 */
+@import './components.css';
+@import './animations.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 基础样式 */
+@layer base {
+  * {
+    font-family: 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  }
+  
+  html {
+    @apply font-sans;
+  }
+  
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+}
+
+/* 组件样式 */
+@layer components {
+  .container {
+    @apply max-w-md mx-auto bg-gray-50 min-h-screen;
+  }
+  
+  .page-content {
+    @apply px-4 pb-20;
+  }
+  
+  .glass-card {
+    @apply bg-white bg-opacity-95 backdrop-blur-sm border border-white border-opacity-20 rounded-2xl shadow-lg;
+  }
+  
+  /* Hero背景 */
+  .hero-bg {
+    @apply bg-gradient-to-br from-slate-50 to-slate-200 relative overflow-hidden;
+  }
+  
+  .hero-bg::before {
+    content: '';
+    @apply absolute inset-0 opacity-30 z-0;
+    background-image: url('/src/assets/hero-bg.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* 导航栏 */
+  .nav-bottom {
+    @apply fixed bottom-0 left-0 right-0 z-50 bg-white bg-opacity-95 backdrop-blur-sm border-t border-black border-opacity-10;
+  }
+  
+  .nav-item {
+    @apply transition-all duration-300 ease-in-out;
+  }
+  
+  .nav-item.active {
+    @apply text-primary-600 transform -translate-y-0.5;
+  }
+  
+  /* 上传区域 */
+  .upload-area {
+    @apply border-2 border-dashed border-primary-600 transition-all duration-300 ease-in-out;
+  }
+  
+  .upload-area:hover {
+    @apply border-primary-800 bg-primary-50;
+  }
+  
+  .upload-area.dragover {
+    @apply border-success-600 bg-success-50;
+  }
+  
+  /* AI识别结果 */
+  .ai-result {
+    @apply bg-gradient-to-r from-primary-50 to-primary-100 border-l-4 border-primary-600;
+  }
+  
+  /* 置信度条 */
+  .confidence-bar {
+    @apply h-1 rounded-full bg-gradient-to-r from-success-500 via-warning-500 to-danger-500;
+  }
+  
+  /* 优先级按钮 */
+  .priority-btn {
+    @apply transition-all duration-200 ease-in-out;
+  }
+  
+  .priority-btn.active {
+    @apply ring-2 ring-offset-2 transform scale-105;
+  }
+  
+  .priority-btn[data-priority="low"].active {
+    @apply ring-gray-400;
+  }
+  
+  .priority-btn[data-priority="medium"].active {
+    @apply ring-warning-400;
+  }
+  
+  .priority-btn[data-priority="high"].active {
+    @apply ring-danger-400;
+  }
+  
+  /* 事件卡片 */
+  .event-card {
+    @apply glass-card p-4 transition-all duration-300 ease-in-out hover:shadow-card-hover hover:-translate-y-1;
+  }
+  
+  /* 跟踪页面样式 */
+  .tracking-page {
+    @apply min-h-screen bg-gray-50;
+  }
+  
+  .filter-tabs {
+    @apply flex space-x-1 overflow-x-auto pb-1;
+  }
+  
+  .filter-tab {
+    @apply px-4 py-2 text-sm font-medium rounded-full whitespace-nowrap transition-colors;
+  }
+  
+  .filter-tab.active {
+    @apply bg-blue-600 text-white;
+  }
+  
+  .filter-tab:not(.active) {
+    @apply bg-gray-100 text-gray-700 hover:bg-gray-200;
+  }
+  
+  /* 下拉刷新指示器 */
+  .pull-refresh-indicator {
+    @apply absolute top-full left-0 right-0 bg-white border-b transition-all duration-300;
+    transform: translateY(-100%);
+  }
+  
+  /* 统计卡片 */
+  .stat-card {
+    @apply bg-white rounded-lg p-3 text-center shadow-sm transition-all duration-200 hover:shadow-md;
+  }
+  
+  /* 事件列表 */
+  .event-list {
+    @apply space-y-3;
+  }
+  
+  /* 加载更多 */
+  .load-more-section {
+    @apply text-center py-6;
+  }
+  
+  /* 搜索栏 */
+  .search-bar {
+    @apply bg-white border-b transition-all duration-300;
+  }
+  
+  /* 空状态和错误状态 */
+  .empty-state, .error-state, .loading-state {
+    @apply text-center py-12;
+  }
+  
+  /* 事件详情模态框 */
+  .event-detail-content {
+    @apply max-h-96 overflow-y-auto;
+  }
+  
+  /* 文本截断 */
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  /* 状态标签 */
+  .status-badge {
+    @apply px-2 py-1 rounded-full text-xs font-medium;
+  }
+  
+  .status-badge.pending {
+    @apply bg-warning-100 text-warning-800;
+  }
+  
+  .status-badge.processing {
+    @apply bg-primary-100 text-primary-800;
+  }
+  
+  .status-badge.completed {
+    @apply bg-success-100 text-success-800;
+  }
+  
+  .status-badge.rejected {
+    @apply bg-danger-100 text-danger-800;
+  }
+  
+  /* 按钮样式 */
+  .btn-primary {
+    @apply bg-primary-600 text-white py-3 px-6 rounded-xl font-semibold hover:bg-primary-700 transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-100 text-gray-700 py-3 px-6 rounded-xl font-semibold hover:bg-gray-200 transition-colors duration-200;
+  }
+  
+  .btn-success {
+    @apply bg-success-600 text-white py-3 px-6 rounded-xl font-semibold hover:bg-success-700 transition-colors duration-200;
+  }
+  
+  .btn-danger {
+    @apply bg-danger-600 text-white py-3 px-6 rounded-xl font-semibold hover:bg-danger-700 transition-colors duration-200;
+  }
+  
+  /* 表单样式 */
+  .form-input {
+    @apply w-full p-3 border border-gray-200 rounded-lg resize-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200;
+  }
+  
+  .form-label {
+    @apply block text-sm font-medium text-gray-700 mb-2;
+  }
+  
+  /* 模态框样式 */
+  .modal-overlay {
+    @apply fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50;
+  }
+  
+  .modal-content {
+    @apply bg-white rounded-2xl p-6 mx-4 max-w-sm w-full;
+  }
+  
+  /* 通知样式 */
+  .notification {
+    @apply fixed top-4 right-4 z-50 p-4 rounded-lg shadow-lg max-w-sm;
+  }
+  
+  .notification.success {
+    @apply bg-success-100 border border-success-200 text-success-800;
+  }
+  
+  .notification.error {
+    @apply bg-danger-100 border border-danger-200 text-danger-800;
+  }
+  
+  .notification.warning {
+    @apply bg-warning-100 border border-warning-200 text-warning-800;
+  }
+  
+  .notification.info {
+    @apply bg-primary-100 border border-primary-200 text-primary-800;
+  }
+}
+
+/* 动画样式 */
+@layer utilities {
+  .pulse-animation {
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+  }
+  
+  .floating-animation {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .slide-up {
+    animation: slideUp 0.3s ease-out;
+  }
+  
+  .slide-down {
+    animation: slideDown 0.3s ease-out;
+  }
+  
+  .bounce-in {
+    animation: bounceIn 0.6s ease-out;
+  }
+}

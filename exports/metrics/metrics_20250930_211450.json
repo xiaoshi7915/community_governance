@@ -1,0 +1,331 @@
+{
+  "system_metrics": [
+    {
+      "timestamp": "2025-09-30T20:45:41.652634",
+      "cpu_percent": 5.4,
+      "memory_percent": 94.2,
+      "memory_used_mb": 15088.015625,
+      "memory_available_mb": 928.4609375,
+      "disk_percent": 92.2889422806638,
+      "disk_used_gb": 218.8626823425293,
+      "disk_free_gb": 18.286727905273438,
+      "active_connections": 283
+    },
+    {
+      "timestamp": "2025-09-30T20:46:44.176996",
+      "cpu_percent": 6.1,
+      "memory_percent": 94.9,
+      "memory_used_mb": 15196.671875,
+      "memory_available_mb": 819.8046875,
+      "disk_percent": 92.2895728372933,
+      "disk_used_gb": 218.86417770385742,
+      "disk_free_gb": 18.285232543945312,
+      "active_connections": 278
+    },
+    {
+      "timestamp": "2025-09-30T20:47:45.198708",
+      "cpu_percent": 8.7,
+      "memory_percent": 95.3,
+      "memory_used_mb": 15264.76171875,
+      "memory_available_mb": 751.71484375,
+      "disk_percent": 92.29026773643602,
+      "disk_used_gb": 218.86582565307617,
+      "disk_free_gb": 18.283584594726562,
+      "active_connections": 284
+    },
+    {
+      "timestamp": "2025-09-30T20:48:46.244979",
+      "cpu_percent": 4.9,
+      "memory_percent": 94.6,
+      "memory_used_mb": 15153.7265625,
+      "memory_available_mb": 862.75,
+      "disk_percent": 92.29044950403585,
+      "disk_used_gb": 218.8662567138672,
+      "disk_free_gb": 18.283153533935547,
+      "active_connections": 280
+    },
+    {
+      "timestamp": "2025-09-30T20:49:47.288117",
+      "cpu_percent": 7.2,
+      "memory_percent": 94.9,
+      "memory_used_mb": 15205.0,
+      "memory_available_mb": 811.4765625,
+      "disk_percent": 92.29070526552586,
+      "disk_used_gb": 218.86686325073242,
+      "disk_free_gb": 18.282546997070312,
+      "active_connections": 281
+    },
+    {
+      "timestamp": "2025-09-30T20:50:48.313240",
+      "cpu_percent": 7.0,
+      "memory_percent": 95.4,
+      "memory_used_mb": 15286.44921875,
+      "memory_available_mb": 730.02734375,
+      "disk_percent": 92.29079856217002,
+      "disk_used_gb": 218.86708450317383,
+      "disk_free_gb": 18.282325744628906,
+      "active_connections": 283
+    },
+    {
+      "timestamp": "2025-09-30T20:51:50.885483",
+      "cpu_percent": 7.3,
+      "memory_percent": 94.2,
+      "memory_used_mb": 15081.91796875,
+      "memory_available_mb": 934.55859375,
+      "disk_percent": 92.2826431486202,
+      "disk_used_gb": 218.8477439880371,
+      "disk_free_gb": 18.301666259765625,
+      "active_connections": 281
+    },
+    {
+      "timestamp": "2025-09-30T20:52:51.929198",
+      "cpu_percent": 7.7,
+      "memory_percent": 95.0,
+      "memory_used_mb": 15220.31640625,
+      "memory_available_mb": 796.16015625,
+      "disk_percent": 92.2827332281387,
+      "disk_used_gb": 218.84795761108398,
+      "disk_free_gb": 18.30145263671875,
+      "active_connections": 286
+    },
+    {
+      "timestamp": "2025-09-30T20:53:53.101242",
+      "cpu_percent": 21.7,
+      "memory_percent": 95.9,
+      "memory_used_mb": 15364.19921875,
+      "memory_available_mb": 652.27734375,
+      "disk_percent": 92.2825160721566,
+      "disk_used_gb": 218.84744262695312,
+      "disk_free_gb": 18.30196762084961,
+      "active_connections": 324
+    },
+    {
+      "timestamp": "2025-09-30T20:54:54.163854",
+      "cpu_percent": 4.3,
+      "memory_percent": 94.0,
+      "memory_used_mb": 15050.50390625,
+      "memory_available_mb": 965.97265625,
+      "disk_percent": 92.28287639023058,
+      "disk_used_gb": 218.84829711914062,
+      "disk_free_gb": 18.30111312866211,
+      "active_connections": 300
+    },
+    {
+      "timestamp": "2025-09-30T20:55:55.202679",
+      "cpu_percent": 8.9,
+      "memory_percent": 94.4,
+      "memory_used_mb": 15114.4921875,
+      "memory_available_mb": 901.984375,
+      "disk_percent": 92.2815203717646,
+      "disk_used_gb": 218.8450813293457,
+      "disk_free_gb": 18.30432891845703,
+      "active_connections": 300
+    },
+    {
+      "timestamp": "2025-09-30T20:56:57.839021",
+      "cpu_percent": 7.3,
+      "memory_percent": 93.9,
+      "memory_used_mb": 15034.84375,
+      "memory_available_mb": 981.6328125,
+      "disk_percent": 92.28201098342787,
+      "disk_used_gb": 218.84624481201172,
+      "disk_free_gb": 18.303165435791016,
+      "active_connections": 296
+    },
+    {
+      "timestamp": "2025-09-30T20:57:58.854970",
+      "cpu_percent": 7.8,
+      "memory_percent": 94.1,
+      "memory_used_mb": 15066.9453125,
+      "memory_available_mb": 949.53125,
+      "disk_percent": 92.28239703850714,
+      "disk_used_gb": 218.84716033935547,
+      "disk_free_gb": 18.302249908447266,
+      "active_connections": 279
+    },
+    {
+      "timestamp": "2025-09-30T20:58:59.867485",
+      "cpu_percent": 9.4,
+      "memory_percent": 94.6,
+      "memory_used_mb": 15153.26171875,
+      "memory_available_mb": 863.21484375,
+      "disk_percent": 92.28293912418097,
+      "disk_used_gb": 218.84844589233398,
+      "disk_free_gb": 18.30096435546875,
+      "active_connections": 280
+    },
+    {
+      "timestamp": "2025-09-30T21:00:00.902563",
+      "cpu_percent": 11.0,
+      "memory_percent": 94.7,
+      "memory_used_mb": 15170.94921875,
+      "memory_available_mb": 845.52734375,
+      "disk_percent": 92.28323509974176,
+      "disk_used_gb": 218.84914779663086,
+      "disk_free_gb": 18.300262451171875,
+      "active_connections": 280
+    },
+    {
+      "timestamp": "2025-09-30T21:01:01.920493",
+      "cpu_percent": 5.5,
+      "memory_percent": 95.8,
+      "memory_used_mb": 15340.1484375,
+      "memory_available_mb": 676.328125,
+      "disk_percent": 92.28381900804918,
+      "disk_used_gb": 218.85053253173828,
+      "disk_free_gb": 18.298877716064453,
+      "active_connections": 288
+    },
+    {
+      "timestamp": "2025-09-30T21:02:04.542367",
+      "cpu_percent": 5.2,
+      "memory_percent": 95.5,
+      "memory_used_mb": 15294.59375,
+      "memory_available_mb": 721.8828125,
+      "disk_percent": 92.28532944854686,
+      "disk_used_gb": 218.8541145324707,
+      "disk_free_gb": 18.29529571533203,
+      "active_connections": 288
+    },
+    {
+      "timestamp": "2025-09-30T21:03:05.573393",
+      "cpu_percent": 5.3,
+      "memory_percent": 94.3,
+      "memory_used_mb": 15108.11328125,
+      "memory_available_mb": 908.36328125,
+      "disk_percent": 92.28577341188804,
+      "disk_used_gb": 218.85516738891602,
+      "disk_free_gb": 18.29424285888672,
+      "active_connections": 297
+    },
+    {
+      "timestamp": "2025-09-30T21:04:06.603665",
+      "cpu_percent": 7.8,
+      "memory_percent": 93.4,
+      "memory_used_mb": 14956.640625,
+      "memory_available_mb": 1059.8359375,
+      "disk_percent": 92.28589566266314,
+      "disk_used_gb": 218.8554573059082,
+      "disk_free_gb": 18.29395294189453,
+      "active_connections": 294
+    },
+    {
+      "timestamp": "2025-09-30T21:05:07.633354",
+      "cpu_percent": 25.3,
+      "memory_percent": 94.5,
+      "memory_used_mb": 15128.5546875,
+      "memory_available_mb": 887.921875,
+      "disk_percent": 92.2861739440328,
+      "disk_used_gb": 218.85611724853516,
+      "disk_free_gb": 18.293292999267578,
+      "active_connections": 278
+    },
+    {
+      "timestamp": "2025-09-30T21:06:08.651971",
+      "cpu_percent": 9.4,
+      "memory_percent": 94.3,
+      "memory_used_mb": 15098.73828125,
+      "memory_available_mb": 917.73828125,
+      "disk_percent": 92.2849176564623,
+      "disk_used_gb": 218.8531379699707,
+      "disk_free_gb": 18.29627227783203,
+      "active_connections": 286
+    },
+    {
+      "timestamp": "2025-09-30T21:07:11.345779",
+      "cpu_percent": 7.0,
+      "memory_percent": 93.7,
+      "memory_used_mb": 15005.62109375,
+      "memory_available_mb": 1010.85546875,
+      "disk_percent": 92.28522167483723,
+      "disk_used_gb": 218.8538589477539,
+      "disk_free_gb": 18.295551300048828,
+      "active_connections": 291
+    },
+    {
+      "timestamp": "2025-09-30T21:08:12.398957",
+      "cpu_percent": 7.3,
+      "memory_percent": 94.3,
+      "memory_used_mb": 15111.01171875,
+      "memory_available_mb": 905.46484375,
+      "disk_percent": 92.28597126511616,
+      "disk_used_gb": 218.8556365966797,
+      "disk_free_gb": 18.293773651123047,
+      "active_connections": 286
+    },
+    {
+      "timestamp": "2025-09-30T21:09:13.436962",
+      "cpu_percent": 10.9,
+      "memory_percent": 94.4,
+      "memory_used_mb": 15112.65234375,
+      "memory_available_mb": 903.82421875,
+      "disk_percent": 92.28630102049638,
+      "disk_used_gb": 218.85641860961914,
+      "disk_free_gb": 18.292991638183594,
+      "active_connections": 285
+    },
+    {
+      "timestamp": "2025-09-30T21:10:14.465109",
+      "cpu_percent": 11.8,
+      "memory_percent": 94.3,
+      "memory_used_mb": 15103.265625,
+      "memory_available_mb": 913.2109375,
+      "disk_percent": 92.28652782785547,
+      "disk_used_gb": 218.8569564819336,
+      "disk_free_gb": 18.29245376586914,
+      "active_connections": 278
+    },
+    {
+      "timestamp": "2025-09-30T21:11:15.508028",
+      "cpu_percent": 5.0,
+      "memory_percent": 93.5,
+      "memory_used_mb": 14970.359375,
+      "memory_available_mb": 1046.1171875,
+      "disk_percent": 92.28676750371719,
+      "disk_used_gb": 218.85752487182617,
+      "disk_free_gb": 18.291885375976562,
+      "active_connections": 277
+    },
+    {
+      "timestamp": "2025-09-30T21:12:18.122886",
+      "cpu_percent": 7.4,
+      "memory_percent": 94.4,
+      "memory_used_mb": 15112.70703125,
+      "memory_available_mb": 903.76953125,
+      "disk_percent": 92.28727580957158,
+      "disk_used_gb": 218.8587303161621,
+      "disk_free_gb": 18.290679931640625,
+      "active_connections": 286
+    },
+    {
+      "timestamp": "2025-09-30T21:13:19.177328",
+      "cpu_percent": 5.4,
+      "memory_percent": 93.9,
+      "memory_used_mb": 15031.61328125,
+      "memory_available_mb": 984.86328125,
+      "disk_percent": 92.28476162586774,
+      "disk_used_gb": 218.85276794433594,
+      "disk_free_gb": 18.296642303466797,
+      "active_connections": 277
+    },
+    {
+      "timestamp": "2025-09-30T21:14:20.217553",
+      "cpu_percent": 9.9,
+      "memory_percent": 94.2,
+      "memory_used_mb": 15089.91796875,
+      "memory_available_mb": 926.55859375,
+      "disk_percent": 92.28499486747815,
+      "disk_used_gb": 218.85332107543945,
+      "disk_free_gb": 18.29608917236328,
+      "active_connections": 276
+    }
+  ],
+  "api_metrics": [],
+  "error_counts": {
+    "401": 20
+  },
+  "time_range": {
+    "start": "2025-09-30T20:44:50.211199",
+    "end": "2025-09-30T21:14:50.212203"
+  }
+}

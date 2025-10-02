@@ -1,0 +1,520 @@
+"""
+事件管理API端点
+包含事件的CRUD操作、状态管理和时间线查询功能
+"""
+import uuid
+from typing import List, Optional
+from datetime import datetime
+from fastapi import APIRouter, Depends, HTTPException, Query
+from sqlalchemy.ext.asyncio import AsyncSession
+
+from app.core.database import get_db
+from app.core.auth_middleware import get_current_user
+from app.core.response import ResponseFormatter
+from app.models.user import User
+from app.models.event import EventStatus, EventPriority
+from app.services.event_service import event_service
+from app.schemas.event import (
+    CreateEventRequest, UpdateEventRequest, UpdateEventStatusRequest,
+    EventListRequest, CreateEventResponse, EventDetailResponse,
+    EventListResponse, UpdateEventResponse, DeleteEventResponse,
+    EventStatusUpdateResponse, EventTimelineListResponse
+)
+
+router = APIRouter()
+
+# 使用全局事件服务实例
+
+
+@router.post("/events", 
+             response_model=CreateEventResponse,
+             summary="创建事件", 
+             description="创建新事件并处理地理位置信息和媒体文件")
+async def create_event(
+    request: CreateEventRequest,
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db)
+):
+    """创建事件 - 处理事件创建请求"""
+    try:
+        # 转换媒体文件格式
+        media_files = None
+        if request.media_files:
+            media_files = []
+            for media in request.media_files:
+                media_files.append({
+                    "media_type": media.media_type.value,
+                    "file_url": media.file_url,
+                    "thumbnail_url": media.thumbnail_url,
+                    "file_size": media.file_size,
+                    "file_name": media.file_name,
+                    "metadata": media.metadata
+                })
+        
+        result = await event_service.create_event(
+            user_id=current_user.id,
+            event_type=request.event_type,
+            title=request.title,
+            description=request.description,
+            latitude=request.latitude,
+            longitude=request.longitude,
+            address=request.address,
+            media_files=media_files,
+            ai_analysis=request.ai_analysis,
+            confidence=request.confidence,
+            db=db
+        )
+        
+        if result["success"]:
+            return ResponseFormatter.success(
+                data=result,
+                message="事件创建成功"
+            )
+        else:
+            return ResponseFormatter.error(
+                message=result["error"],
+                error_code="EVENT_CREATE_FAILED"
+            )
+            
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"创建事件失败: {str(e)}")
+
+
+@router.get("/events",
+            response_model=EventListResponse,
+            summary="获取事件列表",
+            description="返回用户事件列表，支持分页、筛选和排序")
+async def get_events_list(
+    event_types: Optional[str] = Query(None, description="事件类型过滤，多个用逗号分隔"),
+    statuses: Optional[str] = Query(None, description="状态过滤，多个用逗号分隔"),
+    priorities: Optional[str] = Query(None, description="优先级过滤，多个用逗号分隔"),
+    start_date: Optional[datetime] = Query(None, description="开始日期"),
+    end_date: Optional[datetime] = Query(None, description="结束日期"),
+    search_query: Optional[str] = Query(None, description="搜索关键词"),
+    latitude: Optional[float] = Query(None, ge=-90, le=90, description="中心点纬度"),
+    longitude: Optional[float] = Query(None, ge=-180, le=180, description="中心点经度"),
+    radius_meters: Optional[int] = Query(None, ge=1, le=50000, description="搜索半径（米）"),
+    sort_by: str = Query("created_at", description="排序字段"),
+    sort_order: str = Query("desc", description="排序方向"),
+    page: int = Query(1, ge=1, description="页码"),
+    page_size: int = Query(20, ge=1, le=100, description="每页大小"),
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db)
+):
+    """获取事件列表 - 返回用户事件列表"""
+    try:
+        # 验证排序方向
+        if sort_order not in ["asc", "desc"]:
+            raise HTTPException(status_code=400, detail="排序方向必须是 'asc' 或 'desc'")
+        
+        # 处理过滤参数
+        event_types_list = event_types.split(',') if event_types else None
+        statuses_list = None
+        if statuses:
+            try:
+                statuses_list = [EventStatus(s.strip()) for s in statuses.split(',')]
+            except ValueError as e:
+                raise HTTPException(status_code=400, detail=f"无效的状态值: {str(e)}")
+        
+        priorities_list = None
+        if priorities:
+            try:
+                priorities_list = [EventPriority(p.strip()) for p in priorities.split(',')]
+            except ValueError as e:
+                raise HTTPException(status_code=400, detail=f"无效的优先级值: {str(e)}")
+        
+        # 构建地理位置过滤
+        location_filter = None
+        if latitude is not None and longitude is not None:
+            location_filter = {
+                "latitude": latitude,
+                "longitude": longitude,
+                "radius_meters": radius_meters or 1000
+            }
+        
+        result = await event_service.get_events_list(
+            user_id=current_user.id,
+            event_types=event_types_list,
+            statuses=statuses_list,
+            priorities=priorities_list,
+            start_date=start_date,
+            end_date=end_date,
+            location_filter=location_filter,
+            search_query=search_query,
+            sort_by=sort_by,
+            sort_order=sort_order,
+            page=page,
+            page_size=page_size,
+            db=db
+        )
+        
+        if result["success"]:
+            return ResponseFormatter.success(
+                data=result,
+                message="获取事件列表成功"
+            )
+        else:
+            return ResponseFormatter.error(
+                message=result["error"],
+                error_code="EVENT_LIST_FAILED"
+            )
+            
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"获取事件列表失败: {str(e)}")
+
+
+@router.get("/events/{event_id}",
+            response_model=EventDetailResponse,
+            summary="获取事件详情",
+            description="返回事件详情，包含完整事件信息和处理历史")
+async def get_event_detail(
+    event_id: uuid.UUID,
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db)
+):
+    """获取事件详情 - 返回事件详情"""
+    try:
+        result = await event_service.get_event_detail(
+            event_id=event_id,
+            user_id=current_user.id,
+            db=db
+        )
+        
+        if result["success"]:
+            return ResponseFormatter.success(
+                data=result["event"],
+                message="获取事件详情成功"
+            )
+        else:
+            if "不存在" in result["error"]:
+                raise HTTPException(status_code=404, detail=result["error"])
+            return ResponseFormatter.error(
+                message=result["error"],
+                error_code="EVENT_DETAIL_FAILED"
+            )
+            
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"获取事件详情失败: {str(e)}")
+
+
+@router.put("/events/{event_id}",
+            response_model=UpdateEventResponse,
+            summary="更新事件信息",
+            description="支持事件信息更新")
+async def update_event(
+    event_id: uuid.UUID,
+    request: UpdateEventRequest,
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db)
+):
+    """更新事件信息 - 支持事件信息更新"""
+    try:
+        # 首先检查事件是否存在以及用户权限
+        event_detail = await event_service.get_event_detail(
+            event_id=event_id,
+            user_id=current_user.id,
+            db=db
+        )
+        
+        if not event_detail["success"]:
+            if "不存在" in event_detail["error"]:
+                raise HTTPException(status_code=404, detail="事件不存在")
+            raise HTTPException(status_code=403, detail="无权限访问此事件")
+        
+        # 检查事件所有权
+        if event_detail["event"]["user_id"] != str(current_user.id):
+            raise HTTPException(status_code=403, detail="只能更新自己创建的事件")
+        
+        # 检查事件状态 - 已完成的事件不能更新
+        if event_detail["event"]["status"] == EventStatus.COMPLETED.value:
+            raise HTTPException(status_code=400, detail="已完成的事件不能更新")
+        
+        # 构建更新数据
+        update_data = {}
+        updated_fields = []
+        
+        if request.event_type is not None:
+            update_data["event_type"] = request.event_type
+            updated_fields.append("event_type")
+        
+        if request.title is not None:
+            update_data["title"] = request.title
+            updated_fields.append("title")
+        
+        if request.description is not None:
+            update_data["description"] = request.description
+            updated_fields.append("description")
+        
+        if request.latitude is not None:
+            update_data["location_lat"] = request.latitude
+            updated_fields.append("location_lat")
+        
+        if request.longitude is not None:
+            update_data["location_lng"] = request.longitude
+            updated_fields.append("location_lng")
+        
+        if request.address is not None:
+            update_data["location_address"] = request.address
+            updated_fields.append("location_address")
+        
+        if request.priority is not None:
+            update_data["priority"] = request.priority
+            updated_fields.append("priority")
+        
+        if not update_data:
+            raise HTTPException(status_code=400, detail="没有提供要更新的字段")
+        
+        # 执行更新
+        from sqlalchemy.future import select
+        from app.models.event import Event
+        
+        query = select(Event).where(Event.id == event_id)
+        result = await db.execute(query)
+        event = result.scalar_one_or_none()
+        
+        if not event:
+            raise HTTPException(status_code=404, detail="事件不存在")
+        
+        # 更新字段
+        for field, value in update_data.items():
+            setattr(event, field, value)
+        
+        event.updated_at = datetime.utcnow()
+        
+        await db.commit()
+        
+        # 获取更新后的事件信息
+        updated_event_detail = await event_service.get_event_detail(
+            event_id=event_id,
+            user_id=current_user.id,
+            db=db
+        )
+        
+        response_data = {
+            "event_id": str(event_id),
+            "updated_fields": updated_fields,
+            "event": updated_event_detail["event"],
+            "message": "事件更新成功"
+        }
+        
+        return ResponseFormatter.success(
+            data=response_data,
+            message="事件更新成功"
+        )
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        await db.rollback()
+        raise HTTPException(status_code=500, detail=f"更新事件失败: {str(e)}")
+
+
+@router.delete("/events/{event_id}",
+               response_model=DeleteEventResponse,
+               summary="删除事件",
+               description="处理事件删除，包含相关文件的清理")
+async def delete_event(
+    event_id: uuid.UUID,
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db)
+):
+    """删除事件 - 处理事件删除"""
+    try:
+        result = await event_service.delete_event(
+            event_id=event_id,
+            user_id=current_user.id,
+            db=db
+        )
+        
+        if result["success"]:
+            return ResponseFormatter.success(
+                data=result,
+                message="事件删除成功"
+            )
+        else:
+            if "不存在" in result["error"]:
+                raise HTTPException(status_code=404, detail=result["error"])
+            elif "无权限" in result["error"]:
+                raise HTTPException(status_code=403, detail=result["error"])
+            elif "不能删除" in result["error"]:
+                raise HTTPException(status_code=400, detail=result["error"])
+            return ResponseFormatter.error(
+                message=result["error"],
+                error_code="EVENT_DELETE_FAILED"
+            )
+            
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"删除事件失败: {str(e)}")
+
+
+@router.get("/events/{event_id}/timeline",
+            response_model=EventTimelineListResponse,
+            summary="获取事件处理历史",
+            description="返回事件处理历史时间线")
+async def get_event_timeline(
+    event_id: uuid.UUID,
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db)
+):
+    """获取事件处理历史 - 返回事件处理历史"""
+    try:
+        # 首先检查事件是否存在
+        event_detail = await event_service.get_event_detail(
+            event_id=event_id,
+            user_id=current_user.id,
+            db=db
+        )
+        
+        if not event_detail["success"]:
+            if "不存在" in event_detail["error"]:
+                raise HTTPException(status_code=404, detail="事件不存在")
+            raise HTTPException(status_code=403, detail="无权限访问此事件")
+        
+        # 提取时间线数据
+        timelines = event_detail["event"]["timelines"]
+        
+        response_data = {
+            "event_id": str(event_id),
+            "timelines": timelines,
+            "total_count": len(timelines)
+        }
+        
+        return ResponseFormatter.success(
+            data=response_data,
+            message="获取事件时间线成功"
+        )
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"获取事件时间线失败: {str(e)}")
+
+
+@router.put("/events/{event_id}/status",
+            response_model=EventStatusUpdateResponse,
+            summary="更新事件状态",
+            description="更新事件状态并记录时间线")
+async def update_event_status(
+    event_id: uuid.UUID,
+    request: UpdateEventStatusRequest,
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db)
+):
+    """更新事件状态 - 支持状态流转和时间线记录"""
+    try:
+        result = await event_service.update_event_status(
+            event_id=event_id,
+            new_status=request.status,
+            operator_id=current_user.id,
+            description=request.description,
+            db=db
+        )
+        
+        if result["success"]:
+            return ResponseFormatter.success(
+                data=result,
+                message="事件状态更新成功"
+            )
+        else:
+            if "不存在" in result["error"]:
+                raise HTTPException(status_code=404, detail=result["error"])
+            elif "不能从状态" in result["error"]:
+                raise HTTPException(status_code=400, detail=result["error"])
+            return ResponseFormatter.error(
+                message=result["error"],
+                error_code="EVENT_STATUS_UPDATE_FAILED"
+            )
+            
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"更新事件状态失败: {str(e)}")
+
+
+@router.get("/events/user/stats",
+            summary="获取用户统计信息",
+            description="获取当前用户的事件统计数据")
+async def get_user_stats(
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db)
+):
+    """
+    获取用户统计信息
+    
+    返回用户的事件统计数据，包括：
+    - 总事件数
+    - 各状态事件数
+    - 各类型事件数
+    """
+    try:
+        from sqlalchemy import select, func
+        from app.models.event import Event
+        
+        # 获取用户总事件数
+        total_events_result = await db.execute(
+            select(func.count(Event.id)).where(Event.user_id == current_user.id)
+        )
+        total_events = total_events_result.scalar() or 0
+        
+        # 获取各状态事件数
+        status_stats_result = await db.execute(
+            select(Event.status, func.count(Event.id))
+            .where(Event.user_id == current_user.id)
+            .group_by(Event.status)
+        )
+        status_stats = {row[0]: row[1] for row in status_stats_result.fetchall()}
+        
+        # 获取各类型事件数
+        type_stats_result = await db.execute(
+            select(Event.event_type, func.count(Event.id))
+            .where(Event.user_id == current_user.id)
+            .group_by(Event.event_type)
+        )
+        type_stats = {row[0]: row[1] for row in type_stats_result.fetchall()}
+        
+        # 获取最近事件
+        recent_events_result = await db.execute(
+            select(Event)
+            .where(Event.user_id == current_user.id)
+            .order_by(Event.created_at.desc())
+            .limit(5)
+        )
+        recent_events = recent_events_result.scalars().all()
+        
+        stats_data = {
+            "total_events": total_events,
+            "status_stats": {
+                "pending": status_stats.get("pending", 0),
+                "processing": status_stats.get("processing", 0),
+                "resolved": status_stats.get("resolved", 0),
+                "closed": status_stats.get("closed", 0)
+            },
+            "type_stats": type_stats,
+            "recent_events": [
+                {
+                    "id": str(event.id),
+                    "title": event.title,
+                    "status": event.status,
+                    "event_type": event.event_type,
+                    "created_at": event.created_at.isoformat() if event.created_at else None
+                }
+                for event in recent_events
+            ]
+        }
+        
+        return ResponseFormatter.success(
+            data=stats_data,
+            message="用户统计信息获取成功"
+        )
+        
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=f"获取用户统计信息失败: {str(e)}"
+        )

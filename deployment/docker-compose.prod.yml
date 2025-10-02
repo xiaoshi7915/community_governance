@@ -1,0 +1,164 @@
+version: '3.8'
+
+services:
+  # 应用服务
+  app:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+      target: production
+    container_name: governance-backend-app
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - ENVIRONMENT=production
+      - DATABASE_URL=postgresql://postgres:${POSTGRES_PASSWORD}@db:5432/governance_db
+      - REDIS_URL=redis://redis:6379/0
+      - SECRET_KEY=${SECRET_KEY}
+      - ALIYUN_ACCESS_KEY_ID=${ALIYUN_ACCESS_KEY_ID}
+      - ALIYUN_ACCESS_KEY_SECRET=${ALIYUN_ACCESS_KEY_SECRET}
+      - OSS_BUCKET_NAME=${OSS_BUCKET_NAME}
+      - OSS_ENDPOINT=${OSS_ENDPOINT}
+      - BAILIAN_API_KEY=${BAILIAN_API_KEY}
+      - BAILIAN_ENDPOINT=${BAILIAN_ENDPOINT}
+    depends_on:
+      - db
+      - redis
+    volumes:
+      - app_logs:/app/logs
+    networks:
+      - governance_network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # 数据库服务
+  db:
+    image: postgres:15-alpine
+    container_name: governance-backend-db
+    restart: unless-stopped
+    environment:
+      - POSTGRES_DB=governance_db
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ../scripts/init-db.sql:/docker-entrypoint-initdb.d/init-db.sql
+    networks:
+      - governance_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d governance_db"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  # Redis缓存服务
+  redis:
+    image: redis:7-alpine
+    container_name: governance-backend-redis
+    restart: unless-stopped
+    command: redis-server --appendonly yes --requirepass ${REDIS_PASSWORD}
+    volumes:
+      - redis_data:/data
+    networks:
+      - governance_network
+    healthcheck:
+      test: ["CMD", "redis-cli", "--raw", "incr", "ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Nginx反向代理
+  nginx:
+    image: nginx:alpine
+    container_name: governance-backend-nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      - ./ssl:/etc/nginx/ssl
+      - nginx_logs:/var/log/nginx
+    depends_on:
+      - app
+    networks:
+      - governance_network
+
+  # 监控服务 - Prometheus
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: governance-backend-prometheus
+    restart: unless-stopped
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
+      - prometheus_data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/etc/prometheus/console_libraries'
+      - '--web.console.templates=/etc/prometheus/consoles'
+      - '--storage.tsdb.retention.time=200h'
+      - '--web.enable-lifecycle'
+    networks:
+      - governance_network
+
+  # 监控服务 - Grafana
+  grafana:
+    image: grafana/grafana:latest
+    container_name: governance-backend-grafana
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=${GRAFANA_PASSWORD}
+      - GF_USERS_ALLOW_SIGN_UP=false
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./monitoring/grafana/dashboards:/etc/grafana/provisioning/dashboards
+      - ./monitoring/grafana/datasources:/etc/grafana/provisioning/datasources
+    networks:
+      - governance_network
+
+  # 日志收集 - Filebeat
+  filebeat:
+    image: docker.elastic.co/beats/filebeat:8.11.0
+    container_name: governance-backend-filebeat
+    restart: unless-stopped
+    user: root
+    volumes:
+      - ./monitoring/filebeat.yml:/usr/share/filebeat/filebeat.yml:ro
+      - app_logs:/var/log/app:ro
+      - nginx_logs:/var/log/nginx:ro
+      - /var/lib/docker/containers:/var/lib/docker/containers:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    environment:
+      - ELASTICSEARCH_HOSTS=${ELASTICSEARCH_HOSTS}
+      - KIBANA_HOST=${KIBANA_HOST}
+    networks:
+      - governance_network
+
+volumes:
+  postgres_data:
+    driver: local
+  redis_data:
+    driver: local
+  prometheus_data:
+    driver: local
+  grafana_data:
+    driver: local
+  app_logs:
+    driver: local
+  nginx_logs:
+    driver: local
+
+networks:
+  governance_network:
+    driver: bridge

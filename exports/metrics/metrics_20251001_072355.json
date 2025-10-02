@@ -1,0 +1,30 @@
+{
+  "system_metrics": [
+    {
+      "timestamp": "2025-10-01T07:23:53.856214",
+      "cpu_percent": 9.6,
+      "memory_percent": 92.4,
+      "memory_used_mb": 14806.6484375,
+      "memory_available_mb": 1209.828125,
+      "disk_percent": 92.2754400042659,
+      "disk_used_gb": 218.83066177368164,
+      "disk_free_gb": 18.318748474121094,
+      "active_connections": 312
+    }
+  ],
+  "api_metrics": [
+    {
+      "endpoint": "/api/v1/auth/login",
+      "method": "POST",
+      "response_time": 0.002995729446411133,
+      "status_code": 200,
+      "timestamp": "2025-10-01T07:23:54.067952",
+      "request_id": "098a9e02-5515-4931-ae2c-41ec91fce151"
+    }
+  ],
+  "error_counts": {},
+  "time_range": {
+    "start": "2025-10-01T06:53:55.395956",
+    "end": "2025-10-01T07:23:55.395956"
+  }
+}
