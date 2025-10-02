@@ -64,9 +64,19 @@ class ExceptionHandlerMiddleware(BaseHTTPMiddleware):
                 method=request.method
             )
             
+            # 在开发环境返回详细错误信息，生产环境返回通用错误
+            from app.core.config import settings
+            if settings.ENVIRONMENT == "development":
+                error_message = f"系统内部错误: {str(e)}"
+                details = {"traceback": traceback.format_exc()}
+            else:
+                error_message = "系统内部错误，请稍后重试"
+                details = None
+            
             return ResponseFormatter.error(
-                message="系统内部错误",
+                message=error_message,
                 error_code="INTERNAL_ERROR",
+                details=details,
                 status_code=status.HTTP_500_INTERNAL_SERVER_ERROR
             )
     

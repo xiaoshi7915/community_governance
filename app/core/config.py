@@ -35,18 +35,28 @@ class Settings(BaseSettings):
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 120  # 2小时
     REFRESH_TOKEN_EXPIRE_DAYS: int = 7  # 7天
     
-    # CORS配置 - 允许更多来源
-    BACKEND_CORS_ORIGINS: List[str] = [
-        "http://localhost:3000",
-        "http://localhost:8080",
-        "http://127.0.0.1:3000",
-        "http://127.0.0.1:8080",
-        "http://192.168.43.249:3000",
-        "http://192.168.43.249:8080",
-        "http://192.168.1.*",
-        "http://10.0.0.*",
-        "*"  # 开发环境允许所有来源
-    ]
+    # CORS配置 - 根据环境动态配置
+    BACKEND_CORS_ORIGINS: List[str] = []
+    
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        # 根据环境设置CORS
+        if self.ENVIRONMENT == "development":
+            self.BACKEND_CORS_ORIGINS = [
+                "http://localhost:3000",
+                "http://localhost:8080",
+                "http://127.0.0.1:3000",
+                "http://127.0.0.1:8080",
+                "http://192.168.43.249:3000",
+                "http://192.168.43.249:8080",
+            ]
+        elif self.ENVIRONMENT == "production":
+            # 生产环境只允许特定域名
+            cors_origins = os.getenv("CORS_ORIGINS", "")
+            if cors_origins:
+                self.BACKEND_CORS_ORIGINS = [origin.strip() for origin in cors_origins.split(",")]
+            else:
+                self.BACKEND_CORS_ORIGINS = []
     
     @validator("BACKEND_CORS_ORIGINS", pre=True)
     def assemble_cors_origins(cls, v):
@@ -56,8 +66,8 @@ class Settings(BaseSettings):
             return v
         raise ValueError(v)
     
-    # 阿里云OSS配置
-    ALIYUN_OSS_ACCESS_KEY_ID: str = os.getenv("ALIYUN_OSS_ACCESS_KEY_ID", "LTAI5t7DeLJNLc8gNqEBDfnD")
+    # 阿里云OSS配置 - 移除硬编码密钥
+    ALIYUN_OSS_ACCESS_KEY_ID: str = os.getenv("ALIYUN_OSS_ACCESS_KEY_ID", "")
     ALIYUN_OSS_ACCESS_KEY_SECRET: str = os.getenv("ALIYUN_OSS_ACCESS_KEY_SECRET", "")
     ALIYUN_OSS_BUCKET_NAME: str = os.getenv("ALIYUN_OSS_BUCKET_NAME", "governance-files")
     ALIYUN_OSS_ENDPOINT: str = os.getenv("ALIYUN_OSS_ENDPOINT", "oss-cn-hangzhou.aliyuncs.com")
@@ -66,8 +76,8 @@ class Settings(BaseSettings):
     ALIYUN_AI_API_KEY: str = os.getenv("ALIYUN_AI_API_KEY", "")
     ALIYUN_AI_ENDPOINT: str = os.getenv("ALIYUN_AI_ENDPOINT", "")
     
-    # 阿里云短信服务配置
-    ALIYUN_ACCESS_KEY_SECRET: str = os.getenv("ALIYUN_ACCESS_KEY_SECRET", "LTAI5tJpFaLSz5F6uQqPD9EN")
+    # 阿里云短信服务配置 - 移除硬编码密钥
+    ALIYUN_ACCESS_KEY_SECRET: str = os.getenv("ALIYUN_ACCESS_KEY_SECRET", "")
     
     # 高德地图API配置
     AMAP_API_KEY: str = os.getenv("AMAP_API_KEY", "")
@@ -101,3 +111,31 @@ class Settings(BaseSettings):
 
 # 创建全局设置实例
 settings = Settings()
+
+# 验证配置
+def validate_settings():
+    """验证配置设置"""
+    try:
+        from app.core.config_validator import validate_config
+        validation_result = validate_config(settings)
+        
+        if not validation_result["valid"]:
+            print("配置验证失败:")
+            for error in validation_result["errors"]:
+                print(f"  错误: {error}")
+            
+            # 在生产环境下，配置错误应该导致应用启动失败
+            if settings.ENVIRONMENT == "production":
+                raise RuntimeError("生产环境配置验证失败，应用无法启动")
+        
+        if validation_result["warnings"]:
+            print("配置验证警告:")
+            for warning in validation_result["warnings"]:
+                print(f"  警告: {warning}")
+                
+    except ImportError:
+        # 如果验证器模块不存在，跳过验证
+        pass
+
+# 在模块加载时验证配置
+validate_settings()

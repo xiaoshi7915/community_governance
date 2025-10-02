@@ -2,7 +2,7 @@
 安全相关工具类
 包含JWT令牌生成验证和密码哈希功能
 """
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from typing import Any, Dict, Optional, Union
 from jose import JWTError, jwt
 from passlib.context import CryptContext
@@ -78,9 +78,9 @@ class JWTManager:
         to_encode = data.copy()
         
         if expires_delta:
-            expire = datetime.utcnow() + expires_delta
+            expire = datetime.now(timezone.utc) + expires_delta
         else:
-            expire = datetime.utcnow() + timedelta(
+            expire = datetime.now(timezone.utc) + timedelta(
                 minutes=settings.ACCESS_TOKEN_EXPIRE_MINUTES
             )
         
@@ -112,9 +112,9 @@ class JWTManager:
         to_encode = data.copy()
         
         if expires_delta:
-            expire = datetime.utcnow() + expires_delta
+            expire = datetime.now(timezone.utc) + expires_delta
         else:
-            expire = datetime.utcnow() + timedelta(
+            expire = datetime.now(timezone.utc) + timedelta(
                 days=settings.REFRESH_TOKEN_EXPIRE_DAYS
             )
         
@@ -159,7 +159,7 @@ class JWTManager:
             if exp is None:
                 raise AuthenticationError("令牌缺少过期时间")
             
-            if datetime.utcnow() > datetime.fromtimestamp(exp):
+            if datetime.now(timezone.utc) > datetime.fromtimestamp(exp, tz=timezone.utc):
                 raise AuthenticationError("令牌已过期")
             
             return payload

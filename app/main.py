@@ -69,6 +69,11 @@ async def startup_event():
         await monitoring_scheduler.start()
         logger.info("监控调度器启动完成")
         
+        # 启动性能监控
+        from app.core.metrics import performance_monitor
+        await performance_monitor.start()
+        logger.info("性能监控启动完成")
+        
         logger.info("系统启动完成")
     except Exception as e:
         logger.error(f"系统启动失败: {e}")
@@ -80,6 +85,11 @@ async def shutdown_event():
     logger.info("正在关闭系统...")
     
     try:
+        # 停止性能监控
+        from app.core.metrics import performance_monitor
+        await performance_monitor.stop()
+        logger.info("性能监控已停止")
+        
         # 停止监控调度器
         await monitoring_scheduler.stop()
         logger.info("监控调度器已停止")
@@ -105,10 +115,35 @@ app.include_router(api_router, prefix=settings.API_V1_STR)
 
 @app.get("/health")
 async def health_check():
-    """简单健康检查端点"""
-    return {
+    """详细健康检查端点"""
+    from app.core.redis import redis_client
+    from sqlalchemy import text
+    
+    health_status = {
         "status": "healthy",
         "service": settings.PROJECT_NAME,
         "version": "1.0.0",
-        "timestamp": logger.info("健康检查请求") or datetime.now().isoformat()
+        "timestamp": datetime.now().isoformat(),
+        "checks": {}
     }
+    
+    # 检查数据库连接
+    try:
+        async with engine.begin() as conn:
+            await conn.execute(text("SELECT 1"))
+        health_status["checks"]["database"] = {"status": "healthy"}
+    except Exception as e:
+        health_status["checks"]["database"] = {"status": "unhealthy", "error": str(e)}
+        health_status["status"] = "unhealthy"
+    
+    # 检查Redis连接
+    try:
+        if redis_client:
+            await redis_client.ping()
+            health_status["checks"]["redis"] = {"status": "healthy"}
+        else:
+            health_status["checks"]["redis"] = {"status": "unavailable", "message": "Redis未配置"}
+    except Exception as e:
+        health_status["checks"]["redis"] = {"status": "unhealthy", "error": str(e)}
+    
+    return health_status

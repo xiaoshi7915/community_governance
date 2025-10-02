@@ -4,7 +4,7 @@ API v1 主路由
 """
 from fastapi import APIRouter
 
-from app.api.v1 import auth, users, files, ai, events, notifications, statistics, admin, monitoring, metrics_dashboard
+from app.api.v1 import auth, users, files, ai, events, notifications, statistics, admin, monitoring, metrics_dashboard, monitoring_metrics
 from app.api import health
 
 # 创建API v1路由器
@@ -21,4 +21,5 @@ api_router.include_router(notifications.router, prefix="/notifications", tags=["
 api_router.include_router(statistics.router, tags=["statistics"])
 api_router.include_router(admin.router, tags=["admin"])
 api_router.include_router(monitoring.router, prefix="/monitoring", tags=["monitoring"])
+api_router.include_router(monitoring_metrics.router)
 api_router.include_router(metrics_dashboard.router, prefix="/dashboard", tags=["dashboard"])

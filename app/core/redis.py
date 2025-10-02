@@ -21,6 +21,9 @@ async def init_redis():
             encoding="utf-8",
             decode_responses=True,
             max_connections=20,
+            retry_on_timeout=True,
+            socket_connect_timeout=5,
+            socket_timeout=5,
         )
         
         redis_client = redis.Redis(connection_pool=redis_pool)
@@ -28,11 +31,13 @@ async def init_redis():
         # 测试连接
         await redis_client.ping()
         print("Redis连接成功")
+        return True
     except Exception as e:
         print(f"Redis连接失败，将使用内存缓存: {e}")
         # 如果Redis连接失败，设置为None，应用将使用内存缓存
         redis_client = None
         redis_pool = None
+        return False
 
 
 async def close_redis():
@@ -67,28 +72,58 @@ class RedisService:
     
     async def set(self, key: str, value: str, expire: int = None) -> bool:
         """设置键值对"""
-        client = await self.get_client()
-        return await client.set(key, value, ex=expire)
+        try:
+            client = await self.get_client()
+            if client is None:
+                return False
+            return await client.set(key, value, ex=expire)
+        except Exception as e:
+            print(f"Redis set操作失败: {e}")
+            return False
     
     async def get(self, key: str) -> Optional[str]:
         """获取值"""
-        client = await self.get_client()
-        return await client.get(key)
+        try:
+            client = await self.get_client()
+            if client is None:
+                return None
+            return await client.get(key)
+        except Exception as e:
+            print(f"Redis get操作失败: {e}")
+            return None
     
     async def delete(self, key: str) -> bool:
         """删除键"""
-        client = await self.get_client()
-        return await client.delete(key) > 0
+        try:
+            client = await self.get_client()
+            if client is None:
+                return False
+            return await client.delete(key) > 0
+        except Exception as e:
+            print(f"Redis delete操作失败: {e}")
+            return False
     
     async def exists(self, key: str) -> bool:
         """检查键是否存在"""
-        client = await self.get_client()
-        return await client.exists(key) > 0
+        try:
+            client = await self.get_client()
+            if client is None:
+                return False
+            return await client.exists(key) > 0
+        except Exception as e:
+            print(f"Redis exists操作失败: {e}")
+            return False
     
     async def expire(self, key: str, seconds: int) -> bool:
         """设置键的过期时间"""
-        client = await self.get_client()
-        return await client.expire(key, seconds)
+        try:
+            client = await self.get_client()
+            if client is None:
+                return False
+            return await client.expire(key, seconds)
+        except Exception as e:
+            print(f"Redis expire操作失败: {e}")
+            return False
 
 
 # 创建全局Redis服务实例

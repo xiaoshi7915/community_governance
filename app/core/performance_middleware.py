@@ -1,18 +1,14 @@
 """
 性能监控中间件
-记录API性能指标、资源使用情况和响应时间
+记录API请求的响应时间和性能指标
 """
 import time
-import asyncio
 from typing import Callable
 from fastapi import Request, Response
 from starlette.middleware.base import BaseHTTPMiddleware
 from starlette.types import ASGIApp
-
-from app.core.logging import get_logger, performance_logger
-from app.core.monitoring import metrics_collector, alert_manager
-
-logger = get_logger(__name__)
+from app.core.logging import performance_logger, get_logger
+from app.core.metrics import performance_monitor
 
 
 class PerformanceMonitoringMiddleware(BaseHTTPMiddleware):
@@ -24,82 +20,55 @@ class PerformanceMonitoringMiddleware(BaseHTTPMiddleware):
     
     async def dispatch(self, request: Request, call_next: Callable) -> Response:
         """监控请求性能"""
-        
-        # 记录开始时间
         start_time = time.time()
-        
-        # 获取请求信息
-        method = request.method
-        path = request.url.path
-        request_id = getattr(request.state, 'request_id', 'unknown')
+        error_message = None
+        response = None
         
         try:
             # 处理请求
             response = await call_next(request)
-            
+            return response
+        except Exception as e:
+            # 记录异常信息
+            error_message = str(e)
+            raise
+        finally:
             # 计算处理时间
             process_time = time.time() - start_time
             
-            # 记录性能指标
-            metrics_collector.record_api_metrics(
-                endpoint=path,
-                method=method,
+            # 获取响应状态码
+            status_code = getattr(response, 'status_code', 500) if response else 500
+            
+            # 获取用户ID（如果有）
+            user_id = None
+            if hasattr(request.state, 'current_user') and request.state.current_user:
+                user_id = str(request.state.current_user.id)
+            
+            # 获取请求ID
+            request_id = getattr(request.state, 'request_id', None)
+            
+            # 记录到性能监控系统
+            await performance_monitor.record_request(
+                method=request.method,
+                path=request.url.path,
+                status_code=status_code,
                 response_time=process_time,
-                status_code=response.status_code,
-                request_id=request_id
+                user_id=user_id,
+                error=error_message
             )
             
             # 记录性能日志
             performance_logger.log_api_performance(
-                method=method,
-                path=path,
-                status_code=response.status_code,
+                method=request.method,
+                path=request.url.path,
+                status_code=status_code,
                 process_time=process_time,
                 request_id=request_id
             )
             
-            # 检查性能告警
-            from app.core.monitoring import APIMetrics
-            from datetime import datetime
-            
-            api_metrics = APIMetrics(
-                endpoint=path,
-                method=method,
-                response_time=process_time,
-                status_code=response.status_code,
-                timestamp=datetime.now(),
-                request_id=request_id
-            )
-            
-            # 异步检查告警（不阻塞响应）
-            asyncio.create_task(alert_manager.check_api_alerts(api_metrics))
-            
-            return response
-            
-        except Exception as e:
-            # 计算处理时间
-            process_time = time.time() - start_time
-            
-            # 记录错误指标
-            metrics_collector.record_api_metrics(
-                endpoint=path,
-                method=method,
-                response_time=process_time,
-                status_code=500,
-                request_id=request_id
-            )
-            
-            # 记录错误日志
-            self.logger.error(
-                "请求处理异常",
-                method=method,
-                path=path,
-                process_time=process_time,
-                request_id=request_id,
-                error=str(e)
-            )
-            
-            raise
+            # 添加性能头
+            if response:
+                response.headers["X-Process-Time"] = str(process_time)
 
 
 class DatabasePerformanceMonitor:

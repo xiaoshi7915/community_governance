@@ -1,7 +1,7 @@
 """
 统一API响应格式处理器
 """
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Any, Dict, Optional, Union, TypeVar, Generic
 from fastapi import status
 from fastapi.responses import JSONResponse
@@ -67,7 +67,7 @@ class ResponseFormatter:
             data=data,
             message=message,
             code=status_code,
-            timestamp=datetime.utcnow().isoformat()
+            timestamp=datetime.now(timezone.utc).isoformat()
         )
         
         return JSONResponse(
@@ -100,7 +100,7 @@ class ResponseFormatter:
                 message=message,
                 details=details
             ),
-            timestamp=datetime.utcnow().isoformat()
+            timestamp=datetime.now(timezone.utc).isoformat()
         )
         
         return JSONResponse(
@@ -254,5 +254,5 @@ def create_response(
         "data": data,
         "message": message,
         "code": status_code,
-        "timestamp": datetime.utcnow().isoformat()
+        "timestamp": datetime.now(timezone.utc).isoformat()
     }

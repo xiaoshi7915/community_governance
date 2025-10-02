@@ -12,6 +12,10 @@ engine = create_async_engine(
     echo=settings.DEBUG,  # 在调试模式下显示SQL语句
     poolclass=NullPool if settings.ENVIRONMENT == "test" else None,
     pool_pre_ping=True,  # 连接前检查连接是否有效
+    pool_size=20,  # 连接池大小
+    max_overflow=30,  # 最大溢出连接数
+    pool_timeout=30,  # 获取连接超时时间
+    pool_recycle=3600,  # 连接回收时间（1小时）
 )
 
 # 创建异步会话工厂
