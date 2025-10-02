@@ -171,17 +171,47 @@ export class HomePage {
    * 从坐标获取地址
    */
   async getAddressFromCoordinates(lat, lng) {
-    // 这里可以集成百度地图、高德地图等API
-    // 暂时返回格式化的坐标信息
-    return new Promise((resolve) => {
-      // 模拟异步地址解析
-      setTimeout(() => {
-        // 简单的地址格式化
-        const latStr = lat.toFixed(4);
-        const lngStr = lng.toFixed(4);
-        resolve(`位置: ${latStr}, ${lngStr}`);
-      }, 1000);
-    });
+    try {
+      // 使用百度地图API进行反向地理编码
+      const apiKey = 'DtlfzaQIvZYuPq3l4QpUUffmqT7mCRzA';
+      
+      // 先将GPS坐标转换为百度坐标系
+      const convertUrl = `https://api.map.baidu.com/geoconv/v2/?coords=${lng},${lat}&from=1&to=5&ak=${apiKey}`;
+      
+      try {
+        const convertResponse = await fetch(convertUrl);
+        const convertData = await convertResponse.json();
+        
+        if (convertData.status === 0 && convertData.result && convertData.result.length > 0) {
+          const bdLng = convertData.result[0].x;
+          const bdLat = convertData.result[0].y;
+          
+          // 使用转换后的百度坐标进行反向地理编码
+          const geocodeUrl = `https://api.map.baidu.com/reverse_geocoding/v3/?ak=${apiKey}&output=json&coordtype=bd09ll&location=${bdLat},${bdLng}`;
+          
+          const geocodeResponse = await fetch(geocodeUrl);
+          const geocodeData = await geocodeResponse.json();
+          
+          if (geocodeData.status === 0 && geocodeData.result) {
+            const address = geocodeData.result.formatted_address;
+            console.log('百度地图地址解析成功:', address);
+            return address;
+          }
+        }
+      } catch (baiduError) {
+        console.warn('百度地图API调用失败，尝试备用方案:', baiduError);
+      }
+      
+      // 备用方案：使用简化的地址格式
+      throw new Error('地址解析失败');
+      
+    } catch (error) {
+      console.warn('地址解析失败:', error);
+      // 降级处理：返回格式化的坐标信息
+      const latStr = lat.toFixed(4);
+      const lngStr = lng.toFixed(4);
+      return `位置: ${latStr}, ${lngStr}`;
+    }
   }
 
   /**
@@ -253,7 +283,7 @@ export class HomePage {
   render() {
     this.container = document.createElement('div');
     this.container.className = 'home-page min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100';
-
+    
     this.container.innerHTML = this.getTemplate();
 
     // 渲染子组件
@@ -698,18 +728,11 @@ export class HomePage {
       // 根据媒体类型选择分析方法
       let analysisResult;
       if (media.type.startsWith('image/')) {
-        analysisResult = await this.aiService.analyzeImage(uploadResult.data.url, {
-          detect_types: ['traffic', 'environment', 'infrastructure', 'safety'],
-          confidence_threshold: 0.4,
-          return_details: true
-        });
+        // 调用图片分析API
+        analysisResult = await this.aiService.analyzeImage(uploadResult.data.url);
       } else if (media.type.startsWith('video/')) {
-        analysisResult = await this.aiService.analyzeVideo(uploadResult.data.url, {
-          detect_types: ['traffic', 'environment', 'infrastructure', 'safety'],
-          confidence_threshold: 0.4,
-          sample_interval: 3,
-          return_details: true
-        });
+        // 调用视频分析API
+        analysisResult = await this.aiService.analyzeVideo(uploadResult.data.url);
       } else {
         throw new Error('不支持的媒体类型');
       }
@@ -1073,7 +1096,7 @@ export class HomePage {
 
     // 更新UI状态
     refreshBtn.disabled = true;
-    refreshText.textContent = '定位�?..';
+    refreshText.textContent = '定位中...';
     locationInput.value = '正在获取位置...';
     locationInput.readOnly = true;
     accuracyDiv.classList.add('hidden');
@@ -1601,30 +1624,21 @@ export class HomePage {
       timestamp: new Date().toISOString()
     };
 
-    // 位置信息
+    // 位置信息 - 后端API期望latitude, longitude, address作为直接字段
     if (this.formData.location) {
       if (typeof this.formData.location === 'object') {
-        formData.location = {
-          address: this.formData.location.address || '',
-          latitude: this.formData.location.latitude || null,
-          longitude: this.formData.location.longitude || null,
-          accuracy: this.formData.location.accuracy || null
-        };
+        formData.address = this.formData.location.address || '';
+        formData.latitude = this.formData.location.latitude || null;
+        formData.longitude = this.formData.location.longitude || null;
       } else {
-        formData.location = {
-          address: this.formData.location,
-          latitude: null,
-          longitude: null,
-          accuracy: null
-        };
+        formData.address = this.formData.location;
+        formData.latitude = null;
+        formData.longitude = null;
       }
     } else {
-      formData.location = {
-        address: form.querySelector('#event-location').value.trim(),
-        latitude: null,
-        longitude: null,
-        accuracy: null
-      };
+      formData.address = form.querySelector('#event-location').value.trim();
+      formData.latitude = null;
+      formData.longitude = null;
     }
 
     // 媒体文件信息
@@ -1692,7 +1706,7 @@ export class HomePage {
     }
 
     if (data.description.length < 10) {
-      Notification.show('事件描述至少需要20个字符', 'error');
+      Notification.show('事件描述至少需要10个字符', 'error');
       return false;
     }
 

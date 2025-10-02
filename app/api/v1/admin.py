@@ -10,6 +10,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.database import get_db
 from app.core.auth_middleware import get_current_user
+from app.core.permissions import require_permission, Permission
 from app.core.scheduler import scheduler
 from app.models.user import User
 from app.schemas.response import ResponseModel
@@ -22,11 +23,8 @@ router = APIRouter(prefix="/admin", tags=["admin"])
 
 
 # 这里可以添加管理员权限检查装饰器
-async def require_admin_permission(current_user: User = Depends(get_current_user)):
+async def require_admin_permission(current_user: User = Depends(require_permission(Permission.VIEW_ADMIN_PANEL))):
     """检查管理员权限"""
-    # 暂时简化，实际应用中需要检查用户角色
-    # if not current_user.is_admin:
-    #     raise HTTPException(status_code=403, detail="需要管理员权限")
     return current_user
 
 

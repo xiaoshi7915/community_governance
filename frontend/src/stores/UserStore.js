@@ -1,5 +1,6 @@
 import Store from './Store.js';
 import { createStorageMiddleware, restoreFromStorage, clearStorage } from './StorageMiddleware.js';
+import { permissionManager } from '../utils/PermissionManager.js';
 
 /**
  * 用户状态管理
@@ -61,10 +62,15 @@ class UserStore extends Store {
    * @param {Object} user - 用户信息
    */
   setUser(user) {
+    // 更新权限管理器
+    permissionManager.setUser(user);
+    
     this.setState({
       user,
       isAuthenticated: true,
-      loginError: null
+      loginError: null,
+      permissions: permissionManager.getCurrentPermissions(),
+      roles: [user?.role]
     });
   }
 

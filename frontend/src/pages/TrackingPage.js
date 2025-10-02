@@ -109,7 +109,12 @@ export class TrackingPage {
         ...this.buildFilterParams(state.filters)
       };
 
-      const response = await this.eventService.getEvents(params);
+      //const response = await this.eventService.getEvents(params);
+      const response = await this.eventService.getEvents({
+        page: this.currentPage,
+        page_size: this.pageSize,
+        status: this.currentFilter
+    });
 
       if (response.success) {
         this.eventStore.setEvents(

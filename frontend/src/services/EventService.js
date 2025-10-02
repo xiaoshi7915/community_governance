@@ -9,6 +9,9 @@ export class EventService extends HttpClient {
   constructor() {
     super('/events');
     
+    // 添加认证拦截器
+    this.addRequestInterceptor(this.addAuthHeader.bind(this));
+    
     // 事件状态枚举
     this.EVENT_STATUS = {
       PENDING: 'pending',
@@ -24,6 +27,30 @@ export class EventService extends HttpClient {
       HIGH: 'high',
       URGENT: 'urgent'
     };
+  }
+
+  /**
+   * 添加认证头
+   * @param {Object} config - 请求配置
+   * @returns {Object} 修改后的配置
+   */
+  addAuthHeader(config) {
+    const token = localStorage.getItem('access_token');
+    if (token) {
+      // 确保headers对象存在
+      if (!config.options) {
+        config.options = {};
+      }
+      if (!config.options.headers) {
+        config.options.headers = {};
+      }
+      
+      // 只有在没有Authorization头时才添加
+      if (!config.options.headers.Authorization) {
+        config.options.headers.Authorization = `Bearer ${token}`;
+      }
+    }
+    return config;
   }
 
   /**
@@ -89,7 +116,7 @@ export class EventService extends HttpClient {
       });
 
       const queryString = new URLSearchParams(queryParams).toString();
-      const response = await this.get(`/?${queryString}`);
+      const response = await this.get(queryString ? `?${queryString}` : '');
 
       return response;
     } catch (error) {
@@ -307,6 +334,19 @@ export class EventService extends HttpClient {
       return response;
     } catch (error) {
       throw new Error(error.message || '获取用户统计数据失败');
+    }
+  }
+
+  /**
+   * 获取历史统计数据
+   * @returns {Promise<Object>} 历史统计数据
+   */
+  async getHistoryStats() {
+    try {
+      const response = await this.get('/history/stats');
+      return response;
+    } catch (error) {
+      throw new Error(error.message || '获取历史统计数据失败');
     }
   }
 

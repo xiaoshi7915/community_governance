@@ -74,7 +74,14 @@ export class ProfilePage {
         try {
             const response = await this.eventService.getUserStats();
             if (response.success) {
-                this.userStats = response.data;
+                const data = response.data;
+                // 映射后端数据到前端期望的格式
+                this.userStats = {
+                    totalReports: data.total_events || 0,
+                    resolvedReports: data.status_stats?.resolved || 0,
+                    contributionPoints: (data.total_events || 0) * 10, // 简单计算贡献值
+                    achievementLevel: this.calculateAchievementLevel(data.total_events || 0)
+                };
                 this.updateStatsDisplay();
             }
         } catch (error) {
@@ -90,11 +97,22 @@ export class ProfilePage {
     }
 
     /**
+     * 计算成就等级
+     */
+    calculateAchievementLevel(totalEvents) {
+        if (totalEvents >= 50) return '社区达人';
+        if (totalEvents >= 20) return '活跃市民';
+        if (totalEvents >= 10) return '热心市民';
+        if (totalEvents >= 5) return '参与市民';
+        return '新手市民';
+    }
+
+    /**
      * 渲染页面
      */
     render() {
         this.container = document.createElement('div');
-        this.container.className = 'profile-page min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100';
+        this.container.className = 'profile-page min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 pt-96';
 
         this.container.innerHTML = this.getTemplate();
 
@@ -576,6 +594,8 @@ export class ProfilePage {
      * 数字动画
      */
     animateNumber(element, targetValue) {
+        // 确保targetValue是有效数字
+        const safeTargetValue = Number(targetValue) || 0;
         const startValue = 0;
         const duration = 1000;
         const startTime = performance.now();
@@ -586,7 +606,7 @@ export class ProfilePage {
 
             // 使用缓动函数
             const easeOutQuart = 1 - Math.pow(1 - progress, 4);
-            const currentValue = Math.round(startValue + (targetValue - startValue) * easeOutQuart);
+            const currentValue = Math.round(startValue + (safeTargetValue - startValue) * easeOutQuart);
 
             element.textContent = currentValue;
 
@@ -2119,11 +2139,21 @@ export class ProfilePage {
                         this.isLoggingOut = true;
                         
                         try {
-                            modal.hide(); // 先关闭弹框
+                            // 先关闭弹框
+                            await modal.hide();
+                            
+                            // 显示退出中提示
+                            Notification.show('正在退出登录...', 'info');
+                            
+                            // 执行退出登录
                             await this.authService.logout();
+                            
+                            // 清除当前页面状态
+                            this.currentModal = null;
+                            
                         } catch (error) {
                             console.error('Logout failed:', error);
-                            Notification.show('退出登录失败', 'error');
+                            Notification.show('退出登录失败，请重试', 'error');
                         } finally {
                             this.isLoggingOut = false;
                         }

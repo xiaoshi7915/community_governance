@@ -18,7 +18,8 @@ from app.schemas.auth import (
     SendCodeRequest,
     TokenResponse,
     TokenRefreshResponse,
-    MessageResponse
+    MessageResponse,
+    UserResponse
 )
 from app.core.exceptions import (
     AuthenticationError,
@@ -29,6 +30,27 @@ from app.core.exceptions import (
 from app.models.user import User
 
 router = APIRouter(prefix="/auth", tags=["认证"])
+
+
+@router.get("/me")
+async def get_current_user_info(
+    current_user: User = Depends(get_current_active_user)
+):
+    """
+    获取当前用户信息
+    """
+    return create_response(
+        data={
+            "id": str(current_user.id),
+            "phone": current_user.phone,
+            "name": current_user.name,
+            "avatar_url": current_user.avatar_url,
+            "role": current_user.role,
+            "is_active": current_user.is_active,
+            "created_at": current_user.created_at,
+            "updated_at": current_user.updated_at
+        }
+    )
 
 
 @router.post(
@@ -99,10 +121,8 @@ async def login(
             password=request.password
         )
         
-        return create_response(
-            data=result,
-            message="登录成功"
-        )
+        # 直接返回TokenResponse格式
+        return TokenResponse(**result)
         
     except AuthenticationError as e:
         raise HTTPException(
@@ -115,9 +135,14 @@ async def login(
             detail=str(e)
         )
     except Exception as e:
+        import traceback
+        import logging
+        logger = logging.getLogger(__name__)
+        logger.error(f"登录异常: {str(e)}")
+        logger.error(f"异常详情: {traceback.format_exc()}")
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail="登录失败，请稍后重试"
+            detail=f"登录失败: {str(e)}"
         )
 
 

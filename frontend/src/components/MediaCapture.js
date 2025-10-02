@@ -148,9 +148,17 @@ export class MediaCapture {
    */
   async handlePhotoCapture() {
     try {
+      // 移动端优先使用文件输入
+      if (this.isMobileDevice()) {
+        this.createMobilePhotoInput();
+        return;
+      }
+
       // 检查浏览器支持
       if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
-        throw new Error('您的浏览器不支持摄像头功能');
+        // 降级到文件选择
+        this.createMobilePhotoInput();
+        return;
       }
 
       // 检查权限
@@ -184,7 +192,94 @@ export class MediaCapture {
       document.body.appendChild(captureModal);
       
     } catch (error) {
-      this.handleError('拍照失败', error);
+      console.warn('摄像头调用失败，使用文件选择:', error);
+      // 降级到文件选择
+      this.createMobilePhotoInput();
+    }
+  }
+
+  /**
+   * 检测是否为移动设备
+   */
+  isMobileDevice() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ||
+           (navigator.maxTouchPoints && navigator.maxTouchPoints > 2);
+  }
+
+  /**
+   * 创建移动端拍照文件输入
+   */
+  createMobilePhotoInput() {
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = 'image/*';
+    input.capture = 'environment'; // 调用后置摄像头
+    input.style.display = 'none';
+    
+    input.addEventListener('change', (e) => {
+      const file = e.target.files[0];
+      if (file) {
+        this.processSelectedFile(file, 'photo');
+      }
+      // 清理input元素
+      document.body.removeChild(input);
+    });
+    
+    document.body.appendChild(input);
+    input.click();
+  }
+
+  /**
+   * 创建移动端录像文件输入
+   */
+  createMobileVideoInput() {
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = 'video/*';
+    input.capture = 'environment'; // 调用后置摄像头
+    input.style.display = 'none';
+    
+    input.addEventListener('change', (e) => {
+      const file = e.target.files[0];
+      if (file) {
+        this.processSelectedFile(file, 'video');
+      }
+      // 清理input元素
+      document.body.removeChild(input);
+    });
+    
+    document.body.appendChild(input);
+    input.click();
+  }
+
+  /**
+   * 处理选择的文件
+   */
+  processSelectedFile(file, type) {
+    try {
+      // 检查文件大小
+      if (file.size > this.maxFileSize) {
+        throw new Error(`文件大小超过限制 (${Math.round(this.maxFileSize / 1024 / 1024)}MB)`);
+      }
+
+      // 创建媒体对象
+      const mediaData = {
+        file: file,
+        type: file.type,
+        name: file.name,
+        size: file.size,
+        captureType: type,
+        url: URL.createObjectURL(file),
+        timestamp: new Date().toISOString()
+      };
+
+      // 触发回调
+      if (this.onMediaCapture) {
+        this.onMediaCapture(mediaData);
+      }
+
+    } catch (error) {
+      this.handleError('文件处理失败', error);
     }
   }
 
@@ -193,9 +288,17 @@ export class MediaCapture {
    */
   async handleVideoCapture() {
     try {
+      // 移动端优先使用文件输入
+      if (this.isMobileDevice()) {
+        this.createMobileVideoInput();
+        return;
+      }
+
       // 检查浏览器支持
       if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
-        throw new Error('您的浏览器不支持摄像头功能');
+        // 降级到文件选择
+        this.createMobileVideoInput();
+        return;
       }
 
       // 检查权限

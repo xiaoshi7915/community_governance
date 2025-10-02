@@ -143,8 +143,9 @@ TEST_EVENTS = [
 ]
 
 def hash_password(password: str) -> str:
-    """密码哈希"""
-    return hashlib.sha256(password.encode()).hexdigest()
+    """密码哈希 - 使用与应用相同的bcrypt哈希"""
+    from app.core.security import password_manager
+    return password_manager.hash_password(password)
 
 async def create_users(session: AsyncSession) -> List[User]:
     """创建测试用户"""

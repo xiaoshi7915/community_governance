@@ -178,7 +178,7 @@ async def get_event_detail(
     try:
         result = await event_service.get_event_detail(
             event_id=event_id,
-            user_id=current_user.id,
+            user_id=None,  # 不进行严格的用户权限检查
             db=db
         )
         
@@ -364,17 +364,17 @@ async def get_event_timeline(
 ):
     """获取事件处理历史 - 返回事件处理历史"""
     try:
-        # 首先检查事件是否存在
+        # 首先检查事件是否存在（不进行严格的用户权限检查）
         event_detail = await event_service.get_event_detail(
             event_id=event_id,
-            user_id=current_user.id,
+            user_id=None,  # 不进行严格的用户权限检查
             db=db
         )
         
         if not event_detail["success"]:
             if "不存在" in event_detail["error"]:
                 raise HTTPException(status_code=404, detail="事件不存在")
-            raise HTTPException(status_code=403, detail="无权限访问此事件")
+            raise HTTPException(status_code=500, detail=event_detail["error"])
         
         # 提取时间线数据
         timelines = event_detail["event"]["timelines"]
@@ -447,25 +447,57 @@ async def get_user_stats(
     """
     获取用户统计信息
     
-    返回用户的事件统计数据，包括：
-    - 总事件数
-    - 各状态事件数
-    - 各类型事件数
+    基于用户角色返回不同范围的统计数据：
+    - 市民：个人30天内上报事件
+    - 网格员：负责区域30天内事件
+    - 管理员/决策者：平台30天内所有事件
     """
     try:
-        from sqlalchemy import select, func
+        from sqlalchemy import select, func, and_
         from app.models.event import Event
+        from datetime import datetime, timedelta
         
-        # 获取用户总事件数
+        # 计算30天前的时间
+        thirty_days_ago = datetime.utcnow() - timedelta(days=30)
+        
+        # 根据用户角色确定统计范围
+        if current_user.role == "citizen":
+            # 市民：只统计自己30天内的事件
+            base_query = select(Event).where(
+                and_(
+                    Event.user_id == current_user.id,
+                    Event.created_at >= thirty_days_ago
+                )
+            )
+        elif current_user.role == "grid_officer":
+            # 网格员：统计负责区域30天内的事件
+            # 这里简化处理，可以根据实际需求添加地理范围过滤
+            base_query = select(Event).where(Event.created_at >= thirty_days_ago)
+        else:
+            # 管理员和决策者：统计平台30天内所有事件
+            base_query = select(Event).where(Event.created_at >= thirty_days_ago)
+        
+        # 获取总事件数
         total_events_result = await db.execute(
-            select(func.count(Event.id)).where(Event.user_id == current_user.id)
+            select(func.count(Event.id)).select_from(base_query.subquery())
         )
         total_events = total_events_result.scalar() or 0
+        
+        # 构建状态统计查询
+        if current_user.role == "citizen":
+            status_query_filter = and_(
+                Event.user_id == current_user.id,
+                Event.created_at >= thirty_days_ago
+            )
+        elif current_user.role == "grid_officer":
+            status_query_filter = Event.created_at >= thirty_days_ago
+        else:
+            status_query_filter = Event.created_at >= thirty_days_ago
         
         # 获取各状态事件数
         status_stats_result = await db.execute(
             select(Event.status, func.count(Event.id))
-            .where(Event.user_id == current_user.id)
+            .where(status_query_filter)
             .group_by(Event.status)
         )
         status_stats = {row[0]: row[1] for row in status_stats_result.fetchall()}
@@ -473,7 +505,7 @@ async def get_user_stats(
         # 获取各类型事件数
         type_stats_result = await db.execute(
             select(Event.event_type, func.count(Event.id))
-            .where(Event.user_id == current_user.id)
+            .where(status_query_filter)
             .group_by(Event.event_type)
         )
         type_stats = {row[0]: row[1] for row in type_stats_result.fetchall()}
@@ -481,7 +513,7 @@ async def get_user_stats(
         # 获取最近事件
         recent_events_result = await db.execute(
             select(Event)
-            .where(Event.user_id == current_user.id)
+            .where(status_query_filter)
             .order_by(Event.created_at.desc())
             .limit(5)
         )
@@ -511,6 +543,153 @@ async def get_user_stats(
         return ResponseFormatter.success(
             data=stats_data,
             message="用户统计信息获取成功"
+        )
+        
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=f"获取用户统计失败: {str(e)}"
+        )
+
+
+@router.get("/events/history/stats",
+            summary="获取历史统计数据",
+            description="获取基于角色的历史统计数据")
+async def get_history_stats(
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db)
+):
+    """
+    获取历史统计数据
+    
+    基于用户角色返回不同范围的历史统计：
+    - 市民：个人历史统计
+    - 网格员：负责区域历史统计
+    - 管理员/决策者：平台历史统计
+    """
+    try:
+        from sqlalchemy import select, func, and_, extract
+        from app.models.event import Event
+        from datetime import datetime, timedelta
+        
+        # 根据用户角色确定统计范围
+        if current_user.role == "citizen":
+            base_filter = Event.user_id == current_user.id
+        # elif current_user.role == "grid_officer":
+        #     # 网格员：统计所有事件（简化处理）
+        #     base_filter = True
+        # else:
+        #     base_filter = True  # 错误：不是有效的WHERE条件
+
+        else:
+            # 网格员和管理员：不添加用户过滤
+            base_filter = None
+
+        # 构建基础查询
+        def build_query(additional_filter=None):
+            query = select(func.count(Event.id))
+            if user_filter is not None:
+                query = query.where(user_filter)
+            if additional_filter is not None:
+                query = query.where(additional_filter)
+            return query
+        
+        # 获取总事件数
+        total_query = build_query()
+        total_result = await db.execute(total_query)
+        total_events = total_result.scalar() or 0
+        
+        # 获取已解决事件数
+        resolved_query = build_query(Event.status == "resolved")
+        resolved_result = await db.execute(resolved_query)
+        resolved_events = resolved_result.scalar() or 0
+        
+        # # 获取总体统计
+        # total_events_result = await db.execute(
+        #     select(func.count(Event.id)).where(base_filter)
+        # )
+        # total_events = total_events_result.scalar() or 0
+        
+        # # 获取已解决事件数
+        # resolved_events_result = await db.execute(
+        #     select(func.count(Event.id)).where(
+        #         and_(base_filter, Event.status == "resolved")
+        #     )
+        # )
+        # resolved_events = resolved_events_result.scalar() or 0
+        
+        # 获取处理中事件数
+        processing_events_result = await db.execute(
+            select(func.count(Event.id)).where(
+                and_(base_filter, Event.status == "processing")
+            )
+        )
+        processing_events = processing_events_result.scalar() or 0
+        
+        # 获取超期事件数（创建超过7天且未解决）
+        seven_days_ago = datetime.utcnow() - timedelta(days=7)
+        overdue_events_result = await db.execute(
+            select(func.count(Event.id)).where(
+                and_(
+                    base_filter,
+                    Event.created_at < seven_days_ago,
+                    Event.status.in_(["pending", "processing"])
+                )
+            )
+        )
+        overdue_events = overdue_events_result.scalar() or 0
+        
+        # 计算解决率
+        resolution_rate = (resolved_events / total_events * 100) if total_events > 0 else 0
+        
+        # 获取事件类型分布
+        type_distribution_result = await db.execute(
+            select(Event.event_type, func.count(Event.id))
+            .where(base_filter)
+            .group_by(Event.event_type)
+        )
+        type_distribution = {row[0]: row[1] for row in type_distribution_result.fetchall()}
+        
+        # 获取月度趋势（最近6个月）
+        monthly_trends = []
+        for i in range(6):
+            month_start = datetime.utcnow().replace(day=1) - timedelta(days=30*i)
+            month_end = month_start + timedelta(days=30)
+            
+            month_events_result = await db.execute(
+                select(func.count(Event.id)).where(
+                    and_(
+                        base_filter,
+                        Event.created_at >= month_start,
+                        Event.created_at < month_end
+                    )
+                )
+            )
+            month_events = month_events_result.scalar() or 0
+            
+            monthly_trends.append({
+                "month": month_start.strftime("%Y-%m"),
+                "events": month_events
+            })
+        
+        monthly_trends.reverse()  # 按时间正序
+        
+        history_data = {
+            "summary": {
+                "total_events": total_events,
+                "resolved_events": resolved_events,
+                "processing_events": processing_events,
+                "overdue_events": overdue_events,
+                "resolution_rate": round(resolution_rate, 1)
+            },
+            "type_distribution": type_distribution,
+            "monthly_trends": monthly_trends,
+            "user_role": current_user.role
+        }
+        
+        return ResponseFormatter.success(
+            data=history_data,
+            message="历史统计数据获取成功"
         )
         
     except Exception as e:

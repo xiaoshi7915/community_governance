@@ -108,6 +108,14 @@ export class App {
                     requiresAuth: true,
                     meta: { title: '历史记录' }
                 }
+            },
+            {
+                path: '/permission-test',
+                component: () => import('./pages/PermissionTestPage.js').then(m => m.PermissionTestPage),
+                options: {
+                    requiresAuth: true,
+                    meta: { title: '权限测试' }
+                }
             }
         ]);
     }

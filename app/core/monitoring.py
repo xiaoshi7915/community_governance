@@ -233,7 +233,7 @@ class HealthChecker:
         try:
             async with engine.begin() as conn:
                 result = await conn.execute(text("SELECT 1"))
-                await result.fetchone()
+                result.fetchone()
             
             response_time = time.time() - start_time
             status = HealthStatus(

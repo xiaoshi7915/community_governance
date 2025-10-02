@@ -50,19 +50,24 @@ export class AuthService extends HttpClient {
    * @returns {*} 处理后的数据
    */
   async handleTokenExpiry(data, response) {
-    if (response.status === 401 && this.refreshToken) {
-      try {
-        // 尝试刷新token
-        await this.refreshAccessToken();
-        // 重新发起原请求
-        // 注意：这里简化处理，实际应用中可能需要更复杂的重试机制
-        return data;
-      } catch (error) {
-        // 刷新失败，清除所有token并跳转到登录页
-        this.clearTokens();
-        this.redirectToLogin();
-        throw error;
+    if (response.status === 401) {
+      console.warn('Token expired or invalid, clearing auth state');
+      // 清除所有token并触发重新登录
+      this.clearTokens();
+      
+      // 触发全局登录状态更新
+      if (typeof window !== 'undefined' && window.userStore) {
+        window.userStore.logout();
       }
+      
+      // 显示提示信息
+      if (typeof window !== 'undefined' && window.Notification) {
+        window.Notification.show('登录已过期，请重新登录', 'warning');
+      }
+      
+      // 跳转到登录页
+      this.redirectToLogin();
+      throw new Error('登录已过期，请重新登录');
     }
     return data;
   }
@@ -78,8 +83,9 @@ export class AuthService extends HttpClient {
     try {
       const response = await this.post('/login', credentials);
       
-      if (response.success) {
-        const { access_token, refresh_token, user } = response.data;
+      // 检查响应格式 - 新的API直接返回数据
+      if (response.access_token || (response.success && response.data)) {
+        const { access_token, refresh_token, user } = response.access_token ? response : response.data;
         
         // 保存tokens
         this.setTokens(access_token, refresh_token);

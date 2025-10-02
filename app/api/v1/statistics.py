@@ -13,6 +13,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.database import get_db
 from app.core.auth_middleware import get_current_user
+from app.core.permissions import require_permission, Permission
 from app.models.user import User
 from app.services.statistics_service import statistics_service
 from app.schemas.response import ResponseModel
@@ -28,7 +29,7 @@ async def get_user_statistics(
     user_id: Optional[UUID] = Query(None, description="用户ID，为空时统计所有用户"),
     start_date: Optional[datetime] = Query(None, description="开始日期"),
     end_date: Optional[datetime] = Query(None, description="结束日期"),
-    current_user: User = Depends(get_current_user),
+    current_user: User = Depends(require_permission(Permission.VIEW_STATISTICS)),
     db: AsyncSession = Depends(get_db)
 ):
     """

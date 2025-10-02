@@ -28,6 +28,7 @@ from app.schemas.file import (
 )
 from app.core.response import response_formatter
 from app.core.auth_middleware import get_current_user
+from app.core.permissions import require_permission, Permission
 from app.core.exceptions import (
     FileUploadError,
     ValidationError,
@@ -46,7 +47,7 @@ security = HTTPBearer()
 async def upload_file(
     file: UploadFile = File(...),
     folder: str = Form(default="uploads"),
-    current_user: User = Depends(get_current_user)
+    current_user: User = Depends(require_permission(Permission.UPLOAD_FILE))
 ):
     """
     上传单个文件
@@ -69,10 +70,8 @@ async def upload_file(
         )
         
         logger.info(f"文件上传成功: {result['file_key']}")
-        return response_formatter.success(
-            data=FileUploadResponse(**result),
-            message="文件上传成功"
-        )
+        # 直接返回FileUploadResponse格式
+        return FileUploadResponse(**result)
         
     except ValidationError as e:
         logger.warning(f"文件上传验证失败: {str(e)}")

@@ -38,10 +38,8 @@ async def get_user_profile(
     需要认证：是
     返回当前登录用户的详细信息
     """
-    return create_response(
-        data=current_user.to_dict(),
-        message="获取用户资料成功"
-    )
+    # 直接返回UserResponse格式
+    return UserResponse(**current_user.to_dict())
 
 
 @router.put(
@@ -71,10 +69,8 @@ async def update_user_profile(
             avatar_url=request.avatar_url
         )
         
-        return create_response(
-            data=updated_user.to_dict(),
-            message="用户资料更新成功"
-        )
+        # 直接返回UserResponse格式
+        return UserResponse(**updated_user.to_dict())
         
     except NotFoundError as e:
         raise HTTPException(

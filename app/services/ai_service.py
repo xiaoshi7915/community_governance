@@ -586,28 +586,45 @@ class AIService:
         try:
             session = await self._get_session()
             
-            # 构建请求数据
-            request_data = {
-                "model": "qwen-vl-plus",  # 使用通义千问视觉模型
-                "input": {
+            # 构建请求数据 - 使用OpenAI兼容格式
+            if media_type == "image":
+                request_data = {
+                    "model": "qwen-vl-plus",
                     "messages": [
                         {
                             "role": "user",
                             "content": [
                                 {
-                                    "image": media_url
+                                    "type": "image_url",
+                                    "image_url": {"url": media_url}
                                 },
                                 {
+                                    "type": "text",
                                     "text": "请分析这张图片中的内容，识别可能存在的城市治理问题，如道路损坏、垃圾堆积、违章建筑、环境污染、公共设施损坏、交通问题等。请详细描述发现的问题，并评估问题的严重程度。"
                                 }
                             ]
                         }
                     ]
-                },
-                "parameters": {
-                    "result_format": "message"
                 }
-            }
+            else:  # video
+                request_data = {
+                    "model": "qwen-vl-max-latest",
+                    "messages": [
+                        {
+                            "role": "user",
+                            "content": [
+                                {
+                                    "type": "video",
+                                    "video": [media_url]
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "请分析这个视频中的内容，识别可能存在的城市治理问题，如道路损坏、垃圾堆积、违章建筑、环境污染、公共设施损坏、交通问题等。请详细描述发现的问题，并评估问题的严重程度。"
+                                }
+                            ]
+                        }
+                    ]
+                }
             
             # 设置请求头
             headers = {
@@ -615,9 +632,10 @@ class AIService:
                 "Content-Type": "application/json"
             }
             
-            # 发送请求
+            # 发送请求到OpenAI兼容端点
+            endpoint = "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions"
             async with session.post(
-                settings.ALIYUN_AI_ENDPOINT,
+                endpoint,
                 json=request_data,
                 headers=headers
             ) as response:
@@ -647,9 +665,8 @@ class AIService:
             AIAnalysisResult: 处理后的分析结果
         """
         try:
-            # 提取AI响应内容
-            output = response.get("output", {})
-            choices = output.get("choices", [])
+            # 处理OpenAI兼容格式的响应
+            choices = response.get("choices", [])
             
             if not choices:
                 raise AIServiceError("AI响应格式错误：缺少choices")
@@ -767,19 +784,27 @@ class AIService:
         
         # 基于URL或文件名进行简单推断
         url_lower = image_url.lower()
-        event_type = "其他"
-        description = "图像内容分析（降级模式）"
-        confidence = 0.2
+        event_type = "其他问题"
+        description = "已接收您上传的图片，AI智能分析服务暂时不可用。请在事件描述中详细说明具体问题，工作人员会根据图片和描述及时处理。"
+        confidence = 0.4
         
         # 简单的关键词匹配
-        if any(keyword in url_lower for keyword in ["road", "路", "道路"]):
-            event_type = "道路损坏"
-            description = "可能存在道路相关问题"
-            confidence = 0.3
-        elif any(keyword in url_lower for keyword in ["garbage", "trash", "垃圾"]):
-            event_type = "垃圾堆积"
-            description = "可能存在垃圾处理问题"
-            confidence = 0.3
+        if any(keyword in url_lower for keyword in ["road", "路", "道路", "street"]):
+            event_type = "道路交通"
+            description = "检测到可能的道路交通相关问题。请在描述中说明具体情况，如路面损坏、交通设施故障等。"
+            confidence = 0.5
+        elif any(keyword in url_lower for keyword in ["garbage", "trash", "垃圾", "waste"]):
+            event_type = "环境卫生"
+            description = "检测到可能的环境卫生问题。请说明垃圾类型、堆积程度等具体情况。"
+            confidence = 0.5
+        elif any(keyword in url_lower for keyword in ["building", "construction", "建筑", "施工"]):
+            event_type = "违章建筑"
+            description = "检测到可能的建筑相关问题。请描述具体的违章情况或建筑安全隐患。"
+            confidence = 0.5
+        elif any(keyword in url_lower for keyword in ["water", "flood", "积水", "排水"]):
+            event_type = "市政设施"
+            description = "检测到可能的水务或排水问题。请说明积水位置、程度等详细信息。"
+            confidence = 0.5
         
         details = {
             "media_type": "image",

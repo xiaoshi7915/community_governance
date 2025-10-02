@@ -4,7 +4,7 @@
 """
 import uuid
 from typing import List, Optional, Dict, Any, Tuple
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from sqlalchemy import and_, or_, func, text, desc, asc
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.orm import selectinload
@@ -841,7 +841,8 @@ class EventService:
                 status_durations[status] = status_durations.get(status, 0) + duration
             else:
                 # 最后一个状态到现在的时间
-                duration = (datetime.utcnow() - timeline.created_at).total_seconds()
+                now = datetime.now(timezone.utc)
+                duration = (now - timeline.created_at).total_seconds()
                 status_durations[status] = status_durations.get(status, 0) + duration
         
         return {

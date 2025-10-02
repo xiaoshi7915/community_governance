@@ -5,13 +5,9 @@
 from datetime import datetime, timedelta, timezone
 from typing import Any, Dict, Optional, Union
 from jose import JWTError, jwt
-from passlib.context import CryptContext
+import bcrypt
 from app.core.config import settings
 from app.core.exceptions import AuthenticationError
-
-
-# 密码加密上下文
-pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 
 class PasswordManager:
@@ -29,12 +25,14 @@ class PasswordManager:
             str: 加密后的密码哈希
         """
         # 确保密码不超过72字节（bcrypt限制）
-        if isinstance(password, str):
-            password_bytes = password.encode('utf-8')
-            if len(password_bytes) > 72:
-                password = password_bytes[:72].decode('utf-8', errors='ignore')
+        password_bytes = password.encode('utf-8')
+        if len(password_bytes) > 72:
+            password_bytes = password_bytes[:72]
         
-        return pwd_context.hash(password)
+        # 生成salt并哈希
+        salt = bcrypt.gensalt()
+        hashed = bcrypt.hashpw(password_bytes, salt)
+        return hashed.decode('utf-8')
     
     @staticmethod
     def verify_password(plain_password: str, hashed_password: str) -> bool:
@@ -49,12 +47,11 @@ class PasswordManager:
             bool: 密码是否匹配
         """
         # 确保密码不超过72字节（bcrypt限制）
-        if isinstance(plain_password, str):
-            password_bytes = plain_password.encode('utf-8')
-            if len(password_bytes) > 72:
-                plain_password = password_bytes[:72].decode('utf-8', errors='ignore')
+        password_bytes = plain_password.encode('utf-8')
+        if len(password_bytes) > 72:
+            password_bytes = password_bytes[:72]
         
-        return pwd_context.verify(plain_password, hashed_password)
+        return bcrypt.checkpw(password_bytes, hashed_password.encode('utf-8'))
 
 
 class JWTManager:

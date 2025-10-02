@@ -43,6 +43,7 @@ export class HistoryPage {
   render() {
     this.container = document.createElement('div');
     this.container.className = 'history-page min-h-screen bg-gray-50';
+    
     this.container.innerHTML = this.getTemplate();
 
     this.renderComponents();

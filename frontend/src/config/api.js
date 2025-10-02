@@ -34,7 +34,9 @@ const getApiBaseUrl = () => {
   
   // 生产环境
   if (import.meta && import.meta.env && import.meta.env.PROD) {
-    return window.location.origin;
+    // 在生产环境中，API服务器运行在8000端口
+    const currentHost = window.location.hostname;
+    return `http://${currentHost}:8000`;
   }
   
   // 默认

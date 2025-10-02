@@ -44,14 +44,12 @@ async def get_user_notifications(
             db=db
         )
         
-        return create_response(
-            data={
-                "notifications": [notification.to_dict() for notification in notifications],
-                "total_count": len(notifications),
-                "limit": limit,
-                "offset": offset
-            },
-            message="获取通知列表成功"
+        # 直接返回NotificationListResponse格式
+        return NotificationListResponse(
+            notifications=[NotificationResponse(**notification.to_dict()) for notification in notifications],
+            total_count=len(notifications),
+            limit=limit,
+            offset=offset
         )
     
     except Exception as e:

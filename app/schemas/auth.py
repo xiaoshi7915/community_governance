@@ -75,6 +75,7 @@ class UserResponse(BaseModel):
     phone: str = Field(..., description="手机号")
     name: str = Field(..., description="用户姓名")
     avatar_url: Optional[str] = Field(None, description="头像URL")
+    role: str = Field(..., description="用户角色")
     is_active: bool = Field(..., description="是否激活")
     created_at: str = Field(..., description="创建时间")
     updated_at: str = Field(..., description="更新时间")
